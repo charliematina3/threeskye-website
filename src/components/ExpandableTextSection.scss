@@ -1,0 +1,16 @@
+@import "../styles/Variables.scss";
+
+.expandable-text-section {
+	a {
+		color: $colour-blue;
+		font-weight: $fw-regular;
+		text-decoration: underline;
+		font-size: inherit;
+	}
+	.expandable-more-info-button {
+		color: $colour-blue;
+		font-weight: $fw-regular;
+		margin-top: 30px;
+		cursor: pointer;
+	}
+}

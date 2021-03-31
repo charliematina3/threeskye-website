@@ -1,0 +1,60 @@
+@import "./Variables.scss";
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 700;
+	margin: 0;
+	margin-bottom: 20px;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 34px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 27px;
+}
+
+h3 {
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 1rem;
+	font-weight: 400;
+	margin: 0;
+	margin-bottom: 10px;
+	line-height: 1.4;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+small {
+	font-size: smaller;
+}
+
+.color-white {
+	color: #fff;
+}
+
+.color-blue {
+	color: $colour-blue;
+}

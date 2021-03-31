@@ -1,0 +1,11 @@
+@import "../../../styles/Variables.scss";
+
+.mobile-nav-container {
+	position: fixed;
+	z-index: 10;
+}
+
+.mobile-nav-inner {
+	height: 66px;
+	padding-bottom: 20px;
+}

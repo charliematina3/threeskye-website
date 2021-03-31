@@ -1,0 +1,23 @@
+@import "../styles/Variables.scss";
+
+.bullet-point-item {
+	font-size: 17px;
+	font-weight: $fw-regular;
+	padding-left: 13px;
+	color: $colour-font-main;
+	position: relative;
+	margin-bottom: 16px;
+	display: flex;
+	align-items: center;
+
+	&:before {
+		content: "";
+		width: 6px;
+		height: 6px;
+		background-color: $colour-blue;
+		border-radius: 50%;
+		position: absolute;
+		left: 0;
+		top: 10px;
+	}
+}

@@ -1,0 +1,33 @@
+@import "../styles/Variables.scss";
+
+.ts-input-field-wrapper {
+	label {
+		color: $colour-font-main;
+		font-weight: $fw-medium;
+		font-size: 17px;
+
+		&.MuiFormLabel-filled {
+			opacity: 0.5;
+			font-size: 14px;
+		}
+		
+		&.Mui-focused {
+			color: $colour-blue;
+			opacity: 1;
+			font-size: 14px;
+		}
+	}
+
+	.MuiInput-underline::after {
+		border-color: $colour-blue;
+	}
+
+	.MuiInput-underline::before {
+		border-color: #7A87A3;
+	}
+
+	.ts-input-field {
+		font-size: 18px;
+		font-weight: $fw-medium;
+	}
+}

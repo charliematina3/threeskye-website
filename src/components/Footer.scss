@@ -1,0 +1,33 @@
+@import "../styles/Variables.scss";
+
+.footer-container {
+	background-color: $colour-footer;
+	padding-bottom: 100px;
+
+	h2 {
+		margin-bottom: 0;
+		line-height: 1.6;
+	}
+}
+
+.disclaimer {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.MuiGrid-root {
+	.icons-container {
+		margin: 40px 0;
+	}
+}
+
+.footer-icon {
+	font-size: 14px;
+	color: #fff;
+	margin-right: 35px;
+
+	&:last-of-type{
+		margin-right: 0;
+	}
+}

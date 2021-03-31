@@ -1,0 +1,12 @@
+@import "../styles/Variables.scss";
+
+.pb-image {
+	width: 100%;
+	height: auto;
+	display: block;
+	max-width: 190px;
+
+	@media screen and (min-width: $breakpoint-sm){
+		max-width: 500px;
+	}
+}

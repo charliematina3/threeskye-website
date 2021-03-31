@@ -1,0 +1,11 @@
+@import "../styles/Variables.scss";
+
+.form-checkbox-group {
+	display: flex;
+	flex-wrap: wrap;
+	
+	.ts-form-checkbox {
+		margin-right: 8px;
+		margin-bottom: 10px;
+	}
+}

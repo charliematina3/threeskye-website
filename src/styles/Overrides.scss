@@ -1,0 +1,24 @@
+$max-small-size: 540px;
+$max-medium-size: 720px;
+$max-large-size: 960px;
+$max-extra-large-size: 1456px;
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$spacer: 1rem !default;
+
+:export {
+	xs: $breakpoint-xs;
+	sm: $breakpoint-sm;
+	md: $breakpoint-md;
+	lg: $breakpoint-lg;
+	xl: $breakpoint-xl;
+	csm: $max-small-size;
+	cmd: $max-medium-size;
+	clg: $max-large-size;
+	cxl: $max-extra-large-size;
+	spacer: $spacer;
+}

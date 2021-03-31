@@ -1,0 +1,81 @@
+@import "../styles/Variables.scss";
+
+.ts-form-checkbox {
+	display: inline-flex;
+	position: relative;
+	cursor: pointer;
+	padding: 8px 24px;
+	padding-right: 14px;
+	background-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 2px solid $colour-blue;
+	transition: 300ms ease;
+
+	&:before {
+		content: "";
+		z-index: 0;
+		position: absolute;
+		left: 0;
+		height: 100%;
+		width: 10px;
+		top: 0;
+		background-color: $colour-blue;
+		transition: 200ms ease;
+	}
+
+	span {
+		z-index: 1;
+		font-size: 15px;
+		font-weight: $fw-medium;
+	};
+	
+	/* Hide the browser's default checkbox */
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+	
+	&:hover {
+		@media screen and (min-width: $breakpoint-lg){
+			color: $colour-blue;
+	
+			&:before {
+				animation: stretch 300ms infinite alternate;
+			}
+		}
+	}
+
+	&.checked {
+		padding: 8px 19px;
+
+		span {
+			color: #fff;
+		}	
+
+		&:before {
+			width: 100%;
+		}
+
+		&:hover {
+			&:before {
+				animation: none;
+			}
+		}
+	}
+}
+
+@keyframes stretch {
+	0% {
+		width: 10px;
+	}
+
+	100% {
+		width: 14px;
+	}
+}

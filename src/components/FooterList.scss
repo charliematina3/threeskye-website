@@ -1,0 +1,33 @@
+@import "../styles/Variables.scss";
+
+.footer-list {
+	.link-item, .footer-list-header {
+		font-weight: 400;
+		width: 100%;
+		display: block;
+		margin-bottom: 15px;
+		opacity: 0.7;
+		color: #fff;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	&.no-header {
+		&:first-of-type {
+			font-weight: 400;
+		}
+	}
+
+	.footer-list-header {
+		opacity: 1;
+		font-weight: 700;
+		margin-bottom: 15px !important;
+	}
+}
+

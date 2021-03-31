@@ -1,0 +1,21 @@
+@import "../styles/Variables.scss";
+
+.pp-section-container {
+	padding-bottom: 0;
+
+	hr {
+		margin-top: 50px;
+	}
+}
+
+.privacy-policy-text-section {
+	margin-bottom: 30px;
+
+	h5 {
+		margin-bottom: 10px;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}

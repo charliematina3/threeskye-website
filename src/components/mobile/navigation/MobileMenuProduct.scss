@@ -1,0 +1,25 @@
+@import "../../../styles/Variables.scss";
+
+.mm-product-container {
+	margin-bottom: 20px;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.mm-product-header {
+	margin-bottom: 3px;
+	width: 100%;
+	font-weight: $fw-medium;
+}
+
+.mm-product-text {
+	font-size: 12px;
+	margin-bottom: 0;
+	line-height: 1.1;
+}
+
+.mm-product-info {
+	display: flex;
+	flex-wrap: wrap;
+}

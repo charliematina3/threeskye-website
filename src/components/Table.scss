@@ -1,0 +1,25 @@
+@import "../styles/Variables.scss";
+
+.ts-table {
+	text-align: left;
+	border-collapse: collapse;
+
+	th {
+		font-weight: $fw-bold;
+		padding: 10px 10px 10px 0;
+		font-size: 14px;
+	}
+
+	td {
+		font-weight: $fw-regular;
+		font-size: 13px;
+		border-top: 1px solid $colour-divider;
+		padding: 10px 10px 10px 0;
+	}
+
+	tr:last-of-type td {
+		border-bottom: 1px solid $colour-divider;
+	}
+	
+	margin: 20px 0;
+}

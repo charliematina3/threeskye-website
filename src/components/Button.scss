@@ -1,0 +1,61 @@
+@import "../styles/Variables.scss";
+
+.ts-button {
+	width: 100%;
+	
+	&.MuiButton-root {
+		background-color: $colour-blue;
+		font-family: $font-primary;
+		border-radius: 0px;
+
+		&.color-primary {
+			span {
+				color: $colour-blue;
+			}
+		}
+
+		&.color-white {
+			span {
+				color: #fff;
+			}
+		}
+
+		span {
+			color: #fff;
+			text-transform: capitalize;
+			font-weight: 500;
+		}
+
+		&:hover {
+			background-color: rgba($colour-blue-light, 0.9);
+		}
+	}
+	
+	&.MuiButton-outlined {
+		background-color: transparent;
+		border-width: 2px;
+
+		&.bg-color-alt {
+			border-color: $colour-blue-alt;
+		}
+
+		&.bg-color-white {
+			border-color: #fff;
+		}
+
+		&:hover {
+			&.bg-color-alt {
+				background-color: $colour-blue-alt;
+			}
+	
+			&.bg-color-white {
+				background-color: #fff;
+			}
+		}
+	}
+
+	&.Mui-disabled {
+		opacity: 0.4;
+		background-color: $colour-blue-light;
+	}
+}

@@ -1,0 +1,31 @@
+.animation-fade-up {
+	animation: fadeUp 500ms ease;
+}
+
+.animation-fade-in {
+	animation: fadeIn 500ms ease-in;
+}
+
+@keyframes fadeUp {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
