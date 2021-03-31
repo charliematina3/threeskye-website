@@ -26,7 +26,7 @@ class MobileNav extends Component {
 
 		return (
 			<>
-				<TsContainer withColour className="mobile-nav-container py-0 d-lg-none">
+				<TsContainer bg="blue" className="mobile-nav-container py-0 d-lg-none">
 					<Row className="mobile-nav-inner justify-content-between align-items-end">
 						<Col xs="auto">
 							{/* Logo */}

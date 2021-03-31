@@ -9,7 +9,7 @@ class ProductSection extends Component {
 	render() {
 		const { products, currentPage } = this.props;
 		return (
-			<TsContainer withColour>
+			<TsContainer bg>
 				<Row container justify="flex-start" spacing="6" xs="12">
 					<Col xs="12">
 						<SectionHeader>Products</SectionHeader>

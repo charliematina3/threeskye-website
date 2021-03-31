@@ -29,11 +29,11 @@ class ProductFeatureBlock extends Component {
 	}
 
 	render() {
-		const { imgPath, header, text, expandedText, withColour, smallText } = this.props;
+		const { imgPath, header, text, expandedText, bg, smallText } = this.props;
 		const { expanded, width } = this.state;
 
 		return (
-			<TsContainer withColour={withColour} innerClassName="pfb-container ">
+			<TsContainer bg={bg} innerClassName="pfb-container">
 				<Row className="justify-content-center">
 					<Col xs="12" sm="6" className="d-flex justify-content-center">
 						<img src={imgPath} alt="Product graphic" className="pb-image" />

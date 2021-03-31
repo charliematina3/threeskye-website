@@ -12,7 +12,7 @@ class AboutUsPage extends Component {
 		return (
 			<FadeInSection>
 				{/* Intro */}
-				<TextSection withColour header="Who are we?">
+				<TextSection bg="blue" header="Who are we?">
 					<FadeInSection fadeUp delay="1">
 						We design and develop software that is aligned with the financials services sector. Our mission is to make <FocusText>simple beautiful software</FocusText> that reinvent the the user experiences of ageing legacy systems.
 					</FadeInSection>

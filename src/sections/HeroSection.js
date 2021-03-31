@@ -10,7 +10,7 @@ class HeroSection extends Component {
 		const { header, text, buttonLink, buttonText, heroImage, children, buttonDisabled, heroImageXs } = this.props;
 
 		return (
-			<TsContainer withColour>
+			<TsContainer bg="blue">
 				<Row className="justify-content-center flex-sm-row-reverse">
 					{heroImage && (
 						<Col xs={heroImageXs ? heroImageXs : 8} sm="5">

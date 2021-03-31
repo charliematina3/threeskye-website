@@ -24,7 +24,7 @@ class HowItWorks extends Component {
 						<ScrollFadeSection>
 							<ProductFeatureBlock
 								key="idx"
-								withColour={idx % 2 !== 0}
+								bg={idx % 2 !== 0}
 								imgPath={feature.imgPath}
 								header={feature.name}
 								text={feature.text}

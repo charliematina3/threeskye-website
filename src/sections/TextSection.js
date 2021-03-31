@@ -7,9 +7,9 @@ import FocusParagraph from '../components/FocusParagraph';
 
 class TextSection extends Component {
 	render() {
-		const { children, header, props, withColour } = this.props;
+		const { children, header, props, bg } = this.props;
 		return (
-			<TsContainer {...props} withColour={withColour}>
+			<TsContainer {...props} bg={bg}>
 				<Row>
 					<Col xs="12">
 						<SectionHeader>{header}</SectionHeader>

@@ -4,7 +4,11 @@
 	padding-top: 50px;
 	padding-bottom: 50px;
 
-	&.with-bg {
+	&.bg-blue {
+		background-color: $colour-blue-bg;
+	}
+
+	&.bg-white {
 		background-color: $colour-blue-bg;
 	}
 }

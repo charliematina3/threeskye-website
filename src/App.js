@@ -10,6 +10,7 @@ import TsxPage from "./pages/TsxPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import GetInTouchPage from "./pages/GetInTouchPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import NavBar from "./components/desktop/navigation/NavBar";
 
 function App() {
 	// Paths for navigation
@@ -18,6 +19,12 @@ function App() {
 		{ name: "About Us", path: "/about-us" },
 		{ name: "Get in Touch", path: "/get-in-touch" },
 		{ name: "Privacy Policy", path: "/privacy-policy" },
+	];
+
+	const navPaths = [
+		{ name: "Home", path: "/", exact: true },
+		{ name: "Products" },
+		{ name: "About Us", path: "/about-us" },
 	];
 
 	// Product paths + content 
@@ -33,6 +40,8 @@ function App() {
 				{/* Navigation */}
 				{/* Mobile */}
 				<MobileNav paths={paths} products={products} />
+				{/* Desktop */}
+				<NavBar paths={navPaths} products={products} />
 				<div className="main-content-container">
 					<Switch>
 						<Route path="/" exact render={() => <Homepage products={products} />} />

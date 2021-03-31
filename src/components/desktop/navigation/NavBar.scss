@@ -1,0 +1,41 @@
+@import "../../../styles/Variables.scss";
+
+.ts-nav-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	transition: 300ms ease;
+
+	&.page-scrolled {
+		padding-top: 30px;
+        padding-bottom: 30px;
+		box-shadow: 0 1px 5px rgba($colour-blue-dark, 0.1);
+
+		.link-item {
+			font-size: smaller;
+		}
+	}
+}
+
+.ts-nav-bar-links {
+	display: flex;
+	align-items: center;
+	
+	.link-item {
+		transition: 300ms ease;
+		margin-bottom: 0;
+		margin-right: 54px;
+		text-decoration: none;
+		width: auto;
+
+		&.active-option {
+			color: $colour-font-main;
+			font-weight: $fw-bold;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

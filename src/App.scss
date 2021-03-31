@@ -22,6 +22,7 @@ a {
 
 body {
 	color: $colour-font-main;
+	background-color: $colour-blue-bg;
 }
 
 hr {
@@ -34,4 +35,8 @@ hr {
 
 .main-content-container {
 	padding-top: 60px;
+
+	@media screen and (min-width: $breakpoint-lg){
+		padding-top: 120px;
+	}
 }

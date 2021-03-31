@@ -23,7 +23,7 @@ class Homepage extends Component {
 				</FadeInSection>
 				{/* Intro */}
 				<ScrollFadeSection>
-					<TextSection header="Intro">
+					<TextSection bg="white" header="Intro">
 						3SKYE is a web platform for <FocusText>Wealth Professionals</FocusText> and <FocusText>Investors</FocusText>. Our intuitive interface allows Advisers to
 						easily and efficiently manage their client’s affairs.
 					</TextSection>
@@ -34,7 +34,7 @@ class Homepage extends Component {
 				</ScrollFadeSection>
 				{/* Get to know us */}
 				<ScrollFadeSection>
-					<GetToKnowUs />
+					<GetToKnowUs bg="white" />
 				</ScrollFadeSection>
 			</>
 		);

@@ -6,10 +6,10 @@ import TextSection from './TextSection';
 
 class GetInTouchSection extends Component {
 	render() {
-		const { withColour } = this.props;
+		const { bg } = this.props;
 		return (
 			<FadeInSection fadeUp delay="3">	
-				<TextSection withColour={withColour} header="Get in touch" style={{ paddingTop: 100, paddingBottom: 100 }}>
+				<TextSection bg={bg} header="Get in touch" style={{ paddingTop: 100, paddingBottom: 100 }}>
 					Interested in our products please hit the contact button below or alternatively email us at <FocusText>info@3skye.com</FocusText>.
 					<br />
 					<br />

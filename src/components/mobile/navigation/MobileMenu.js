@@ -14,7 +14,7 @@ class MobileMenu extends Component {
 		const { menuShowing, paths, products, closeMenuClick } = this.props;
 		return (
 			<div className={`mobile-menu-container${menuShowing ? " menu-active" : ""}`}>
-				<TsContainer className="mobile-menu-header" withColour>
+				<TsContainer className="mobile-menu-header" bg>
 					<Row className="mobile-menu-menu-header">
 						<Col className="d-flex justify-content-between">
 							<SectionHeader noMargin>Menu</SectionHeader>
@@ -39,7 +39,7 @@ class MobileMenu extends Component {
 						</Col>
 					</Row>
 				</TsContainer>
-				<TsContainer withColour className="close-menu-container" onClick={closeMenuClick}>
+				<TsContainer bg="blue" className="close-menu-container" onClick={closeMenuClick}>
 					<Row>
 						<Col xs="12" className="text-center">
 							<h6>Close Menu</h6>
