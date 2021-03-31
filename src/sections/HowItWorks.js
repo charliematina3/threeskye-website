@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import TsContainer from '../components/TsContainer';
 import SectionHeader from '../components/SectionHeader';
 import ProductFeatureBlock from '../components/ProductFeatureBlock';
-import { ResearchFeatures } from "../Utils/Utils.js";
+import { ResearchFeatures } from "../utils/Utils.js";
 import ScrollFadeSection from '../components/ScrollFadeSection';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
