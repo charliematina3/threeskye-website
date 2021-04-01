@@ -1,0 +1,26 @@
+@import "./Variables.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+
+// Override bootstrap variables here. Variables are located in node_modules/bootstrap/scss/_variables.scss.
+
+// Grid
+// $grid-gutter-width: 32px !default;
+
+// Container
+.container {
+	@media screen and (min-width: $breakpoint-sm){
+		max-width: $max-small-size;
+	}
+
+	@media screen and (min-width: $breakpoint-md){
+		max-width: $max-medium-size;
+	}
+
+	@media screen and (min-width: $breakpoint-lg){
+		max-width: $max-large-size;
+	}
+
+	@media screen and (min-width: $breakpoint-xl){
+		max-width: $max-extra-large-size;
+	}
+}

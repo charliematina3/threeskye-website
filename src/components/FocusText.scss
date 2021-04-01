@@ -6,4 +6,8 @@
 	line-height: 1.8;
 	color: $colour-blue;
 	display: inline;
+
+	@media screen and (min-width: $breakpoint-lg) {
+		font-size: 26px
+	}
 }

@@ -41,6 +41,45 @@ p {
 	line-height: 1.4;
 }
 
+@media screen and (min-width: $breakpoint-lg){
+	h1 {
+		font-size: 60px;
+	}
+	
+	h2 {
+		font-size: 27px;
+	}
+	
+	h3 {
+		font-size: 23px;
+		margin-bottom: 15px;
+	}
+	
+	h4 {
+		font-size: 20px;
+	}
+	
+	h5 {
+		font-size: 18px;
+	}
+	
+	h6 {
+		font-size: 16px;
+	}
+	
+	p {
+		font-size: 1rem;
+		font-weight: 400;
+		margin: 0;
+		margin-bottom: 10px;
+		line-height: 1.4;
+	}
+
+	.sub-header {
+		font-size: 20px;
+	}
+}
+
 ul {
 	list-style-type: none;
 	margin: 0;

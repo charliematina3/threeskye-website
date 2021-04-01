@@ -34,7 +34,7 @@ class ProductFeatureBlock extends Component {
 
 		return (
 			<TsContainer bg={bg} innerClassName="pfb-container">
-				<Row className="justify-content-center">
+				<Row className="justify-content-lg-center">
 					<Col xs="12" sm="6" className="d-flex justify-content-center">
 						<img src={imgPath} alt="Product graphic" className="pb-image" />
 					</Col>

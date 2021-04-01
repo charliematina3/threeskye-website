@@ -5,6 +5,10 @@
 	font-weight: 700;
 	margin-bottom: 25px;
 	display: inline-block;
+	
+	@media screen and (min-width: $breakpoint-lg) {
+		font-size: 21px;
+	}
 
 	&.no-margin {
 		margin: 0;

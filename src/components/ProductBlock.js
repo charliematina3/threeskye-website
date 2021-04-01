@@ -16,11 +16,11 @@ function ProductBlock(props) {
 	
 	return (
 		<ScrollFadeSection slower>
-			<Row onClick={() => changeRoute(productPath)}>
-				<Col item xs="12" sm="4">
+			<Row onClick={() => changeRoute(productPath)} className="justify-content-lg-center">
+				<Col xs="12" sm="4" lg="8">
 					<img src={imgPath} alt="Product graphic" className="pb-image" />
 				</Col>
-				<Col item xs="12" sm="8">
+				<Col xs="12" sm="8" lg="12" className="text-lg-center">
 					<h3>{header}</h3>
 					<p>{children}</p>
 					<TextButton>{textButton ? textButton : "More info"}</TextButton>

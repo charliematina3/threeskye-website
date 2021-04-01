@@ -10,7 +10,7 @@ function NavBar(props) {
 	const [scrolled, setScroll] = useState(false);
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
-			setScroll(window.scrollY > 30);
+			setScroll(window.scrollY > 40);
 		});
 	}, []);
 	
@@ -22,7 +22,7 @@ function NavBar(props) {
 				<Col xs="auto">
 					<Link to="/">
 						<img src="/images/logo.svg" alt="logo" style={{ width: 73 }} />
-					</Link>
+				</Link>
 				</Col>
 				<Col xs="auto">
 					<LinkList className="ts-nav-bar-links" links={paths} />

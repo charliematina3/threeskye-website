@@ -11,9 +11,9 @@ class HeroSection extends Component {
 
 		return (
 			<TsContainer bg="blue">
-				<Row className="justify-content-center flex-sm-row-reverse">
+				<Row className="justify-content-center justify-content-lg-between flex-sm-row-reverse">
 					{heroImage && (
-						<Col xs={heroImageXs ? heroImageXs : 8} sm="5">
+						<Col xs={heroImageXs ? heroImageXs : 8} sm="5" lg="4">
 							<FadeInSection fadeUp>
 								<img style={{ width: "100%" }} alt="hero" src={heroImage} />
 							</FadeInSection>
@@ -25,10 +25,10 @@ class HeroSection extends Component {
 								<h1>{header || children}</h1>
 							</FadeInSection>
 							<FadeInSection fadeUp delay="2">
-								{text && <p>{text}</p>}
+								{text && <p className="sub-header">{text}</p>}
 							</FadeInSection>
 						</Col>
-						<Col item xs="12" sm="8">
+						<Col item xs="12" sm="8" lg="5">
 							<FadeInSection fadeUp delay="3">
 								<Button disabled={buttonDisabled} style={{ marginTop: 20 }} routeChangePath={buttonLink ? buttonLink : "/get-in-touch"}>
 									{buttonText ? buttonText : "Get in touch"}

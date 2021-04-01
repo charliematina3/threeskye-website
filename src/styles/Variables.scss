@@ -21,7 +21,13 @@ $fs-small: 13px;
 
 // Breakpoints
 $breakpoint-xs: 0px;
-$breakpoint-sm: 600px;
-$breakpoint-md: 960px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
 $breakpoint-lg: 992px;
-$breakpoint-xl: 1600px;
+$breakpoint-xl: 1200px;
+
+// max widths
+$max-small-size: 540px;
+$max-medium-size: 720px;
+$max-large-size: 900px;
+$max-extra-large-size: 1140px;
