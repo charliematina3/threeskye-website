@@ -6,6 +6,8 @@
 	left: 0;
 	z-index: 10;
 	transition: 300ms ease;
+	padding-top: 50px;
+	padding-bottom: 50px;
 
 	&.page-scrolled {
 		padding-top: 30px;

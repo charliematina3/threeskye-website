@@ -25,11 +25,11 @@ class Footer extends Component {
 					<Col xs="6" lg={{ span: 3, order: 3 }}>
 						<FooterList header="Products" headerPath="/products" links={products} />
 					</Col>
-					<Col xs="12" lg={{ span: 4, order: 4 }} className="icons-container mt-5">
+					<Col xs="12" lg={{ span: 4, order: 5 }} className="icons-container mt-5">
 						<LinkedIn className="footer-icon" />
 						<EmailOutlined className="footer-icon" />
 					</Col>
-					<Col xs="12" lg={{ span: 4, order: 5 }} className="mt-5">
+					<Col xs="12" lg={{ span: 5, order: 4 }} className="mt-5">
 						<div className="disclaimer">© 2020 3SKYE Limited, All rights reserved</div>
 					</Col>
 				</Row>

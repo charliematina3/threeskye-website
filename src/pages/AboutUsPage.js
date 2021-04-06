@@ -22,7 +22,7 @@ class AboutUsPage extends Component {
 					</FadeInSection>
 				</TextSection>
 				{/* Get to know us */}
-				<GetInTouchSection />
+				<GetInTouchSection bg="white"  />
 			</FadeInSection>
 		);
 	}

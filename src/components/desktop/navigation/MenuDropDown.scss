@@ -19,7 +19,7 @@
 .md-items-outer {
 	position: absolute;
 	left: 50%;
-	transform: translateX(-50%)perspective(300px) rotateX(-4deg);
+	transform: translateX(-50%) perspective(300px) rotateX(-4deg);
 	transform-origin: top;
 	top: 20px;
 	padding-top: 10px;

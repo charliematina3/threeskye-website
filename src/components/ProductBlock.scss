@@ -1,6 +1,26 @@
 @import "../styles/Variables.scss";
 
+.product-block {
+	rotate: 0;
+
+	&:hover {
+		cursor: pointer;
+		.pb-image {
+			transform: translateY(-6px) rotateX(8deg);
+		}
+
+		.text-button::after {
+			height: 8px;
+		}
+	}
+}
+
+.pb-image-container {
+	perspective: 20em;
+}
+
 .pb-image {
+	transition: 300ms ease-in-out;
 	width: 100%;
 	height: auto;
 	display: block;

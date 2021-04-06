@@ -17,7 +17,16 @@ body, * {
 
 a {
 	color: inherit;
+	font-size: inherit;
+	font-weight: inherit;
 	text-decoration: none;
+
+	&:hover {
+		color: $colour-blue;
+		font-size: inherit;
+		font-weight: inherit;
+		text-decoration: none;
+	}
 }
 
 body {
