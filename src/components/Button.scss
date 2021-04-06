@@ -8,16 +8,20 @@
 		font-family: $font-primary;
 		border-radius: 0px;
 
-		&.color-primary {
+		&.colour-primary {
 			span {
 				color: $colour-blue;
 			}
 		}
 
-		&.color-white {
+		&.colour-white {
 			span {
 				color: #fff;
 			}
+		}
+
+		&.bg-colour-alt {
+			background-color: $colour-blue-alt;
 		}
 
 		span {
@@ -34,21 +38,24 @@
 	&.MuiButton-outlined {
 		background-color: transparent;
 		border-width: 2px;
+		border-color: $colour-blue;
 
-		&.bg-color-alt {
+		&.bg-colour-alt {
 			border-color: $colour-blue-alt;
 		}
 
-		&.bg-color-white {
+		&.bg-colour-white {
 			border-color: #fff;
 		}
 
 		&:hover {
-			&.bg-color-alt {
+			background-color: $colour-blue !important;
+			
+			&.bg-colour-alt {
 				background-color: $colour-blue-alt;
 			}
 	
-			&.bg-color-white {
+			&.bg-colour-white {
 				background-color: #fff;
 			}
 		}

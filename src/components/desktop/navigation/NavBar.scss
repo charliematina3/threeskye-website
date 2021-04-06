@@ -23,20 +23,43 @@
 	align-items: center;
 	
 	.link-item {
+		font-weight: $fw-medium;
 		font-size: 17px;
 		transition: 300ms ease;
 		margin-bottom: 0;
 		margin-right: 54px;
 		text-decoration: none;
-		width: auto;
+		width: max-content;
+		transition: 200ms ease-in-out;
+		cursor: pointer;
+		z-index: 9;
 
 		&.active-option {
 			color: $colour-font-main;
 			font-weight: $fw-bold;
+
+			&:hover {
+				color: inherit;
+				padding-bottom: 0;
+			}
 		}
 
 		&:last-child {
 			margin-right: 0;
 		}
+
+		&:hover {
+			color: $colour-blue;
+		}
+
+		&.nav-bar-product-menu {
+			&:hover {
+				padding: 0;
+			}
+		}
+	}
+
+	.MuiButton-root {
+		width: 100px;
 	}
 }

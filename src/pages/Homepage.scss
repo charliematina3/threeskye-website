@@ -1,0 +1,9 @@
+@import "../styles/Variables.scss";
+
+.homepage-hero {
+	@media screen and (min-width: $breakpoint-xl){
+		height: calc(100vh - 120px - 135px);
+		position: relative;
+		margin-bottom: 135px;
+	}
+}

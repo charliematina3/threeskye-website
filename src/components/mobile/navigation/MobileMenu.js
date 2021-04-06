@@ -29,7 +29,7 @@ class MobileMenu extends Component {
 					<h5>Products</h5>
 					{products && products.map((prod, idx) => <MobileMenuProduct product={prod} key={idx} />)}
 				</TsContainer>
-				<TsContainer noVertPadding>
+				<TsContainer>
 					<Row>
 						<Col xs="12">
 							<div className="mm-icons-container">

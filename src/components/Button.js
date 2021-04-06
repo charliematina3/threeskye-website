@@ -9,14 +9,14 @@ function Button(props) {
 		history.push(path);
 	}
 
-	const { variant, color, children, bgColour, onClick, routeChangePath } = props;
+	const { variant, buttonColour, children, bgColour, onClick, routeChangePath } = props;
 
 	return (
 		<MuiButton
+			// {...props}
 			onClick={routeChangePath ? () => changeRoute(routeChangePath) : onClick}
-			className={`ts-button${color ? " color-" + color : ""}${bgColour ? " bg-color-" + bgColour : ""}`}
+			className={`ts-button${buttonColour ? " colour-" + buttonColour : ""}${bgColour ? " bg-colour-" + bgColour : ""}`}
 			variant={variant && variant}
-			{...props}
 		>
 			{children}
 		</MuiButton>

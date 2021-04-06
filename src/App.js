@@ -21,17 +21,11 @@ function App() {
 		{ name: "Privacy Policy", path: "/privacy-policy" },
 	];
 
-	const navPaths = [
-		{ name: "Home", path: "/", exact: true },
-		{ name: "Products" },
-		{ name: "About Us", path: "/about-us" },
-	];
-
 	// Product paths + content 
 	const products = [
-		{ name: "Research Platform", path: "/research-platform", text: "A platform for publishing institutional and equity research.", img: "/images/product-rp.png" },
-		{ name: "Wealth Platform", path: "/wealth-platform", text: "A Single Pane of Glass", img: "/images/product-wp.png" },
-		{ name: "3Skye-X", path: "/3skye-x", text: "A HNW and family office focused platform.", img: "/images/product-hnw.png" },
+		{ name: "Research Platform", path: "/research-platform", text: "A platform for publishing institutional and equity research.", landingText: "Create publish and distribute Research the easy way", img: "/images/product-rp.png" },
+		{ name: "Wealth Platform", path: "/wealth-platform", text: "A Single Pane of Glass", landingText: "A modular platform for financial professionals and investors.", img: "/images/product-wp.png" },
+		{ name: "3Skye-X", path: "/3skye-x", text: "A HNW and family office focused platform.", landingText: "A HNW and Family Office focused platform.", img: "/images/product-hnw.png" },
 	];
 
 	return (
@@ -41,7 +35,7 @@ function App() {
 				{/* Mobile */}
 				<MobileNav paths={paths} products={products} />
 				{/* Desktop */}
-				<NavBar paths={navPaths} products={products} />
+				<NavBar products={products} />
 				<div className="main-content-container">
 					<Switch>
 						<Route path="/" exact render={() => <Homepage products={products} />} />

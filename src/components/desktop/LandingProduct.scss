@@ -1,0 +1,59 @@
+@import "../../styles/Variables.scss";
+
+.landing-product-select {
+	position: fixed;
+	top: calc(100vh - 135px);
+	left: 0;
+	z-index: 10;
+	background-color: #F8FAFF;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	border-top: 3px solid rgba($colour-blue, 0.2);
+	transition: 200ms ease;
+
+	&.scrolled {
+		opacity: 0;
+	}
+}
+
+.landing-product-item {
+	position: relative;
+	cursor: pointer;
+
+	&:before {
+		content: "";
+		background-color: $colour-blue;
+		width: 0;
+		opacity: 0;
+		height: 3px;
+		top: -48px;
+		left: 0;
+		position: absolute;
+		border-radius: 2px;
+		transition: width 400ms ease, opacity 500ms;
+	}
+
+	&:hover {
+		&:before {
+			opacity: 1;
+			width: 40px;
+			transition: width 400ms ease, opacity 200ms;
+		}
+
+		.lpi-product, .lpi-info {
+			transform: translateY(-10px);
+		}
+	}
+}
+
+.lpi-product {
+	transition: 200ms ease-in-out;
+	font-size: 16px;
+	font-weight: $fw-semi-bold;
+}
+
+.lpi-info {
+	transition: 400ms ease-in-out;
+	font-size: 12px;
+	font-weight: $fw-regular;
+}

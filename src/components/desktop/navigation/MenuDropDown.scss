@@ -1,0 +1,36 @@
+@import "../../../styles/Variables.scss";
+
+.menu-dropdown {
+	position: relative;
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+	z-index: 8;
+
+	&:hover {
+		.md-items-outer {
+			visibility: visible;
+			opacity: 1;
+			transform: translateX(-50%) perspective(300px) rotateX(0);
+		}
+	}
+}
+
+.md-items-outer {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%)perspective(300px) rotateX(-4deg);
+	transform-origin: top;
+	top: 20px;
+	padding-top: 10px;
+	color: $colour-font-main;
+	visibility: hidden;
+	opacity: 0;
+	transition: 300ms ease-in-out;
+}
+
+.md-items-inner {
+	border-radius: 3px;
+	background-color: #fff;
+	padding: 20px;
+}

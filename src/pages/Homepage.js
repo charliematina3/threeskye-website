@@ -7,6 +7,8 @@ import HeroSection from '../sections/HeroSection';
 import UnderlinedText from '../components/UnderlinedText';
 import ScrollFadeSection from '../components/ScrollFadeSection';
 import FadeInSection from '../components/FadeInSection';
+import "./Homepage.scss";
+import LandingProductSelect from '../components/desktop/LandingProductSelect';
 
 class Homepage extends Component {
 	componentDidMount() {
@@ -17,9 +19,10 @@ class Homepage extends Component {
 		return (
 			<>
 				<FadeInSection>
-					<HeroSection heroImageXs="5" heroImage="/images/landing.png" text="Equity research, wealth management for Advisers, Investors, HNW and Family Offices.">
+					<HeroSection className="homepage-hero" heroImageXs="5" heroImage="/images/landing.png" text="Equity research, wealth management for Advisers, Investors, HNW and Family Offices.">
 						Financial Software for <UnderlinedText>Humans</UnderlinedText>.
 					</HeroSection>
+					<LandingProductSelect products={products} />
 				</FadeInSection>
 				{/* Intro */}
 				<ScrollFadeSection>

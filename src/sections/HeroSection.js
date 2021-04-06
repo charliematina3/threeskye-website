@@ -7,20 +7,20 @@ import TsContainer from '../components/TsContainer';
 
 class HeroSection extends Component {
 	render() {
-		const { header, text, buttonLink, buttonText, heroImage, children, buttonDisabled, heroImageXs } = this.props;
+		const { header, text, buttonLink, buttonText, heroImage, children, buttonDisabled, heroImageXs, className, style } = this.props;
 
 		return (
-			<TsContainer bg="blue">
+			<TsContainer bg="blue" className={className} style={style}>
 				<Row className="justify-content-center justify-content-lg-between flex-sm-row-reverse">
 					{heroImage && (
-						<Col xs={heroImageXs ? heroImageXs : 8} sm="5" lg="4">
+						<Col xs={heroImageXs ? heroImageXs : 8} sm="5" lg="4" xl={{col: 4, offset: 1}}>
 							<FadeInSection fadeUp>
 								<img style={{ width: "100%" }} alt="hero" src={heroImage} />
 							</FadeInSection>
 						</Col>
 					)}
 					<Col xs="12" sm="7" className="px-0">
-						<Col item xs="12">
+						<Col xs="12">
 							<FadeInSection fadeUp delay="1">
 								<h1>{header || children}</h1>
 							</FadeInSection>
@@ -28,7 +28,7 @@ class HeroSection extends Component {
 								{text && <p className="sub-header">{text}</p>}
 							</FadeInSection>
 						</Col>
-						<Col item xs="12" sm="8" lg="5">
+						<Col xs="12" sm="8" lg="5">
 							<FadeInSection fadeUp delay="3">
 								<Button disabled={buttonDisabled} style={{ marginTop: 20 }} routeChangePath={buttonLink ? buttonLink : "/get-in-touch"}>
 									{buttonText ? buttonText : "Get in touch"}

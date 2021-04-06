@@ -1,0 +1,39 @@
+@import "../../../styles/Variables.scss";
+
+.product-menu-item {
+	display: flex;
+	align-items: center;
+	width: 450px;
+	margin-bottom: 35px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	&:hover {
+		.pmi-details {
+			.pmi-name {
+				color: $colour-blue;
+			}
+		}
+	}
+}
+
+.pmi-img {
+	margin-right: 25px;
+
+	img {
+		width: 80px;
+		height: auto;
+	}
+}
+
+.pmi-name {
+	font-weight: $fw-semi-bold;
+	font-size: 16px;
+}
+
+.pmi-info {
+	font-weight: $fw-regular;
+	font-size: 13px;
+}

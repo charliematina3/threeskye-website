@@ -17,7 +17,7 @@ function MobileMenuProduct(props) {
 				<Col xs="4">
 					<img src={product.img} alt="Product graphic" style={{ width: "100%" }} />
 				</Col>
-				<Col xs="8" alignItems="center">
+				<Col xs="8">
 					<div>
 						<p className="mm-product-header">{product.name}</p>
 						<p className="mm-product-text">{product.text}</p>
