@@ -4,7 +4,7 @@ import "./ScrollFadeSection.scss";
 function ScrollFadeSection(props) {
 	const [isVisible, setVisible] = React.useState(true);
 	const domRef = React.useRef();
-	const { noTransform, fadeInLeft, fadeInRight, faster, slower } = props;
+	const { noTransform, fadeInLeft, fadeInRight, faster, slower, className, style } = props;
 
 	React.useEffect(() => {
 		const currentDomRef = domRef.current;
@@ -21,9 +21,10 @@ function ScrollFadeSection(props) {
 	}, []);
 	return (
 		<div
-			className={`scroll-fade-in-section${isVisible ? " is-visible" : ""}${noTransform ? " scroll-no-transform" : ""}${faster ? " scroll-fade-faster" : ""}${
+			className={`scroll-fade-in-section${className ? " " + className : ""}${isVisible ? " is-visible" : ""}${noTransform ? " scroll-no-transform" : ""}${faster ? " scroll-fade-faster" : ""}${
 				slower ? " scroll-fade-slower" : ""
-			}${fadeInLeft ? " scroll-fade-in-left" : ""}${fadeInRight ? " scroll-fade-in-right" : ""}`}
+				}${fadeInLeft ? " scroll-fade-in-left" : ""}${fadeInRight ? " scroll-fade-in-right" : ""}`}
+			style={style}
 			ref={domRef}
 		>
 			{props.children}

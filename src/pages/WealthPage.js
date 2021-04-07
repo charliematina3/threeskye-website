@@ -19,7 +19,7 @@ class WealthPage extends Component {
 					A <UnderlinedText>Single Pane</UnderlinedText> of Glass for Advisers and Investors.
 				</HeroSection>
 				{/* Intro */}
-				<TextSection header="Intro">
+				<TextSection header="Intro" bg="white">
 					3SKYE is a modular web-and-mobile platform for <FocusText>financial professionals</FocusText> and investors. Our intuitive interface allows Advisers to easily and efficiently manage
 					their client’s affairs. We take a subset of that data and expose it to the investors in a bespoke investor portal.
 				</TextSection>
@@ -28,7 +28,7 @@ class WealthPage extends Component {
 				{/* Products */}
 				<ProductSection products={products} currentPage="Wealth Platform" />
 				{/* Get to know us */}
-				<GetToKnowUs />
+				<GetToKnowUs bg="white"/>
 			</>
 		);
 	}

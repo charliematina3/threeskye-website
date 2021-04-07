@@ -14,6 +14,12 @@
 		.pmi-details {
 			.pmi-name {
 				color: $colour-blue;
+
+				.pmi-arrow {
+					transform: none;
+					visibility: visible;
+					opacity: 1;
+				}
 			}
 		}
 	}
@@ -31,7 +37,16 @@
 .pmi-name {
 	font-weight: $fw-semi-bold;
 	font-size: 16px;
+
+	.pmi-arrow {
+		color: $colour-blue;
+		transform: translateX(-8px);
+		visibility: hidden;
+		opacity: 0;
+		transition: 300ms ease-in-out;
+	}
 }
+
 
 .pmi-info {
 	font-weight: $fw-regular;

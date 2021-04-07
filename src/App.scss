@@ -20,6 +20,7 @@ a {
 	font-size: inherit;
 	font-weight: inherit;
 	text-decoration: none;
+	transition-duration: 100ms;
 
 	&:hover {
 		color: $colour-blue;

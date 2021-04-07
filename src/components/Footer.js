@@ -26,8 +26,8 @@ class Footer extends Component {
 						<FooterList header="Products" headerPath="/products" links={products} />
 					</Col>
 					<Col xs="12" lg={{ span: 4, order: 5 }} className="icons-container mt-5">
-						<LinkedIn className="footer-icon" />
-						<EmailOutlined className="footer-icon" />
+						<a href="https://www.linkedin.com/company/3skye/" target="_blank" rel="noreferrer" className="footer-icon"><LinkedIn /></a>
+						<a href="mailto:info@3skye.com" target="_blank" rel="noreferrer" className="footer-icon"><EmailOutlined /></a>
 					</Col>
 					<Col xs="12" lg={{ span: 5, order: 4 }} className="mt-5">
 						<div className="disclaimer">© 2020 3SKYE Limited, All rights reserved</div>

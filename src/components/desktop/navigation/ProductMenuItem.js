@@ -1,3 +1,4 @@
+import { ArrowRightAlt } from '@material-ui/icons';
 import { useHistory } from 'react-router';
 import "./ProductMenuItem.scss";
 
@@ -17,7 +18,7 @@ function ProductMenuItem(props) {
 				<img src={img} alt="product" />
 			</div>
 			<div className="pmi-details">
-				<div class="pmi-name">{name}</div>
+				<div class="pmi-name">{name} <ArrowRightAlt className="pmi-arrow" /></div>
 				<div class="pmi-info">{info}</div>
 			</div>
 		</div>

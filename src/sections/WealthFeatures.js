@@ -10,7 +10,7 @@ class WealthFeatures extends Component {
 	render() {
 		return (
 			<ScrollFadeSection>
-				<TsContainer>
+				<TsContainer bg="white">
 					<Grid item xs="12">
 						<SectionHeader noMargin>Features</SectionHeader>
 					</Grid>
@@ -20,7 +20,7 @@ class WealthFeatures extends Component {
 						<ScrollFadeSection>
 							<ProductFeatureBlock
 								key="idx"
-								bg={idx % 2 !== 0}
+								bg={idx % 2 !== 0 ? "blue" : "white"}
 								imgPath={feature.imgPath}
 								header={feature.name}
 								text={feature.text}

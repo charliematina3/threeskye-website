@@ -1,0 +1,41 @@
+@import "../../styles/Variables.scss";
+
+.product-card {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 100%;
+}
+
+.pc-image {
+	width: 200px;
+
+	img {
+		width: 100%;
+	}
+}
+
+.pc-name {
+	font-size: 17px;
+	font-weight: $fw-bold;
+}
+
+.pc-info {
+	font-size: 17px;
+	font-weight: $fw-regular;
+}
+
+@keyframes fadeUp {
+	0% {
+		visibilty: hidden;
+		opacity: 0;
+		transform: translateY(5px);
+	}
+
+	100% {
+		visibilty: visible;
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

@@ -2,6 +2,10 @@
 
 .ts-button {
 	width: 100%;
+
+	@media screen and (min-width: $breakpoint-lg){
+		width: 200px;
+	}
 	
 	&.MuiButton-root {
 		background-color: $colour-blue;

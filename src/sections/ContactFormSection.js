@@ -33,7 +33,7 @@ class ContactFormSection extends Component {
 		const { bg } = this.props;
 		return (
 			<TsContainer className="contact-form-container" bg={bg ? bg : "white"}>
-				<form className="contact-form" onSubmit={this.handleSubmit} action="">
+				<form className="contact-form" onSubmit={this.handleSubmit} action="" autocomplete="off">
 					<InputField required placeholder="Wanda Maximoff" label="Your Name" name="name" onChange={this.handleInputChange} />
 					<InputField required placeholder="wanda@hydra.com" label="Your Email Address" name="email" onChange={this.handleInputChange} />
 					<InputField placeholder="Hydra" label="Company Name" name="company" onChange={this.handleInputChange} />

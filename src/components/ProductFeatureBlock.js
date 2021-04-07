@@ -33,12 +33,12 @@ class ProductFeatureBlock extends Component {
 		const { expanded, width } = this.state;
 
 		return (
-			<TsContainer bg={bg} innerClassName="pfb-container">
-				<Row className="justify-content-lg-center">
-					<Col xs="12" sm="6" className="d-flex justify-content-center">
+			<TsContainer bg={bg} className="pfb-container">
+				<Row className="justify-content-sm-center justify-content-lg-center">
+					<Col xs="12" sm="6" md="4" lg="3" className="d-flex justify-content-center align-items-md-baseline">
 						<img src={imgPath} alt="Product graphic" className="pb-image" />
 					</Col>
-					<Col xs="12" style={{ marginTop: 20 }}>
+					<Col xs="12" md="6" lg="9" style={{ marginTop: 20 }}>
 						<h3>{header}</h3>
 						{width > 575 ? !expandedText ? <p>{text}</p> : <p>{expandedText}</p> : expandedText && expanded ? <p>{expandedText}</p> : text && <p>{text}</p>}
 						{width < 575 && expandedText && <TextButton onClick={() => this.setState({ expanded: !this.state.expanded })}>{expanded ? "Show Less" : "More Info"}</TextButton>}
