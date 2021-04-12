@@ -22,8 +22,8 @@ class MobileMenu extends Component {
 						</Col>
 					</Row>
 				</TsContainer>
-				<TsContainer className="mobile-menu-list" onClick={closeMenuClick}>
-					<LinkList links={paths} />
+				<TsContainer className="mobile-menu-list">
+					<LinkList links={paths} onClick={closeMenuClick} />
 				</TsContainer>
 				<TsContainer className="py-0" onClick={closeMenuClick}>
 					<h5>Products</h5>

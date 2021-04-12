@@ -5,10 +5,10 @@ import "./LinkList.scss";
 
 class LinkList extends Component {
 	render() {
-		const { links, className, linkClassName } = this.props;
+		const { links, className, linkClassName, onClick } = this.props;
 
 		return (
-			<div className={`link-list${ className ? " " + className : ""}`}>
+			<div className={`link-list${ className ? " " + className : ""}`} onClick={onClick}>
 				{links &&
 					links.map((link, idx) => (
 						link.path ? (
