@@ -11,10 +11,10 @@ import Col from 'react-bootstrap/Col';
 class MobileMenu extends Component {
 	
 	render() {
-		const { menuShowing, paths, products, closeMenuClick } = this.props;
+		const { menuShowing, paths, products, closeMenuClick, bannerRef } = this.props;
 		return (
 			<div className={`mobile-menu-container d-lg-none${menuShowing ? " menu-active" : ""}`}>
-				<TsContainer className="mobile-menu-header" bg="blue">
+				<TsContainer className="mobile-menu-header" bg="blue" containerRef={bannerRef}>
 					<Row className="mobile-menu-menu-header">
 						<Col className="d-flex justify-content-between">
 							<SectionHeader noMargin>Menu</SectionHeader>
@@ -33,8 +33,8 @@ class MobileMenu extends Component {
 					<Row>
 						<Col xs="12">
 							<div className="mm-icons-container">
-								<LinkedIn className="mm-icon" />
-								<EmailOutlined className="mm-icon" />
+								<a href="https://www.linkedin.com/company/3skye/" target="_blank" rel="noreferrer" className="mm-icon"><LinkedIn /></a>
+								<a href="mailto:info@3skye.com" target="_blank" rel="noreferrer" className="mm-icon"><EmailOutlined /></a>
 							</div>
 						</Col>
 					</Row>
