@@ -23,8 +23,8 @@
 	&:before {
 		content: "";
 		background-color: $colour-blue;
-		width: 0;
-		opacity: 0;
+		width: 40px;
+		opacity: 0.4;
 		height: 3px;
 		top: -48px;
 		left: 0;
@@ -36,7 +36,7 @@
 	&:hover {
 		&:before {
 			opacity: 1;
-			width: 40px;
+			width: 55px;
 			transition: width 400ms ease, opacity 200ms;
 		}
 

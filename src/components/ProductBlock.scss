@@ -4,13 +4,15 @@
 	rotate: 0;
 
 	&:hover {
-		cursor: pointer;
-		.pb-image {
-			transform: translateY(-6px) rotateX(8deg);
-		}
-
-		.text-button::after {
-			height: 8px;
+		@media screen and (min-width: $breakpoint-lg) {
+			cursor: pointer;
+			.pb-image {
+				transform: translateY(-6px) rotateX(8deg);
+			}
+	
+			.text-button::after {
+				height: 8px;
+			}
 		}
 	}
 }
@@ -24,7 +26,7 @@
 	width: 100%;
 	height: auto;
 	display: block;
-	max-width: 190px;
+	// max-width: 190px;
 
 	@media screen and (min-width: $breakpoint-sm){
 		max-width: 500px;

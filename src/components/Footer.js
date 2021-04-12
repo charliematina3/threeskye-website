@@ -14,7 +14,7 @@ class Footer extends Component {
 			<TsContainer className="footer-container">
 				<Row>
 					<Col xs="10" lg={{ span: 4, order: 1 }} className="mb-5">
-						<h2 className="color-white mb-2">Let Us Know How We Can Help You</h2>
+						<h2 className="colour-white mb-2">Let Us Know How We Can Help You</h2>
 						<Button variant="outlined" routeChangePath="./get-in-touch">
 							Get in touch
 						</Button>

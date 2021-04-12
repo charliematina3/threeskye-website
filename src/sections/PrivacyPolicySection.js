@@ -22,7 +22,7 @@ class PrivacyPolicySection extends Component {
 		const { children, header, noDivider, style } = this.props;
 		return (
 			<ScrollFadeSection>
-				<TsContainer className="pp-section-container" style={style}>
+				<TsContainer className="pp-section-container" style={style} bg="white">
 					{header && <h4>{header}</h4>}
 					{children}
 					{!noDivider && <hr/>}

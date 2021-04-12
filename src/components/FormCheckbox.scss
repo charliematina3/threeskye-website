@@ -28,8 +28,12 @@
 
 	span {
 		z-index: 1;
-		font-size: 15px;
+		font-size: 12px;
 		font-weight: $fw-medium;
+
+		@media screen and (min-width: $breakpoint-md){
+			font-size: 15px;
+		}
 	};
 	
 	/* Hide the browser's default checkbox */

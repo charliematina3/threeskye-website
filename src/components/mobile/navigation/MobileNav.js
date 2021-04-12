@@ -35,7 +35,7 @@ class MobileNav extends Component {
 							</Link>
 						</Col>
 						<Col xs="auto">
-							<MenuRounded className="color-blue" onClick={this.toggleMenu}/>
+							<MenuRounded className="colour-blue" onClick={this.toggleMenu}/>
 						</Col>
 					</Row>
 				</TsContainer>

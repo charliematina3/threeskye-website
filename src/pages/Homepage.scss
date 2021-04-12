@@ -6,4 +6,9 @@
 		position: relative;
 		margin-bottom: 135px;
 	}
+
+	@media screen and (min-height: 1100px){
+		height: auto;
+		margin-bottom: inherit;	
+	}
 }

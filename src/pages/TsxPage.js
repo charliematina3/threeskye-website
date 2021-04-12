@@ -22,8 +22,8 @@ class TsxPage extends Component {
 					</HeroSection>
 					{/* Intro */}
 					<FadeInSection fadeUp>
-						<TextSection header="Intro">
-							An exciting new platform that allows HWW and Family Offices to take control of their affairs.
+						<TextSection header="Intro" bg="white">
+							An exciting new platform that allows HNW and Family Offices to take control of their affairs.
 							<br />
 							<br />
 							More info <FocusText>coming soon…</FocusText>
@@ -35,7 +35,7 @@ class TsxPage extends Component {
 					</ScrollFadeSection>
 					{/* Get to know us */}
 					<ScrollFadeSection>
-						<GetToKnowUs />
+						<GetToKnowUs bg="white" />
 					</ScrollFadeSection>
 				</FadeInSection>
 			</>

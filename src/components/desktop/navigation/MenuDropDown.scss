@@ -7,7 +7,7 @@
 	color: inherit;
 	z-index: 8;
 
-	&:hover {
+	&.show-dropdown {
 		.md-items-outer {
 			visibility: visible;
 			opacity: 1;

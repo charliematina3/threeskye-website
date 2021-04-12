@@ -80,6 +80,45 @@ p {
 	}
 }
 
+@media screen and (min-width: $breakpoint-xl){
+	h1 {
+		font-size: 80px;
+	}
+	
+	h2 {
+		font-size: 27px;
+	}
+	
+	h3 {
+		font-size: 23px;
+		margin-bottom: 15px;
+	}
+	
+	h4 {
+		font-size: 20px;
+	}
+	
+	h5 {
+		font-size: 18px;
+	}
+	
+	h6 {
+		font-size: 16px;
+	}
+	
+	p {
+		font-size: 1rem;
+		font-weight: 400;
+		margin: 0;
+		margin-bottom: 10px;
+		line-height: 1.4;
+	}
+
+	.sub-header {
+		font-size: 20px;
+	}
+}
+
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -90,11 +129,11 @@ small {
 	font-size: smaller;
 }
 
-.color-white {
+.colour-white {
 	color: #fff;
 }
 
-.color-blue {
+.colour-blue {
 	color: $colour-blue;
 }
 

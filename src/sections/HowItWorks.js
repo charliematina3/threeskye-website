@@ -10,7 +10,7 @@ class HowItWorks extends Component {
 	render() {
 		return (
 			<ScrollFadeSection>
-				<TsContainer className="pb-0" bg="white">
+				<TsContainer className="pb-0 pt-5" bg="white">
 					<Row>
 						<Col xs="12">
 							<SectionHeader noMargin>How it works</SectionHeader>

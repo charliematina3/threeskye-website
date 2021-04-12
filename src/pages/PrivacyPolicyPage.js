@@ -13,8 +13,8 @@ class PrivacyPolicyPage extends Component {
 	}
 	render() { 
 		return (
-			<>
-				<TsContainer bg>
+			<div className="bg-white">
+				<TsContainer bg="white" className="pb-0">
 					<SectionHeader noMargin>Privacy Policy</SectionHeader>
 				</TsContainer>
 				<PrivacyPolicySection header="Who are we">
@@ -366,7 +366,7 @@ class PrivacyPolicyPage extends Component {
 						}
 					/>
 				</PrivacyPolicySection>
-			</>
+			</div>
 		);
 	}
 }

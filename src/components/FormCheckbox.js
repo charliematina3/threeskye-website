@@ -8,7 +8,7 @@ class FormCheckbox extends Component {
 		return (
 			<label className={`ts-form-checkbox${checked ? " checked" : ""}`}>
 				<span>{label}</span>
-				<input onChange={onChange} type="checkbox" checked={checked} name={name} />
+				<input tabIndex="0" onChange={onChange} type="checkbox" checked={checked} name={name} />
 			</label>
 		);
 	}

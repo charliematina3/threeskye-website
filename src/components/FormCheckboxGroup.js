@@ -8,6 +8,7 @@ class FormCheckboxGroup extends Component {
 
 		return (
 			<div className="form-checkbox-group">
+				<label className="group-label">Product Interest</label>
 				{checkboxes && checkboxes.length >= 0 &&
 					checkboxes.map((checkbox, idx) => <FormCheckbox key={idx} label={checkbox.label} checked={checkbox.checked} name={checkbox.name} onChange={onChange} />)}
 			</div>

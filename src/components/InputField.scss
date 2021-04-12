@@ -16,6 +16,12 @@
 			opacity: 1;
 			font-size: 14px;
 		}
+		
+		&.Mui-error {
+			&.Mui-focused {
+				color: $colour-error;
+			}
+		}
 	}
 
 	.MuiInput-underline::after {
@@ -29,5 +35,14 @@
 	.ts-input-field {
 		font-size: 18px;
 		font-weight: $fw-medium;
+	}
+
+	.MuiFormHelperText-root {
+		font-family: $font-primary;
+		font-weight: 400;
+	}
+	
+	.Mui-error {
+		color: $colour-error;
 	}
 }

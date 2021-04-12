@@ -69,4 +69,11 @@
 		opacity: 0.4;
 		background-color: $colour-blue-light;
 	}
+
+	.spinner-border {
+		width: 1em;
+		height: 1em;
+		border-width: 0.15em;
+		margin-right: 10px;
+	}
 }

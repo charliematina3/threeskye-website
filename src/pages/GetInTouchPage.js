@@ -19,9 +19,7 @@ class GetInTouchPage extends Component {
 						</FadeInSection>
 					</TextSection>
 				</FadeInSection>
-				<FadeInSection fadeUp delay="2">
-					<ContactFormSection />
-				</FadeInSection>
+				<ContactFormSection />
 			</>
 		);
 	}

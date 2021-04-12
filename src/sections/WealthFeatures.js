@@ -10,7 +10,7 @@ class WealthFeatures extends Component {
 	render() {
 		return (
 			<ScrollFadeSection>
-				<TsContainer bg="white">
+				<TsContainer className="pb-0 pt-5" bg="white">
 					<Grid item xs="12">
 						<SectionHeader noMargin>Features</SectionHeader>
 					</Grid>

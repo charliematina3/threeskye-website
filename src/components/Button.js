@@ -9,15 +9,21 @@ function Button(props) {
 		history.push(path);
 	}
 
-	const { variant, buttonColour, children, bgColour, onClick, routeChangePath } = props;
+	const { variant, buttonColour, children, bgColour, onClick, routeChangePath, className, loading, disabled } = props;
 
 	return (
 		<MuiButton
 			// {...props}
 			onClick={routeChangePath ? () => changeRoute(routeChangePath) : onClick}
-			className={`ts-button${buttonColour ? " colour-" + buttonColour : ""}${bgColour ? " bg-colour-" + bgColour : ""}`}
+			className={`ts-button${className ? " " + className : ""}${buttonColour ? " colour-" + buttonColour : ""}${bgColour ? " bg-colour-" + bgColour : ""}`}
 			variant={variant && variant}
+			disabled={disabled}
 		>
+			{loading && (
+				<div class="spinner-border" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+			)}
 			{children}
 		</MuiButton>
 	);
