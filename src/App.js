@@ -36,7 +36,7 @@ function App() {
 				<MobileNav paths={paths} products={products} />
 				{/* Desktop */}
 				<NavBar products={products} />
-				<div className="main-content-container">
+				<div className="main-content-container" id="main-content">
 					<Switch>
 						<Route path="/" exact render={() => <Homepage products={products} />} />
 						<Route path="/research-platform" exact render={() => <ResearchPage products={products} />} />

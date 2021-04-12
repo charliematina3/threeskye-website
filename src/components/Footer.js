@@ -11,7 +11,7 @@ class Footer extends Component {
 	render() {
 		const { paths, products } = this.props;
 		return (
-			<TsContainer className="footer-container">
+			<TsContainer id="footer" className="footer-container">
 				<Row>
 					<Col xs="10" lg={{ span: 4, order: 1 }} className="mb-5">
 						<h2 className="colour-white mb-2">Let Us Know How We Can Help You</h2>

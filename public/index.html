@@ -28,7 +28,36 @@
     -->
     <title>3SKYE</title>
   </head>
+  <style>
+		.skip-links {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			position: relative;
+			z-index: 9999;
+		}
+		.skip-links a, .skip-links a:hover {
+			color: #fff;
+			position: absolute;
+			padding: 5px 10px;
+			font-size: 1em;
+			left: 8px;
+			top: -999em;
+			background-color: #3e9af0;
+			outline: none;
+			border: 3px solid #0c86f6;
+			font-weight: 600;
+		}
+		.skip-links a:focus {
+			top: 8px;
+		}
+	</style>
   <body>
+    <!-- Skip Links -->
+		<ul class="skip-links">
+			<li><a tabindex="1" href="#main-content">Skip to main content</a></li>
+			<li><a tabindex="1" href="#footer">Skip to footer</a></li>
+		</ul>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
