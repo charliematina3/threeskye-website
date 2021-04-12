@@ -7,17 +7,17 @@ class ProductFeatureCard extends Component {
 		const { img, name, info, smallText } = this.props;
 		return (
 			<Card className="product-card">
-				<div class="pc-image">
+				<div className="pc-image">
 					<img src={img} alt={name + " graphic"} />
 				</div>
-				<div class="pc-info">
-					<p class="pc-name">
+				<div className="pc-info">
+					<p className="pc-name">
 						{name}
 					</p>
-					<p class="pc-info">
+					<p className="pc-info">
 						{info}
 					</p>
-					{smallText && <p class="small-text">{smallText}</p>}
+					{smallText && <p className="small-text">{smallText}</p>}
 				</div>
 			</Card>
 		);

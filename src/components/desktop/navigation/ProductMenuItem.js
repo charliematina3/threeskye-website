@@ -13,13 +13,13 @@ function ProductMenuItem(props) {
 	const { name, img, info, path } = props;
 
 	return (
-		<div class="product-menu-item" onClick={() => changeRoute(path)}>
-			<div class="pmi-img">
+		<div className="product-menu-item" onClick={() => changeRoute(path)}>
+			<div className="pmi-img">
 				<img src={img} alt="product" />
 			</div>
 			<div className="pmi-details">
-				<div class="pmi-name">{name} <ArrowRightAlt className="pmi-arrow" /></div>
-				<div class="pmi-info">{info}</div>
+				<div className="pmi-name">{name} <ArrowRightAlt className="pmi-arrow" /></div>
+				<div className="pmi-info">{info}</div>
 			</div>
 		</div>
 	);

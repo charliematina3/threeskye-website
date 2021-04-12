@@ -9,11 +9,10 @@ class ResearchFeaturesMobile extends Component {
 			<div className="d-lg-none">
 				{ResearchFeatures &&
 					ResearchFeatures.map((feature, idx) => (
-						<>
+						<div key={idx}>
 							{/* For Mobile */}
 							<ScrollFadeSection>
 								<ProductFeatureBlock
-									key="idx"
 									bg={idx % 2 !== 0 ? "blue" : "white"}
 									imgPath={feature.imgPath}
 									header={feature.name}
@@ -22,11 +21,11 @@ class ResearchFeaturesMobile extends Component {
 									expandedText={feature.expandedText}
 								/>
 							</ScrollFadeSection>
-						</>
+						</div>
 					))}
 			</div>
 		);
 	}
 }
- 
+
 export default ResearchFeaturesMobile;

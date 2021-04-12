@@ -39,7 +39,7 @@ function NavBar(props) {
 				</Col>
 				<Col xs="auto">
 					{/* <LinkList className="ts-nav-bar-links" links={paths} /> */}
-					<div class="ts-nav-bar-links">
+					<div className="ts-nav-bar-links">
 						<NavBarLink label="Home" path="/" exact />
 						<ProductDropdown products={products} className="nav-bar-product-menu link-item" />
 						<NavBarLink label="About Us" path="/about-us" />

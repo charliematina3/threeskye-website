@@ -7,7 +7,7 @@ class PrivacyPolicyTextSection extends Component {
 	render() {
 		const { header, content } = this.props;
 		return (
-			<div class="privacy-policy-text-section">
+			<div className="privacy-policy-text-section">
 				<h5>{header}</h5>
 				<p>{content}</p>
 			</div>
