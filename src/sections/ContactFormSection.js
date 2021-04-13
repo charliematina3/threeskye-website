@@ -103,7 +103,7 @@ class ContactFormSection extends Component {
 										]}
 									/>
 									<div className="mb-2 mt-5">
-										<ReCAPTCHA sitekey="6LfpTacaAAAAAOVJaelWdDQgir3cIjzIIOHxEDSK" onChange={() => this.setState({captchaChecked: true})} />
+										<ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" onChange={() => this.setState({captchaChecked: true})} />
 									</div>
 									<Button disabled={!captchaChecked} loading={loading} onClick={this.handleSubmit} type="submit" className="mt-4">
 										{loading ? "Submitting" : "Submit"}
@@ -124,7 +124,7 @@ class ContactFormSection extends Component {
 							<Row className="justify-content-center">
 								<Col lg="10" xl="8">
 									<FocusParagraph>
-										Thanks for reaching out! Your message has been sent We will get back to you when lorems ipsums.<FocusText> successfully.</FocusText>
+										Thanks for reaching out. One of the team will be in touch.
 									</FocusParagraph>
 								</Col>
 								<Col lg="10" xl="8">

@@ -19,7 +19,12 @@ class Homepage extends Component {
 		return (
 			<>
 				<FadeInSection>
-					<HeroSection className="homepage-hero" heroImageXs="5" heroImage="/images/landing.png" text="Equity research, wealth management for Advisers, Investors, HNW and Family Offices.">
+					<HeroSection
+						className="homepage-hero"
+						heroImageXs="5"
+						heroImage="/images/landing.png"
+						text="Equity research, wealth management for Advisers, Investors, HNW and Family Offices."
+					>
 						Financial Software for <UnderlinedText>Humans</UnderlinedText>.
 					</HeroSection>
 					<LandingProductSelect products={products} />
@@ -27,8 +32,8 @@ class Homepage extends Component {
 				{/* Intro */}
 				<ScrollFadeSection>
 					<TextSection bg="white" header="Intro">
-						3SKYE is a web platform for <FocusText>Wealth Professionals</FocusText> and <FocusText>Investors</FocusText>. Our intuitive interface allows Advisers to
-						easily and efficiently manage their client’s affairs.
+						At 3SKYE we build tools for the financial services industry in particular <FocusText>Wealth Management</FocusText> and Institutional Equities. <FocusText>Publishing platform</FocusText> for
+						Institutional and Retail Equity research. Our Wealth Management platforms keeps Advisers safe and simplifies client management.
 					</TextSection>
 				</ScrollFadeSection>
 				{/* Products */}
