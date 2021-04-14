@@ -11,6 +11,7 @@ class AboutUsPage extends Component {
 	render() {
 		return (
 			<FadeInSection>
+				<h1 className="d-none">About Us</h1>
 				{/* Intro */}
 				<TextSection bg="blue" header="Who are we?">
 					<FadeInSection fadeUp delay="1">

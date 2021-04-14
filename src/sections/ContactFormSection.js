@@ -7,7 +7,6 @@ import Button from '../components/Button';
 import FormCheckboxGroup from '../components/FormCheckboxGroup';
 import FadeInSection from '../components/FadeInSection';
 import SectionHeader from '../components/SectionHeader';
-import FocusText from '../components/FocusText';
 import FocusParagraph from '../components/FocusParagraph';
 import axios from 'axios';
 import ReCAPTCHA from 'react-google-recaptcha';
