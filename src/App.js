@@ -48,8 +48,8 @@ function App() {
 						<Route path="/privacy-policy" exact render={() => <PrivacyPolicyPage products={products} />} />
 						<Route render={ErrorPage}/>
 					</Switch>
-					<Footer paths={paths} products={products} />
 				</div>
+				<Footer paths={paths} products={products} />
 			</BrowserRouter>
 		</div>
 	);

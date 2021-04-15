@@ -43,6 +43,20 @@ hr {
 	margin: 10px 0;
 }
 
+.master-container {
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: $footer-height-xs;
+
+	@media screen and (min-width: $breakpoint-md){
+		padding-bottom: $footer-height-md;
+	}
+
+	@media screen and (min-width: $breakpoint-lg){
+		padding-bottom: $footer-height-lg;
+	}
+}
+
 .main-content-container {
 	padding-top: 60px;
 
