@@ -1,7 +1,7 @@
 @import "../styles/Variables.scss";
 
 .fade-in-section {
-	animation: fadeInSection 1s ease-in;
+	animation: fadeInSection 1s ease-in forwards;
 	will-change: opacity, visibility;
 	font-weight: inherit;
 	font-size: inherit;

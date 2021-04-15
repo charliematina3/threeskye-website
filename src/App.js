@@ -11,6 +11,7 @@ import AboutUsPage from "./pages/AboutUsPage";
 import GetInTouchPage from "./pages/GetInTouchPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import NavBar from "./components/desktop/navigation/NavBar";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
 	// Paths for navigation
@@ -45,6 +46,7 @@ function App() {
 						<Route path="/about-us" exact render={() => <AboutUsPage products={products} />} />
 						<Route path="/get-in-touch" exact render={() => <GetInTouchPage products={products} />} />
 						<Route path="/privacy-policy" exact render={() => <PrivacyPolicyPage products={products} />} />
+						<Route render={ErrorPage}/>
 					</Switch>
 					<Footer paths={paths} products={products} />
 				</div>
