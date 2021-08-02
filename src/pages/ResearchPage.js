@@ -23,16 +23,21 @@ class ResearchPage extends Component {
 				<FadeInSection>
 					<TextSection header="Intro" bg="white">
 						<FadeInSection fadeUp>
-							3SKYE Research is a platform for publishing institutional and equity research. Our intuitive interface allows analysts to easily and efficiently <FocusText>publish and
-							distribute</FocusText> your companies research.
+							Our Research module has been crafted with your clients in mind. Delivering a professional report to their inbox that reflects the quality and
+							professionalism of your firm.
+						</FadeInSection>
+						<br />
+						<FadeInSection fadeUp>
+							Our intuitive solution has been designed to allow Analysts to effectively and efficiently create institutional and equity research reports, then publish
+							them on bespoke designed templates. Keeping on brand and saving time with our secure technology.
 						</FadeInSection>
 					</TextSection>
 				</FadeInSection>
 				<HowItWorks />
 				{/* Products */}
-				<ProductSection products={products} currentPage="Research Platform"/>
+				{/* <ProductSection products={products} currentPage="Research Platform"/> */}
 				{/* Get to know us */}
-				<GetToKnowUs bg="white" />
+				<GetToKnowUs bg="blue" />
 			</>
 		);
 	}

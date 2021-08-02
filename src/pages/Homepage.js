@@ -37,9 +37,9 @@ class Homepage extends Component {
 					</TextSection>
 				</ScrollFadeSection>
 				{/* Products */}
-				<ScrollFadeSection>
+				{/* <ScrollFadeSection>
 					<ProductSection products={products} />
-				</ScrollFadeSection>
+				</ScrollFadeSection> */}
 				{/* Get to know us */}
 				<ScrollFadeSection>
 					<GetToKnowUs bg="white" />
