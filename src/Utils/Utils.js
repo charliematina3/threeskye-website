@@ -55,15 +55,25 @@ export const ResearchFeatures = [
 
 export const WealthFeatures = [
 	{
-		name: "Analytics",
-		text: "A deep dive into clients Fixed Interest allocation….charting, maturity dates, ratings, coupon rates all in one place.",
-		imgPath: "/images/wealth/analytics.png",
+		name: "Client Management",
+		text: "All Eyes on Your Clients. Every client email automatically synched within our platform. Easy note taking again automatically synched per client and/or account.",
+		imgPath: "/images/wealth/client-management.png",
+	},
+	{
+		name: "Portfolio Management",
+		text: "All Eyes on Valuation history, personalised asset allocation, and individual holdings, all before you’ve scrolled down the page.",
+		imgPath: "/images/wealth/portfolio-management.png",
 	},
 	{
 		name: "Transactions",
 		text:
 			"Track every transaction, and use powerful filters to find exactly what you’re looking for. Everything is sortable, and if you need more, simply export to CSV. The sky’s the limit.",
 		imgPath: "/images/wealth/transactions.png",
+	},
+	{
+		name: "Analytics",
+		text: "A deep dive into clients Fixed Interest allocation….charting, maturity dates, ratings, coupon rates all in one place.",
+		imgPath: "/images/wealth/analytics.png",
 	},
 	{
 		name: "Documents",
@@ -89,18 +99,8 @@ export const WealthFeatures = [
 		imgPath: "/images/wealth/investor-portal.png",
 	},
 	{
-		name: "Client Management",
-		text: "All Eyes on Your Clients. Every client email automatically synched within our platform. Easy note taking again automatically synched per client and/or account.",
-		imgPath: "/images/wealth/client-management.png",
-	},
-	{
 		name: "Static Data / Workflow",
 		text: "Take Control of your client static data….Edit Everything. Approval workflow built in that takes the guess work our of Audits.",
 		imgPath: "/images/wealth/static-data.png",
-	},
-	{
-		name: "Portfolio Management",
-		text: "All Eyes on Valuation history, personalised asset allocation, and individual holdings, all before you’ve scrolled down the page.",
-		imgPath: "/images/wealth/portfolio-management.png",
-	},
+	}
 ];
