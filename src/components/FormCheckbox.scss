@@ -45,13 +45,17 @@
 		width: 0;
 	}
 	
-	&:hover {
+	&:hover, &:focus-within {
 		@media screen and (min-width: $breakpoint-lg){
 			color: $colour-blue;
 	
 			&:before {
 				animation: stretch 300ms infinite alternate;
 			}
+		}
+
+		&.checked {
+			opacity: 0.5;
 		}
 	}
 
@@ -63,7 +67,7 @@
 		}	
 
 		&:before {
-			width: 100%;
+			width: 100% !important;
 		}
 
 		&:hover {

@@ -10,7 +10,7 @@ import "../components/ProductBlock.scss";
 class WealthFeatures extends Component {
 	render() {
 		return (
-			<ScrollFadeSection>
+			<div>
 				<TsContainer className="pb-0 pt-5" bg="white">
 					<Grid item xs="12">
 						<SectionHeader noMargin>Features</SectionHeader>
@@ -18,19 +18,17 @@ class WealthFeatures extends Component {
 				</TsContainer>
 				{WealthContent &&
 					WealthContent.map((feature, idx) => (
-						<ScrollFadeSection>
-							<ProductFeatureBlock
-								key="idx"
-								bg={idx % 2 !== 0 ? "blue" : "white"}
-								imgPath={feature.imgPath}
-								header={feature.name}
-								text={feature.text}
-								smallText={feature.smallText}
-								expandedText={feature.expandedText}
-							/>
-						</ScrollFadeSection>
+						<ProductFeatureBlock
+							key="idx"
+							bg={idx % 2 !== 0 ? "blue" : "white"}
+							imgPath={feature.imgPath}
+							header={feature.name}
+							text={feature.text}
+							smallText={feature.smallText}
+							expandedText={feature.expandedText}
+						/>
 					))}
-			</ScrollFadeSection>
+			</div>
 		);
 	}
 }

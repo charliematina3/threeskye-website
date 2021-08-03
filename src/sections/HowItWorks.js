@@ -9,7 +9,7 @@ import ResearchFeaturesDesktop from './ResearchFeaturesDesktop';
 class HowItWorks extends Component {
 	render() {
 		return (
-			<ScrollFadeSection>
+			<div>
 				<TsContainer className="pb-0 pt-5" bg="white">
 					<Row>
 						<Col xs="12">
@@ -19,7 +19,7 @@ class HowItWorks extends Component {
 				</TsContainer>
 				<ResearchFeaturesMobile />
 				<ResearchFeaturesDesktop />
-			</ScrollFadeSection>
+			</div>
 		);
 	}
 }
