@@ -26,6 +26,16 @@
 	font-weight: $fw-regular;
 }
 
+@media screen and (min-width: $breakpoint-lg) {
+	.product-card {
+		display: block;		
+	}
+
+	.pc-image {
+		margin: 0 auto 10px auto;
+	}
+}
+
 @keyframes fadeUp {
 	0% {
 		visibilty: hidden;

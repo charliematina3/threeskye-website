@@ -18,7 +18,7 @@ class AboutUsPage extends Component {
 						className="homepage-hero"
 						heroImageXs="5"
 						heroImage="/images/landing.png"
-						text="Equity research, wealth management for Advisers, Investors, HNW and Family Offices."
+						text="Saving time and creating revenue through software that inspires"
 					>
 						Financial Software for <UnderlinedText>Humans</UnderlinedText>.
 					</HeroSection>
@@ -30,7 +30,7 @@ class AboutUsPage extends Component {
 						<FadeInSection fadeUp delay="1">
 							At 3Skye we craft software solutions for the financial services industry, with a focus on Equities Research publishing. Delivering research to your
 							clients on brand, on time and with ease. With our technology your people will save time via our powerful publishing platform and bespoke templates that
-							a tailored to your brand.
+							are tailored to your brand.
 						</FadeInSection>
 					</TextSection>
 					<TextSection bg="blue" header="Who are we?">

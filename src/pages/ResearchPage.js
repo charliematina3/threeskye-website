@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import FocusText from '../components/FocusText';
+// import FocusText from '../components/FocusText';
 import TextSection from '../sections/TextSection';
 import GetToKnowUs from "../sections/GetToKnowUs";
-import ProductSection from '../components/ProductSection';
+// import ProductSection from '../components/ProductSection';
 import HeroSection from '../sections/HeroSection';
 import UnderlinedText from '../components/UnderlinedText';
 import HowItWorks from '../sections/HowItWorks';
@@ -13,7 +13,7 @@ class ResearchPage extends Component {
 		window.scrollTo(0, 0)
 	}
 	render() {
-		const { products } = this.props;
+		// const { products } = this.props;
 		return (
 			<>
 				<HeroSection heroImage="/images/product-rp.png" buttonText="Request Demo">
@@ -28,8 +28,8 @@ class ResearchPage extends Component {
 						</FadeInSection>
 						<br />
 						<FadeInSection fadeUp>
-							Our intuitive solution has been designed to allow Analysts to effectively and efficiently create institutional and equity research reports, then publish
-							them on bespoke designed templates. Keeping on brand and saving time with our secure technology.
+							Our intuitive solution has been designed to allow Analysts to effectively and efficiently create equity research reports, then publish
+							via your bespoke designed templates. Keeping on brand and saving time with our secure technology.
 						</FadeInSection>
 					</TextSection>
 				</FadeInSection>

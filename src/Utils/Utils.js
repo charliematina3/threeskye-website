@@ -2,7 +2,7 @@ export const ResearchFeatures = [
 	{
 		name: "Branding",
 		text: "We take your branding guidelines and build them into reusable elements.",
-		expandedText: "We take your branding guidelines and build them into reusable elements that can be applied to all future templates. Logo’s, colours, font type face and sizes, headings etc are standardised within the 3SKYE Research Platform.",
+		expandedText: "We take your branding guidelines and build them into reusable elements that can be applied to all future templates. Logo’s, colours, font type face and sizes, headings, and table formatting are standardised within the 3SKYE Research Platform.",
 		imgPath: "/images/research/branding.png",
 	},
 	{
@@ -14,7 +14,7 @@ export const ResearchFeatures = [
 	{
 		name: "Disclaimers",
 		text: "Easy to use Disclaimer management tool",
-		expandedText: "Our easy to use Disclaimer management tool allows compliance to upload, manage and distribute company disclosure statements. These are appended automatically to the end of each research report.",
+		expandedText: "Our easy to use Disclaimer management tool allows compliance to upload and manage company disclosure statements. These are appended automatically to the end of each research report.",
 		imgPath: "/images/research/disclaimers.png",
 	},
 	{
@@ -25,19 +25,19 @@ export const ResearchFeatures = [
 	},
 	{
 		name: "Market Data",
-		text: "Use the 3SKYE integrated feed with Refinitiv (Bloomberg in the works) for automated company financials.",
+		text: "Use the 3SKYE integration engine with Refinitiv (Bloomberg in the works) for automated company financials.",
 		expandedText: "Use the 3SKYE integrated feed with Refinitiv (Bloomberg in the works) for automated company financials. Or alternatively use your data via API or CSV/XLS import. Once integrated your Market Data such Target Price and Ratings are imported automatically.",
 		imgPath: "/images/research/market-data.png",
 	},
 	{
 		name: "Compliance",
-		text: "Automated compliance approval workflow engine.",
-		expandedText: "Automated compliance approval workflow engine is built right into the platform. One click authorization request and approval with full tracking and auditing of the approval process.",
+		text: "Automated compliance approval workflow.",
+		expandedText: "Automated compliance approval workflow is built right into the platform. One click authorization request and approval with full tracking and auditing of the approval process.",
 		imgPath: "/images/research/compliance.png",
 	},
 	{
 		name: "Quality Control",
-		text: "Peer review workflow allows peers and management to easily and efficiently provide feedback to the publisher.",
+		text: "Peer review workflow allows peers and management to easily provide feedback to the publisher.",
 		imgPath: "/images/research/quality-control.png",
 	},
 	{
@@ -48,7 +48,7 @@ export const ResearchFeatures = [
 	{
 		name: "Distribution",
 		text: "One click publishing to the 3SKYE Wealth platform.",
-		expandedText: "One click publishing to the 3SKYE Wealth platform for easy distribution to Advisers and Investors. Alternatively we can integrate with your existing CRM and Investor Portals.",	
+		expandedText: "One click publishing for easy distribution to Advisers and Investors. Alternatively we can integrate with your existing CRM and Investor Portals.",	
 		imgPath: "/images/research/distribution.png",
 	},
 ];
