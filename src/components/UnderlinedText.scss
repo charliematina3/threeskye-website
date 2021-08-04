@@ -6,11 +6,13 @@
 	position: relative;
 	z-index: 1;
 	display: inline-block;
+	color: $colour-blue;
 
 	&::before {
 		content: "";
 		z-index: -1;
 		width: 100%;
+		display: none;
 		position: absolute;
 		bottom: 3%;
 		left: 0;

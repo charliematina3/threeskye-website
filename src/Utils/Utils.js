@@ -2,13 +2,13 @@ export const ResearchFeatures = [
 	{
 		name: "Branding",
 		text: "We take your branding guidelines and build them into reusable elements.",
-		expandedText: "We take your branding guidelines and build them into reusable elements that can be applied to all future templates. Logo’s, colours, font type face and sizes, headings, and table formatting are standardised within the 3SKYE Research Platform.",
+		expandedText: "We take your branding guidelines and build them into reusable elements that can be applied to all future templates. Logos, colours, font type face and sizes, headings, and table formatting are standardised within the 3SKYE Research Platform.",
 		imgPath: "/images/research/branding.png",
 	},
 	{
 		name: "Templates",
 		text: "We take the “output” from your existing templates and imbed them into our inline template engine.",
-		smallText: "Coming Soon – Build and manage your own templates using our initiative new template platform.",
+		smallText: "Coming Soon – Build and manage your own templates using our innovative new template platform.",
 		imgPath: "/images/research/templates.png",
 	},
 	{
