@@ -10,6 +10,7 @@ import SectionHeader from '../components/SectionHeader';
 import FocusParagraph from '../components/FocusParagraph';
 import axios from 'axios';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { SESClient, CloneReceiptRuleSetCommand } from "@aws-sdk/client-ses";
 
 class ContactFormSection extends Component {
 	constructor(props) {
@@ -44,27 +45,51 @@ class ContactFormSection extends Component {
 	}
 
 	handleSubmit(e) {
+		this.sendAWSEmail();
 		e.preventDefault();
-		if (this.state.name && this.state.email && this.state.message) {
-			if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(this.state.email)) {
-				this.setState({ loading: true, emailInvalid: false });
-				axios({
-					method: "POST",
-					url: "http://localhost:3002/send",
-					data: this.state,
-				}).then((response) => {
-					if (response.data.status === "success") {
-						this.setState({ submitted: true })
-					} else if (response.data.status === "fail") {
-						alert("Message failed to send.");
-					}
-				});
-			} else {
-				this.setState({emailInvalid: true})
+		// if (this.state.name && this.state.email && this.state.message) {
+		// 	if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(this.state.email)) {
+		// 		this.setState({ loading: true, emailInvalid: false });
+		// 		axios({
+		// 			method: "POST",
+		// 			url: "http://localhost:3002/send",
+		// 			data: this.state,
+		// 		}).then((response) => {
+		// 			if (response.data.status === "success") {
+		// 				this.setState({ submitted: true })
+		// 			} else if (response.data.status === "fail") {
+		// 				alert("Message failed to send.");
+		// 			}
+		// 		});
+		// 	} else {
+		// 		this.setState({emailInvalid: true})
+		// 	}
+		// } else {
+		// 	this.setState({formInvalid: true})
+		// }
+	}
+
+	sendAWSEmail() {
+		console.log("State:" , this.state);
+		
+		const html = `<body><p>New contact from ${this.state.name} ${this.state.email}</p><p>${this.state.message}</p>`;
+		this.setState({ loading: true, emailInvalid: false });
+		axios({
+			method: "POST",
+			url: "https://aip1fd4b76.execute-api.ap-southeast-2.amazonaws.com/Production/contact-us",
+			data: {
+				"text":"",
+				"html":html
+			},
+		}).then((response) => {
+			if (response.data.status === "success") {
+				this.setState({ submitted: true })
+			} else if (response.data.status === "fail") {
+				alert("Message failed to send.");
 			}
-		} else {
-			this.setState({formInvalid: true})
-		}
+		});
+		
+		
 	}
 
 	checkEmail(email) {
@@ -104,7 +129,7 @@ class ContactFormSection extends Component {
 									<div className="mb-2 mt-5">
 										<ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" onChange={() => this.setState({captchaChecked: true})} />
 									</div>
-									<Button disabled={!captchaChecked} loading={loading} onClick={this.handleSubmit} type="submit" className="mt-4">
+									<Button disabled={false && !captchaChecked} loading={loading} onClick={this.handleSubmit} type="submit" className="mt-4">
 										{loading ? "Submitting" : "Submit"}
 									</Button>
 								</Col>
