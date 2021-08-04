@@ -17,22 +17,22 @@ class TsxPage extends Component {
 		return (
 			<>
 				<FadeInSection fadeUp>
-					<HeroSection heroImage="/images/product-hnw.png" buttonText="Request Demo" buttonDisabled>
+					<HeroSection heroImage="/images/product-hnw.png" buttonText="Let's Chat">
 						A Platform for <UnderlinedText>High Networth</UnderlinedText> &amp; Family Offices
 					</HeroSection>
 					{/* Intro */}
 					<FadeInSection fadeUp>
 						<TextSection header="Intro" bg="white">
-							An exciting new platform that allows HNW and Family Offices to take control of their affairs.
+							An exciting new platform that allows HNW and Family Offices to take control of their financial affairs. An intuitive portal to view and manage all your investments (property, funds, stocks and cash) in one place. 
 							<br />
 							<br />
-							More info <FocusText>coming soon…</FocusText>
+							More information <FocusText>coming soon.</FocusText>
 						</TextSection>
 					</FadeInSection>
 					{/* Products */}
-					<ScrollFadeSection>
+					{/* <ScrollFadeSection>
 						<ProductSection products={products} currentPage="3Skye-X" />
-					</ScrollFadeSection>
+					</ScrollFadeSection> */}
 					{/* Get to know us */}
 					<ScrollFadeSection>
 						<GetToKnowUs bg="white" />

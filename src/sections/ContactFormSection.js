@@ -10,7 +10,7 @@ import SectionHeader from '../components/SectionHeader';
 import FocusParagraph from '../components/FocusParagraph';
 import axios from 'axios';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { SESClient, CloneReceiptRuleSetCommand } from "@aws-sdk/client-ses";
+// import { SESClient, CloneReceiptRuleSetCommand } from "@aws-sdk/client-ses";
 
 class ContactFormSection extends Component {
 	constructor(props) {

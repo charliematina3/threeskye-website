@@ -15,7 +15,7 @@ class WealthPage extends Component {
 		// const { products } = this.props;
 		return (
 			<>
-				<HeroSection heroImage="/images/product-wp.png" buttonText="Request Demo">
+				<HeroSection heroImage="/images/product-wp.png" buttonText="Let's Chat">
 					A <UnderlinedText>Single Pane</UnderlinedText> of Glass for Advisers and Investors.
 				</HeroSection>
 				{/* Intro */}
