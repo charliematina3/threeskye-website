@@ -93,9 +93,11 @@ class ContactFormSection extends Component {
 				"html":html
 			},
 		}).then((response) => {
-			if (response.data.status === "success") {
-				this.setState({ submitted: true })
-			} else if (response.data.status === "fail") {
+			console.log("Got response", response);
+			if (response.data.MessageId) {
+				this.setState({ submitted: true, loading:false })
+			} else {
+				this.setState({ loading:false })
 				alert("Message failed to send.");
 			}
 		});
