@@ -8,4 +8,10 @@
 	@media screen and (min-width: $breakpoint-lg) {
 		font-size: 26px
 	}
+
+	a {
+		.focus-text {
+			color: $colour-blue;
+		}
+	}
 }

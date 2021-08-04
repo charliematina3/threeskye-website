@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ProductFeatureBlock from '../components/ProductFeatureBlock';
-import ScrollFadeSection from '../components/ScrollFadeSection';
+// import ScrollFadeSection from '../components/ScrollFadeSection';
 import { ResearchFeatures } from '../utils/Utils';
 
 class ResearchFeaturesMobile extends Component {
@@ -11,16 +11,14 @@ class ResearchFeaturesMobile extends Component {
 					ResearchFeatures.map((feature, idx) => (
 						<div key={idx}>
 							{/* For Mobile */}
-							<ScrollFadeSection>
-								<ProductFeatureBlock
-									bg={idx % 2 !== 0 ? "blue" : "white"}
-									imgPath={feature.imgPath}
-									header={feature.name}
-									text={feature.text}
-									smallText={feature.smallText}
-									expandedText={feature.expandedText}
-								/>
-							</ScrollFadeSection>
+							<ProductFeatureBlock
+								bg={idx % 2 !== 0 ? "blue" : "white"}
+								imgPath={feature.imgPath}
+								header={feature.name}
+								text={feature.text}
+								smallText={feature.smallText}
+								expandedText={feature.expandedText}
+							/>
 						</div>
 					))}
 			</div>

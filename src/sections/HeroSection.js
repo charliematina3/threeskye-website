@@ -28,7 +28,7 @@ class HeroSection extends Component {
 								{text && <p className="sub-header">{text}</p>}
 							</FadeInSection>
 						</Col>
-						<Col xs="12" sm="8" lg="5" className="mt-4">
+						<Col xs="12" sm="6" lg="5" className="mt-4">
 							<FadeInSection fadeUp delay="3">
 								<Button disabled={buttonDisabled} routeChangePath={buttonLink ? buttonLink : "/get-in-touch"}>
 									{buttonText ? buttonText : "Get in touch"}

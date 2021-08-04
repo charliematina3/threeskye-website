@@ -30,7 +30,7 @@ class Footer extends Component {
 						<a href="mailto:info@3skye.com" target="_blank" rel="noreferrer" className="footer-icon"><EmailOutlined /></a>
 					</Col>
 					<Col xs="12" lg={{ span: 5, order: 4 }} className="mt-5">
-						<div className="disclaimer">© 2020 3SKYE Limited, All rights reserved</div>
+						<div className="disclaimer">© {new Date().getFullYear()} 3SKYE Limited, All rights reserved</div>
 					</Col>
 				</Row>
 			</TsContainer>

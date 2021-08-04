@@ -31,11 +31,11 @@ function NavBar(props) {
 	
 	return (
 		<TsContainer bg="blue" className={`ts-nav-bar d-none d-lg-block${scrolled ? " page-scrolled" : ""}`}>
-			<Row className="justify-content-between">
+			<Row className="justify-content-between align-items-center">
 				<Col xs="auto">
-					<Link to="/">
-						<img src="/images/logo.svg" alt="logo" style={{ width: 73 }} />
-				</Link>
+					<Link className="d-flex align-items-center" to="/">
+						<img src="/images/logo.svg" alt="logo" style={{ width: 90 }} />
+					</Link>
 				</Col>
 				<Col xs="auto">
 					{/* <LinkList className="ts-nav-bar-links" links={paths} /> */}

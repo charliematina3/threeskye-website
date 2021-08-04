@@ -36,8 +36,8 @@ class ProductFeatureBlock extends Component {
 		return (
 			<TsContainer bg={bg} className="pfb-container">
 				<ScrollFadeSection>
-					<Row className="justify-content-sm-center justify-content-lg-center">
-						<Col xs="12" sm="6" md="4" lg="3" className="d-flex justify-content-center align-items-md-baseline">
+					<Row className="justify-content-center justify-content-lg-center">
+						<Col xs="9" sm="6" md="4" lg="3" className="d-flex justify-content-center align-items-md-baseline">
 							<img src={imgPath} alt="Product graphic" className="pb-image" />
 						</Col>
 						<Col xs="12" md="6" lg="9" style={{ marginTop: 20 }}>

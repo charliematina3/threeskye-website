@@ -7,7 +7,12 @@
 	color: $colour-blue;
 	display: inline;
 
+	font-weight: $fw-regular;
+	color: inherit;
+
 	@media screen and (min-width: $breakpoint-lg) {
 		font-size: 26px
 	}
+
+
 }

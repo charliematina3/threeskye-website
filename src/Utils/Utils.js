@@ -25,8 +25,8 @@ export const ResearchFeatures = [
 	},
 	{
 		name: "Market Data",
-		text: "Use the 3SKYE integration engine with Refinitiv (Bloomberg in the works) for automated company financials.",
-		expandedText: "Use the 3SKYE integrated feed with Refinitiv (Bloomberg in the works) for automated company financials. Or alternatively use your data via API or CSV/XLS import. Once integrated your Market Data such Target Price and Ratings are imported automatically.",
+		text: "Our market data integration platform can source data via API or CSV/XLS import.",
+		expandedText: "Our market data integration platform can source data via API or CSV/XLS import. We have integrations with major data providers such as Refinitiv and Bloomberg. Once integrated data such as Target Price, Ratings and company financials are imported directly into the template automatically.",
 		imgPath: "/images/research/market-data.png",
 	},
 	{
@@ -42,13 +42,13 @@ export const ResearchFeatures = [
 	},
 	{
 		name: "Multi-Tier Approach to Research",
-		text: "One template that exports both Institutional and Retail research notes.",
+		text: "One template that exports both institutional and retail research notes in PDF or HTML formats.",
 		imgPath: "/images/research/tier.png",
 	},
 	{
 		name: "Distribution",
-		text: "One click publishing to the 3SKYE Wealth platform.",
-		expandedText: "One click publishing for easy distribution to Advisers and Investors. Alternatively we can integrate with your existing CRM and Investor Portals.",	
+		text: "One click publishing direct to customer via our distribution engine.",
+		expandedText: "One click publishing direct to customer via our distribution engine. Alternatively we can push to your own platforms (CRM/Client Portals) via API.",	
 		imgPath: "/images/research/distribution.png",
 	},
 ];

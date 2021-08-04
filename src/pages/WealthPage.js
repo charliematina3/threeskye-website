@@ -28,7 +28,7 @@ class WealthPage extends Component {
 				{/* Products */}
 				{/* <ProductSection products={products} currentPage="Wealth Platform" /> */}
 				{/* Get to know us */}
-				<GetToKnowUs bg="white"/>
+				<GetToKnowUs bg="blue"/>
 			</>
 		);
 	}

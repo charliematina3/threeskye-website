@@ -4,7 +4,7 @@ import TsContainer from '../components/TsContainer';
 import SectionHeader from '../components/SectionHeader';
 import ProductFeatureBlock from '../components/ProductFeatureBlock';
 import { WealthFeatures as WealthContent } from "../utils/Utils.js";
-import ScrollFadeSection from '../components/ScrollFadeSection';
+// import ScrollFadeSection from '../components/ScrollFadeSection';
 import "../components/ProductBlock.scss";
 
 class WealthFeatures extends Component {

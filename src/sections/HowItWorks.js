@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ScrollFadeSection from '../components/ScrollFadeSection';
+// import ScrollFadeSection from '../components/ScrollFadeSection';
 import TsContainer from '../components/TsContainer';
 import ResearchFeaturesMobile from './ResearchFeaturesMobile';
 import Row from 'react-bootstrap/Row';
