@@ -72,7 +72,18 @@ class ContactFormSection extends Component {
 	sendAWSEmail() {
 		console.log("State:" , this.state);
 		
-		const html = `<body><p>New contact from ${this.state.name} ${this.state.email}</p><p>${this.state.message}</p>`;
+		let html = `<body><p>New contact from ${this.state.name} ${this.state.email}</p><p>${this.state.message}</p>`;
+		if (this.state.research) {
+			html += '<p>Interested in research'
+		}
+		if (this.state.threeskyeX) {
+			html += '<p>Interested in threeskyeX'
+		}
+		if (this.state.wealth) {
+			html += '<p>Interested in wealth'
+		}
+		
+		
 		this.setState({ loading: true, emailInvalid: false });
 		axios({
 			method: "POST",
