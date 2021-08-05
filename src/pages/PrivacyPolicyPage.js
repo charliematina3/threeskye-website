@@ -22,7 +22,7 @@ class PrivacyPolicyPage extends Component {
 					<p>
 						We are an NZ based company.
 						<br />
-						3Skye’s head office is
+						3SKYE’s head office is
 						<br />
 						Level 11, Equinox House
 						<br />
@@ -41,7 +41,7 @@ class PrivacyPolicyPage extends Component {
 							<>
 								<BulletPointList header="When you use our website:" bullets={["Data that identifies you.", "Data on how you use our website."]} />
 								<BulletPointList
-									header="When you purchase and use 3Skye products and services"
+									header="When you purchase and use 3SKYE products and services"
 									bullets={["Contact details.", "Financial information.", "Data regarding your clients"]}
 								/>
 							</>
@@ -56,11 +56,11 @@ class PrivacyPolicyPage extends Component {
 									]}
 								/>
 								<BulletPointList
-									header="When you purchase and use 3Skye products and services:"
+									header="When you purchase and use 3SKYE products and services:"
 									bullets={[
 										"Contact details. The personal contact information you provide such as your name, address, telephone number and email address",
 										"Financial information. Your organisation’s bank account number etc.",
-										"Data regarding your clients. The data that you input onto the 3Skye products and services (client details, financial information etc).",
+										"Data regarding your clients. The data that you input onto the 3SKYE products and services (client details, financial information etc).",
 									]}
 								/>
 							</>
@@ -89,11 +89,11 @@ class PrivacyPolicyPage extends Component {
 								/>
 								<PrivacyPolicyTextSection
 									header="Your requests"
-									content="Managing your service-related requests (processing which is part of the 3Skye services such as initiating forms, connecting your account to
+									content="Managing your service-related requests (processing which is part of the 3SKYE services such as initiating forms, connecting your account to
 									other services), login and authentication, remembering your settings, processing payments, hosting and back-end infrastructure."
 								/>
 								<PrivacyPolicyTextSection
-									header="Improving 3Skye"
+									header="Improving 3SKYE"
 									content="Testing features, managing landing pages, heat mapping our site, traffic optimization and data analysis and research, including profiling and the use of machine learning and other techniques over your data and in some cases using third parties to do this."
 								/>
 								<PrivacyPolicyTextSection
@@ -135,7 +135,7 @@ class PrivacyPolicyPage extends Component {
 										],
 										["Cookie", "10 years", "Identifies that you have accepted our use of cookies"],
 										["Session Storage", "When the browser is closed", "Authentication Token"],
-										["In Page", "When you navigate away from 3Skye, or close the tab", "Account data and personal information for display"],
+										["In Page", "When you navigate away from 3SKYE, or close the tab", "Account data and personal information for display"],
 									]}
 								/>
 								<p>We do not track you over time and across other websites or allow third parties to do this whilst you are using our services.</p>
@@ -335,7 +335,7 @@ class PrivacyPolicyPage extends Component {
 								<p>
 									You can complain by writing to: <br />
 									The Privacy Officer <br />
-									3Skye Limited <br />
+									3SKYE Limited <br />
 									Level 11, Equinox House
 									<br /> 111 The Terrace
 									<br /> Wellington 6011

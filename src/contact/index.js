@@ -41,12 +41,12 @@ router.post('/send', (req, res, next) => {
   var tokenDisabledStyle = "display: inline-block; white-space: nowrap; font-size: 18px; padding: 3px 5px; background-color: #D7D9DE; font-weight: 400; color: #fff; border-radius: 5px; margin-right: 14px; margin-bottom: 8px;";
   var logo = "";
 	var html =
-		"<div style='padding: 20px; padding-bottom: 40px; background-color: #f7f7f7; font-family: Google Sans'><div style='margin: 0 auto; box-shadow: 0px 2px 6px #0000001c; max-width: 700px; background-color: #fff; color: #02184a; padding: 20px 40px; padding-bottom: 50px; border-radius: 10px;'><hr style='"+hrStyle+"' /><h2 style='margin-bottom: 0; font-size: 21px; color: #020a1d;'>New 3Skye website enquiry</h2><hr style='"+hrStyle+"' /><h4 style='"+headerStyle+"'>Name</h4><h3 style='"+valueStyle+"'>"+name+"</h3><h4 style='"+headerStyle+"'>Email</h4><h3 style='"+valueStyle+"'>"+email+"</h3><h4 style='"+headerStyle+"'>Company</h4><h3 style='"+valueStyle+"'>"+company+"</h3><h4 style='"+headerStyle+"'>Message</h4><h3 style='"+valueStyle+"'>"+message+"</h3><h4 style='margin-bottom: 6px !important; "+headerStyle+"'>Interest</h4><span style='"+(research ? tokenActiveStyle : tokenDisabledStyle)+"'>Research Platform</span><span style='"+(wealth ? tokenActiveStyle : tokenDisabledStyle)+"'>Wealth Platform</span><span style='"+(threeskyeX ? tokenActiveStyle : tokenDisabledStyle)+"'>3Skye-x</span><span style='"+(other ? tokenActiveStyle : tokenDisabledStyle)+"'>Other</span></div></div>";
+		"<div style='padding: 20px; padding-bottom: 40px; background-color: #f7f7f7; font-family: Google Sans'><div style='margin: 0 auto; box-shadow: 0px 2px 6px #0000001c; max-width: 700px; background-color: #fff; color: #02184a; padding: 20px 40px; padding-bottom: 50px; border-radius: 10px;'><hr style='"+hrStyle+"' /><h2 style='margin-bottom: 0; font-size: 21px; color: #020a1d;'>New 3SKYE website enquiry</h2><hr style='"+hrStyle+"' /><h4 style='"+headerStyle+"'>Name</h4><h3 style='"+valueStyle+"'>"+name+"</h3><h4 style='"+headerStyle+"'>Email</h4><h3 style='"+valueStyle+"'>"+email+"</h3><h4 style='"+headerStyle+"'>Company</h4><h3 style='"+valueStyle+"'>"+company+"</h3><h4 style='"+headerStyle+"'>Message</h4><h3 style='"+valueStyle+"'>"+message+"</h3><h4 style='margin-bottom: 6px !important; "+headerStyle+"'>Interest</h4><span style='"+(research ? tokenActiveStyle : tokenDisabledStyle)+"'>Research Platform</span><span style='"+(wealth ? tokenActiveStyle : tokenDisabledStyle)+"'>Wealth Platform</span><span style='"+(threeskyeX ? tokenActiveStyle : tokenDisabledStyle)+"'>3SKYE-x</span><span style='"+(other ? tokenActiveStyle : tokenDisabledStyle)+"'>Other</span></div></div>";
 
 	var mail = {
 		from: name,
 		to: "charliematina@gmail.com", // Change to email address that you want to receive messages on
-		subject: "New Message from 3Skye Contact Form",
+		subject: "New Message from 3SKYE Contact Form",
 		html: html,
 		text: content,
 	};

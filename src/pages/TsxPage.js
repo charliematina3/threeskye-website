@@ -31,7 +31,7 @@ class TsxPage extends Component {
 					</FadeInSection>
 					{/* Products */}
 					{/* <ScrollFadeSection>
-						<ProductSection products={products} currentPage="3Skye-X" />
+						<ProductSection products={products} currentPage="3SKYE-X" />
 					</ScrollFadeSection> */}
 					{/* Get to know us */}
 					<ScrollFadeSection>
