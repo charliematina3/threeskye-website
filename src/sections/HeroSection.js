@@ -11,7 +11,7 @@ class HeroSection extends Component {
 
 		return (
 			<TsContainer bg="blue" className={className} style={style}>
-				<Row className="justify-content-center justify-content-lg-between flex-sm-row-reverse">
+				<Row className="justify-content-start justify-content-md-center justify-content-lg-between flex-sm-row-reverse">
 					{heroImage && (
 						<Col xs={heroImageXs ? heroImageXs : 8} sm="5" md="4" lg="4" xl={{col: 4}}>
 							<FadeInSection fadeUp>

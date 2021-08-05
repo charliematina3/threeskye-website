@@ -18,7 +18,7 @@ function App() {
 	const paths = [
 		{ name: "Home", path: "/", exact: true },
 		{ name: "About Us", path: "/about-us" },
-		{ name: "Get in Touch", path: "/get-in-touch" },
+		{ name: "Let's Chat", path: "/get-in-touch" },
 		{ name: "Privacy Policy", path: "/privacy-policy" },
 	];
 

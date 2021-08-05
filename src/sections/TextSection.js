@@ -12,7 +12,7 @@ class TextSection extends Component {
 			<TsContainer {...props} bg={bg}>
 				<Row>
 					<Col xs="12" className={className ? className : ""}>
-						<SectionHeader>{header}</SectionHeader>
+						{header && <SectionHeader>{header}</SectionHeader>}
 						<FocusParagraph>{children}</FocusParagraph>
 					</Col>
 				</Row>

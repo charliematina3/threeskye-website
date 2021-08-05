@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import FocusText from '../components/FocusText';
 import TextSection from '../sections/TextSection';
 import GetToKnowUs from "../sections/GetToKnowUs";
-import ProductSection from '../components/ProductSection';
+// import ProductSection from '../components/ProductSection';
 import HeroSection from '../sections/HeroSection';
 import UnderlinedText from '../components/UnderlinedText';
 import FadeInSection from '../components/FadeInSection';
@@ -13,7 +13,7 @@ class TsxPage extends Component {
 		window.scrollTo(0, 0)
 	}
 	render() {
-		const { products } = this.props;
+		// const { products } = this.props;
 		return (
 			<>
 				<FadeInSection fadeUp>

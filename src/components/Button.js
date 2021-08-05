@@ -1,4 +1,5 @@
 import { Button as MuiButton } from '@material-ui/core';
+import { ArrowForward, ArrowRightAlt } from '@material-ui/icons';
 import { useHistory } from 'react-router';
 import "./Button.scss";
 
@@ -25,6 +26,7 @@ function Button(props) {
 				</div>
 			)}
 			{children}
+			<ArrowRightAlt className="button-arrow" />
 		</MuiButton>
 	);
 }

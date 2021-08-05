@@ -70,18 +70,33 @@ class ContactFormSection extends Component {
 	}
 
 	sendAWSEmail() {
-		console.log("State:" , this.state);
-		
-		let html = `<body><p>New contact from ${this.state.name} ${this.state.email}</p><p>${this.state.message}</p>`;
-		if (this.state.research) {
-			html += '<p>Interested in research'
-		}
-		if (this.state.threeskyeX) {
-			html += '<p>Interested in threeskyeX'
-		}
-		if (this.state.wealth) {
-			html += '<p>Interested in wealth'
-		}
+		console.log("State:", this.state);
+
+		var name = this.state.name;
+		var email = this.state.email;
+		var company = this.state.company;
+		var message = this.state.message;
+		var other = this.state.other;
+		var research = this.state.research;
+		var wealth = this.state.wealth;
+		var threeskyeX = this.state.threeskyeX;
+		var headerStyle = "opacity: 0.7; color: #020a1d; font-size: 14px; width: 100%; margin-bottom: 0; font-weight: 500";
+		var valueStyle = "font-size: 20px; width: 100%; margin-bottom: 36px; margin-top: 2px; font-weight: 500; color: #020A1D;";
+		var hrStyle = "margin: 34px 0; border: none; height: 1px; width: 100%; background-color: #E2E4EA";
+		var tokenActiveStyle = "display: inline-block; white-space: nowrap; font-size: 18px; padding: 3px 5px; background-color: #0D8EFD; font-weight: 400; color: #fff; border-radius: 5px; margin-right: 14px; margin-bottom: 8px;";
+		var tokenDisabledStyle = "display: inline-block; white-space: nowrap; font-size: 18px; padding: 3px 5px; background-color: #D7D9DE; font-weight: 400; color: #fff; border-radius: 5px; margin-right: 14px; margin-bottom: 8px;";
+		let html = "<div style='padding: 20px; padding-bottom: 40px; background-color: #f7f7f7; font-family: Google Sans'><div style='margin: 0 auto; box-shadow: 0px 2px 6px #0000001c; max-width: 700px; background-color: #fff; color: #02184a; padding: 20px 40px; padding-bottom: 50px; border-radius: 10px;'><hr style='"+hrStyle+"' /><h2 style='margin-bottom: 0; font-size: 21px; color: #020a1d;'>New 3Skye website enquiry</h2><hr style='"+hrStyle+"' /><h4 style='"+headerStyle+"'>Name</h4><h3 style='"+valueStyle+"'>"+name+"</h3><h4 style='"+headerStyle+"'>Email</h4><h3 style='"+valueStyle+"'>"+email+"</h3><h4 style='"+headerStyle+"'>Company</h4><h3 style='"+valueStyle+"'>"+company+"</h3><h4 style='"+headerStyle+"'>Message</h4><h3 style='"+valueStyle+"'>"+message+"</h3><h4 style='margin-bottom: 6px !important; "+headerStyle+"'>Interest</h4><span style='"+(research ? tokenActiveStyle : tokenDisabledStyle)+"'>Research Platform</span><span style='"+(wealth ? tokenActiveStyle : tokenDisabledStyle)+"'>Wealth Platform</span><span style='"+(threeskyeX ? tokenActiveStyle : tokenDisabledStyle)+"'>3Skye-x</span><span style='"+(other ? tokenActiveStyle : tokenDisabledStyle)+"'>Other</span></div></div>";
+
+		// let html = `<body><p>New contact from ${this.state.name} ${this.state.email}</p><p>${this.state.message}</p>`;
+		// if (this.state.research) {
+		// 	html += '<p>Interested in research'
+		// }
+		// if (this.state.threeskyeX) {
+		// 	html += '<p>Interested in threeskyeX'
+		// }
+		// if (this.state.wealth) {
+		// 	html += '<p>Interested in wealth'
+		// }
 		
 		
 		this.setState({ loading: true, emailInvalid: false });
@@ -142,7 +157,7 @@ class ContactFormSection extends Component {
 									<div className="mb-2 mt-5">
 										<ReCAPTCHA sitekey="6LfnTacaAAAAAH_XDcjBwA9TXyT0oWCxmGAdsgjn" onChange={() => this.setState({captchaChecked: true})} />
 									</div>
-									<Button disabled={false && !captchaChecked} loading={loading} onClick={this.handleSubmit} type="submit" className="mt-4">
+									<Button disabled={!captchaChecked} loading={loading} onClick={this.handleSubmit} type="submit" className="mt-4">
 										{loading ? "Submitting" : "Submit"}
 									</Button>
 								</Col>

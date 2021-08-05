@@ -43,7 +43,8 @@ function NavBar(props) {
 						<NavBarLink label="Home" path="/" exact />
 						<ProductDropdown products={products} className="nav-bar-product-menu link-item" />
 						<NavBarLink label="About Us" path="/about-us" />
-						<Button className="nav-bar-button" bgColour="alt" routeChangePath="/get-in-touch">Contact</Button>
+						<NavBarLink label="Contact" path="/get-in-touch" />
+						{/* <Button className="nav-bar-button" bgColour="alt" routeChangePath="/get-in-touch">Contact</Button> */}
 					</div>
 				</Col>
 			</Row>

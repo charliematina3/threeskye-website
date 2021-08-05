@@ -10,7 +10,7 @@ class FooterList extends Component {
 
 		return (
 			<div className={`footer-list${className ? " " + className : ""}`}>
-				{header && <NavLink className="footer-list-header" to={headerPath}>{header}</NavLink>}
+				{header && <NavLink className="footer-list-header" to={headerPath ? headerPath : ""}>{header}</NavLink>}
 				<LinkList links={links} />
 			</div>
 		);

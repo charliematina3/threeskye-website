@@ -28,7 +28,7 @@ class AboutUsPage extends Component {
 					{/* Intro */}
 					<TextSection bg="white" header="Intro">
 						<FadeInSection fadeUp delay="1">
-							At 3Skye we craft software solutions for the financial services industry, with a focus on Equities Research publishing. Delivering research to your
+							At 3SKYE we craft software solutions for the financial services industry, with a focus on Equities Research publishing. Delivering research to your
 							clients on brand, on time and with ease. With our technology your people will save time via our powerful publishing platform and bespoke templates that
 							are tailored to your brand.
 						</FadeInSection>

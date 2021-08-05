@@ -17,7 +17,7 @@ class ResearchPage extends Component {
 		return (
 			<>
 				<HeroSection heroImage="/images/product-rp.png" buttonText="Let's Chat">
-					Create <br /> Publish <br /> Distribute Research the <UnderlinedText>Easy Way</UnderlinedText>
+					Create <br className="d-none d-sm-block" /> Publish <br className="d-none d-sm-block" /> Distribute <br className="d-none d-sm-block" /> Research the <UnderlinedText>Easy Way</UnderlinedText>
 				</HeroSection>
 				{/* Intro */}
 				<FadeInSection>

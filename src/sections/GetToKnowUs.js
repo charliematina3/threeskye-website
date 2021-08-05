@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../components/Button';
 import FocusText from '../components/FocusText';
 import TextSection from './TextSection';
-
 class GetToKnowUs extends Component {
 	render() {
 		const { bg } = this.props;
 		return (
-			<TextSection bg={bg} header="Get to know us" className="text-center" style={{ paddingTop: 100, paddingBottom: 100 }}>
-				<Link to="about-us">The 3SKYE <FocusText>Why</FocusText> we do what we do!</Link>
+			<TextSection bg={bg} className="text-center" style={{ paddingTop: 80, paddingBottom: 80 }}>
+				<Link to="about-us"></Link>
+				<Button variant="outlined" routeChangePath="./get-in-touch">
+					<h3 className='m-0'>The 3SKYE Why</h3>
+				</Button>
 			</TextSection>
 		);
 	}
