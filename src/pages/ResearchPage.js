@@ -16,8 +16,8 @@ class ResearchPage extends Component {
 		// const { products } = this.props;
 		return (
 			<>
-				<HeroSection heroImage="/images/product-rp.png" buttonText="Let's Chat">
-					Create <br className="d-none d-sm-block" /> Publish <br className="d-none d-sm-block" /> Distribute <br className="d-none d-sm-block" /> Research the <UnderlinedText>Easy Way</UnderlinedText>
+				<HeroSection centred heroImage="/images/hero.png" buttonText="Let's Chat">
+					Create, Publish, Distribute, Research the <UnderlinedText>Easy Way</UnderlinedText>
 				</HeroSection>
 				{/* Intro */}
 				<FadeInSection>
