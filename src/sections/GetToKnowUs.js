@@ -9,7 +9,7 @@ class GetToKnowUs extends Component {
 		return (
 			<TextSection bg={bg} className="text-center" style={{ paddingTop: 80, paddingBottom: 80 }}>
 				<Link to="about-us"></Link>
-				<Button variant="outlined" routeChangePath="./get-in-touch">
+				<Button variant="outlined" routeChangePath="./about-us">
 					<h3 className='m-0'>The 3SKYE Why</h3>
 				</Button>
 			</TextSection>

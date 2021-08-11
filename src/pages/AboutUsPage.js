@@ -18,7 +18,7 @@ class AboutUsPage extends Component {
 						className="homepage-hero"
 						heroImageXs="5"
 						heroImage="/images/landing.png"
-						text="Saving time and creating revenue through software that inspires"
+						text="We make simple beautiful software that reinvent the user experiences of ageing legacy financial systems."
 					>
 						Financial Software for <UnderlinedText>Humans</UnderlinedText>.
 					</HeroSection>
@@ -36,7 +36,7 @@ class AboutUsPage extends Component {
 					<TextSection bg="blue" header="Who are we?">
 						<FadeInSection fadeUp delay="1">
 							We design and develop software that is aligned with the financials services sector. Our mission is to make{" "}
-							<FocusText>simple beautiful software</FocusText> that reinvent the the user experiences of ageing legacy systems.
+							<FocusText>simple beautiful software</FocusText> that reinvent the user experiences of ageing legacy systems.
 						</FadeInSection>
 						<br />
 						<FadeInSection fadeUp delay="2">
