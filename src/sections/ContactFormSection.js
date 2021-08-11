@@ -157,7 +157,7 @@ class ContactFormSection extends Component {
 									<div className="mb-2 mt-5">
 										<ReCAPTCHA sitekey="6LfnTacaAAAAAH_XDcjBwA9TXyT0oWCxmGAdsgjn" onChange={() => this.setState({captchaChecked: true})} />
 									</div>
-									<Button disabled={!captchaChecked || formInvalid } loading={loading} onClick={this.handleSubmit} type="submit" className="mt-4">
+									<Button disabled={!captchaChecked} loading={loading} onClick={this.handleSubmit} type="submit" className="mt-4">
 										{loading ? "Submitting" : "Submit"}
 									</Button>
 								</Col>
