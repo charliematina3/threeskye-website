@@ -16,12 +16,12 @@ class ResearchPage extends Component {
 		// const { products } = this.props;
 		return (
 			<>
-				<HeroSection centred heroImage="/images/hero.png" buttonText="Let's Chat">
+				<HeroSection mainHero centred heroImage="/images/hero.png" buttonText="Let's Chat">
 					Create, Publish, Distribute, Research the <UnderlinedText>Easy Way</UnderlinedText>
 				</HeroSection>
 				{/* Intro */}
 				<FadeInSection>
-					<TextSection header="Intro" bg="white">
+					<TextSection header="Intro" bg="white" className="intro-text">
 						<FadeInSection fadeUp>
 							Our Research module has been crafted with your clients in mind. Delivering a professional report to their inbox that reflects the quality and
 							professionalism of your firm.

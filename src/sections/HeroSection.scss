@@ -2,10 +2,14 @@
 
 .centred-hero {
 	position: relative;
-	// padding-bottom: 560px;
 
 	.centred-hero-image {
-		// position: absolute;
-		// z-index: 1;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		img {
+			min-width: 80%;
+		}
 	}
 }
