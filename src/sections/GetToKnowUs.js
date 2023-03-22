@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../components/Button';
-import FocusText from '../components/FocusText';
 import TextSection from './TextSection';
 class GetToKnowUs extends Component {
 	render() {

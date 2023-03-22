@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link, NavLink } from 'react-router-dom';
 import "./NavBar.scss";
-import Button from '../../Button';
 import ProductDropdown from './ProductDropdown';
 
 function NavBarLink(props) {

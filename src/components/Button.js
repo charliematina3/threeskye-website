@@ -1,5 +1,5 @@
 import { Button as MuiButton } from '@material-ui/core';
-import { ArrowForward, ArrowRightAlt } from '@material-ui/icons';
+import { ArrowRightAlt } from '@material-ui/icons';
 import { useHistory } from 'react-router';
 import "./Button.scss";
 
