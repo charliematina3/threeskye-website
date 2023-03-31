@@ -13,8 +13,7 @@ class GetInTouchPage extends Component {
 			<>
 				{/* Intro */}
 				<FadeInSection>
-					<h1 className="d-none">Contact</h1>
-					<TextSection bg="blue" header="Let's Chat">
+					<TextSection bg="blue" h1 header="Let's Chat">
 						<FadeInSection fadeUp>
 							Like what you see? Want to know more or see a demo? Fill in the form below or email us at <FocusText>info@3skye.com</FocusText>.
 						</FadeInSection>
