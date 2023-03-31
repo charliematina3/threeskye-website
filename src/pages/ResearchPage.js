@@ -10,7 +10,7 @@ import FadeInSection from '../components/FadeInSection';
 
 class ResearchPage extends Component {
 	componentDidMount() {
-		document.title = '3Skye / Research Platform';
+		document.title = '3SKYE Financial Software for Humans';
 		window.scrollTo(0, 0)
 	}
 	render() {
