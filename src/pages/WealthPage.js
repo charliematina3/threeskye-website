@@ -9,6 +9,7 @@ import WealthFeatures from '../sections/WealthFeatures';
 
 class WealthPage extends Component {
 	componentDidMount() {
+		document.title = 'About Us';
 		window.scrollTo(0, 0)
 	}
 	render() {

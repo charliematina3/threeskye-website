@@ -33,7 +33,7 @@ function NavBar(props) {
 			<Row className="justify-content-between align-items-center">
 				<Col xs="auto">
 					<Link className="d-flex align-items-center" to="/">
-						<img src="/images/logo.svg" alt="logo" style={{ width: 90 }} />
+						<img src="/images/logo.svg" alt="logo" width={90} height="auto" />
 					</Link>
 				</Col>
 				<Col xs="auto">

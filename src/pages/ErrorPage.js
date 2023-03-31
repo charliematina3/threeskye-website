@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FadeInSection from '../components/FadeInSection';
 import { Row, Col } from "react-bootstrap";
 import TsContainer from '../components/TsContainer';
@@ -7,13 +7,17 @@ import "./ErrorPage.scss";
 import { Link } from 'react-router-dom';
 
 const ErrorPage = () => {
+	useEffect(() => {
+		document.title = 'Error';
+	}, []);
+	
 	return (
 		<FadeInSection>
 			<TsContainer>
 				<Row className="justify-content-center flex-md-row-reverse">
 					<Col xs="10" md="8" lg="6" className="mb-3">
 						<FadeInSection fadeUp slower delay="2">
-							<img style={{width: "100%"}} src="/images/404.png" alt="error - page missing" />
+							<img src="/images/404.png" alt="error - page missing" width="100%" height="auto" />
 						</FadeInSection>
 					</Col>
 					<Col xs="12" lg="6">

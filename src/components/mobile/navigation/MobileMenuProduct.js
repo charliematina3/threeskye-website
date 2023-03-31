@@ -15,7 +15,7 @@ function MobileMenuProduct(props) {
 		return (
 			<Row className="mm-product-container" onClick={() => changeRoute(product.path)}>
 				<Col xs="4">
-					<img src={product.img} alt="Product graphic" style={{ width: "100%" }} />
+					<img src={product.img} alt="Product graphic" width="100%" height="auto" />
 				</Col>
 				<Col xs="8">
 					<div>

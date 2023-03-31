@@ -32,6 +32,18 @@
 		opacity: 0;
 		animation-delay: 600ms;
 	}
+
+	@media screen and (min-width: $breakpoint-lg) {	
+		p {
+			font-size: $fs-medium;
+		}
+	}
+	
+	@media screen and (min-width: $breakpoint-xl) {	
+		p {
+			font-size: $fs-large;
+		}
+	}
 }
 
 @keyframes fadeInSection {

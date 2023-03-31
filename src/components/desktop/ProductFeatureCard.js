@@ -8,12 +8,12 @@ class ProductFeatureCard extends Component {
 		return (
 			<Card className="product-card">
 				<div className="pc-image">
-					<img src={img} alt={name + " graphic"} />
+					<img src={img} alt={name + " graphic"} width="100%" height="auto" />
 				</div>
 				<div className="pc-info">
-					<p className="pc-name">
+					<h3 className="pc-name">
 						{name}
-					</p>
+					</h3>
 					<p className="pc-info">
 						{info}
 					</p>

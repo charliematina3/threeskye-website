@@ -9,8 +9,10 @@ import PrivacyPolicySection, { PrivacyPolicyTextSection } from '../sections/Priv
 
 class PrivacyPolicyPage extends Component {
 	componentDidMount() {
+		document.title = 'Privacy Policy';
 		window.scrollTo(0, 0)
 	}
+	
 	render() { 
 		return (
 			<div className="bg-white">

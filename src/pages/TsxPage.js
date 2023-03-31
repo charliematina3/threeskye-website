@@ -10,6 +10,7 @@ import ScrollFadeSection from '../components/ScrollFadeSection';
 
 class TsxPage extends Component {
 	componentDidMount() {
+		document.title = 'High Networth and Family Offices';
 		window.scrollTo(0, 0)
 	}
 	render() {

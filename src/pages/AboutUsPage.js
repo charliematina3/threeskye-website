@@ -8,6 +8,7 @@ import UnderlinedText from '../components/UnderlinedText';
 
 class AboutUsPage extends Component {
 	componentDidMount() {
+		document.title = 'About Us';
 		window.scrollTo(0, 0)
 	}
 	render() {
@@ -28,20 +29,26 @@ class AboutUsPage extends Component {
 					{/* Intro */}
 					<TextSection bg="white" header="Intro">
 						<FadeInSection fadeUp delay="1">
-							At 3SKYE we craft software solutions for the financial services industry, with a focus on Equities Research publishing. Delivering research to your
-							clients on brand, on time and with ease. With our technology your people will save time via our powerful publishing platform and bespoke templates that
-							are tailored to your brand.
+							<p>
+								At 3SKYE we craft software solutions for the financial services industry, with a focus on Equities Research publishing. Delivering research to your
+								clients on brand, on time and with ease. With our technology your people will save time via our powerful publishing platform and bespoke templates that
+								are tailored to your brand.
+							</p>
 						</FadeInSection>
 					</TextSection>
 					<TextSection bg="blue" header="Who are we?">
 						<FadeInSection fadeUp delay="1">
-							We design and develop software that is aligned with the financials services sector. Our mission is to make{" "}
-							<FocusText>simple beautiful software</FocusText> that reinvent the user experiences of ageing legacy systems.
+							<p>
+								We design and develop software that is aligned with the financials services sector. Our mission is to make{" "}
+								<FocusText>simple beautiful software</FocusText> that reinvent the user experiences of ageing legacy systems.
+							</p>
 						</FadeInSection>
 						<br />
 						<FadeInSection fadeUp delay="2">
-							We <FocusText>focus on the users</FocusText> of our platforms with a deep empathy of each individual. This ensures we create tools that people need and
-							want to use.
+							<p>
+								We <FocusText>focus on the users</FocusText> of our platforms with a deep empathy of each individual. This ensures we create tools that people need and
+								want to use.
+							</p>
 						</FadeInSection>
 					</TextSection>
 					{/* Get to know us */}

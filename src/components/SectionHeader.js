@@ -6,7 +6,7 @@ class SectionHeader extends Component {
 	render() {
 		const { noMargin } = this.props;
 		return (
-			<div className="section-header" style={{margin: noMargin ? 0 : "" }}><UnderlinedText>{this.props.children}</UnderlinedText></div>
+			<h2 className="section-header" style={{margin: noMargin ? 0 : "" }}><UnderlinedText>{this.props.children}</UnderlinedText></h2>
 		 );
 	}
 }

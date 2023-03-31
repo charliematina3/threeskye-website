@@ -10,6 +10,7 @@ import FadeInSection from '../components/FadeInSection';
 
 class ResearchPage extends Component {
 	componentDidMount() {
+		document.title = 'Research';
 		window.scrollTo(0, 0)
 	}
 	render() {
@@ -23,8 +24,8 @@ class ResearchPage extends Component {
 				<FadeInSection>
 					<TextSection header="Intro" bg="white" className="intro-text">
 						<FadeInSection fadeUp>
-							Our Research module has been crafted with your clients in mind. Delivering a professional report to their inbox that reflects the quality and
-							professionalism of your firm.
+							<p>Our Research module has been crafted with your clients in mind. Delivering a professional report to their inbox that reflects the quality and
+							professionalism of your firm.</p>
 						</FadeInSection>
 						<br />
 						<FadeInSection fadeUp>

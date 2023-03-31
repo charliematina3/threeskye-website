@@ -32,7 +32,7 @@ function HeroSection(props) {
 							className={centred ? "mt-4 justify-content-center" : ""}
 						>
 							<FadeInSection className="centred-hero-image position" fadeUp>
-								<img style={{ width: mainHero ? 100 - scrollValue * 0.07 + "%" : "100%" }} alt="hero" src={heroImage} />
+								<img width={mainHero ? 100 - scrollValue * 0.07 + "%" : "100%" } height="auto" alt="hero" src={heroImage} />
 							</FadeInSection>
 						</Col>
 					)}
