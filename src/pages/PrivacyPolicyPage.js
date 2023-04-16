@@ -25,9 +25,7 @@ class PrivacyPolicyPage extends Component {
 						<br />
 						3SKYE’s head office is
 						<br />
-						Level 11, Equinox House
-						<br />
-						111 The Terrace
+						Level 5, 1 Post Office Square
 						<br />
 						Wellington 6011
 						<br />
