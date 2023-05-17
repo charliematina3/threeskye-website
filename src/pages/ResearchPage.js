@@ -22,7 +22,7 @@ class ResearchPage extends Component {
 				</HeroSection>
 				{/* Intro */}
 				<FadeInSection>
-					<TextSection header="Intro" bg="white" className="intro-text">
+					<TextSection bg="white" className="intro-text">
 						<FadeInSection fadeUp>
 							<p>Our Research module has been crafted with your clients in mind. Delivering a professional report to their inbox that reflects the quality and
 							professionalism of your firm.</p>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import FocusText from '../components/FocusText';
 import TextSection from '../sections/TextSection';
 import GetToKnowUs from "../sections/GetToKnowUs";
 // import ProductSection from '../components/ProductSection';
@@ -7,10 +6,11 @@ import HeroSection from '../sections/HeroSection';
 import UnderlinedText from '../components/UnderlinedText';
 import FadeInSection from '../components/FadeInSection';
 import ScrollFadeSection from '../components/ScrollFadeSection';
+import Button from '../components/Button';
 
 class TsxPage extends Component {
 	componentDidMount() {
-		document.title = 'High Networth and Family Offices';
+		document.title = 'High Net Worth and Family Offices';
 		window.scrollTo(0, 0)
 	}
 	render() {
@@ -19,15 +19,17 @@ class TsxPage extends Component {
 			<>
 				<FadeInSection fadeUp>
 					<HeroSection heroImage="/images/product-hnw.png" buttonText="Let's Chat">
-						A Platform for <UnderlinedText>High Networth</UnderlinedText> &amp; Family Offices
+						A Platform for <UnderlinedText>High Net Worth</UnderlinedText> &amp; Family Offices
 					</HeroSection>
 					{/* Intro */}
 					<FadeInSection fadeUp>
-						<TextSection header="Intro" bg="white">
+						<TextSection bg="white">
 							An exciting new platform that allows HNW and Family Offices to take control of their financial affairs. An intuitive portal to view and manage all your investments (property, funds, stocks and cash) in one place. 
 							<br />
 							<br />
-							More information <FocusText>coming soon.</FocusText>
+							<Button routeChangePath="/get-in-touch">
+								Get in touch
+							</Button>
 						</TextSection>
 					</FadeInSection>
 					{/* Products */}

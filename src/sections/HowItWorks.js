@@ -10,13 +10,13 @@ class HowItWorks extends Component {
 	render() {
 		return (
 			<div>
-				<TsContainer className="pb-0 pt-5" bg="white">
+				{/* <TsContainer className="pb-0 pt-5" bg="white">
 					<Row>
 						<Col xs="12">
 							<SectionHeader noMargin>How it works</SectionHeader>
 						</Col>
 					</Row>
-				</TsContainer>
+				</TsContainer> */}
 				<ResearchFeaturesMobile />
 				<ResearchFeaturesDesktop />
 			</div>

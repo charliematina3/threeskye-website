@@ -13,4 +13,12 @@
 	@media screen and (min-width: $breakpoint-xl) {
 		font-size: $fs-large;
 	}
+
+	@media screen and (min-width: $breakpoint-lg) {	
+		font-size: $fs-medium;
+	}
+	
+	@media screen and (min-width: $breakpoint-xl) {	
+		font-size: $fs-large;
+	}
 }

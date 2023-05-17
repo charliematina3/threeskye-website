@@ -27,7 +27,7 @@ class AboutUsPage extends Component {
 				<FadeInSection>
 					<h1 className="d-none">About Us</h1>
 					{/* Intro */}
-					<TextSection bg="white" header="Intro">
+					<TextSection bg="white">
 						<FadeInSection fadeUp delay="1">
 							<p>
 								At 3SKYE we craft software solutions for the financial services industry, with a focus on Equities Research publishing. Delivering research to your
