@@ -4,8 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { EmailOutlined, LinkedIn } from '@material-ui/icons';
 import "./Footer.scss";
-import Button from './Button';
 import FooterList from './FooterList';
+import ArrowButton from './ArrowButton';
 
 class Footer extends Component {
 	render() {
@@ -14,10 +14,10 @@ class Footer extends Component {
 			<TsContainer id="footer" className="footer-container">
 				<Row>
 					<Col xs="12" lg={{ span: 4, order: 1 }} className="mb-5 text-center text-sm-left">
-						<h2 className="colour-white mb-2">Let Us Know<br className="d-sm-none"/> How We Can Help You</h2>
-						<Button variant="outlined" routeChangePath="./get-in-touch">
-							Let's Chat
-						</Button>
+						<h2 className="colour-white mb-2">How Can We Help?</h2>
+						<ArrowButton variant="outlined" routeChangePath="./get-in-touch">
+							How can we help?
+						</ArrowButton>
 					</Col>
 					<Col xs="6" lg={{ span: 3, order: 2, offset: 1 }}>
 						<FooterList header="3SKYE" links={paths} />

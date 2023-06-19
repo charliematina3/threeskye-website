@@ -29,7 +29,7 @@ function NavBar(props) {
 	const { products } = props;
 	
 	return (
-		<TsContainer bg="blue" className={`ts-nav-bar d-none d-lg-block${scrolled ? " page-scrolled" : ""}`}>
+		<TsContainer bg="white" className={`ts-nav-bar d-none d-lg-block${scrolled ? " page-scrolled" : ""}`}>
 			<Row className="justify-content-between align-items-center">
 				<Col xs="auto">
 					<Link className="d-flex align-items-center" to="/">

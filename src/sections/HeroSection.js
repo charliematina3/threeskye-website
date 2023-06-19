@@ -18,7 +18,7 @@ function HeroSection(props) {
 		}, []);
 
 		return (
-			<TsContainer bg="blue" className={className} style={style}>
+			<TsContainer bg="white" className={className} style={style}>
 				<Row
 					className={`justify-content-start justify-content-md-center justify-content-lg-between ${centred ? "flex-column-reverse centred-hero" : "flex-sm-row-reverse"}`}
 				>
@@ -46,7 +46,7 @@ function HeroSection(props) {
 						<Col xs="12" sm={centred ? "12" : "6"} lg={centred ? "12" : "5"} className={`mt-4 ${centred ? "text-center" : ""}`}>
 							<FadeInSection>
 								<Button disabled={buttonDisabled} routeChangePath={buttonLink ? buttonLink : "/get-in-touch"}>
-									{buttonText ? buttonText : "Get in touch"}
+									{buttonText ? buttonText : "Let's Chat"}
 								</Button>
 							</FadeInSection>
 						</Col>

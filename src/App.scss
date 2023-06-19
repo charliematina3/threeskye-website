@@ -32,7 +32,7 @@ a {
 
 body {
 	color: $colour-font-main;
-	background-color: $colour-blue-bg;
+	background-color: #fff;
 }
 
 hr {
@@ -63,4 +63,8 @@ hr {
 	@media screen and (min-width: $breakpoint-lg){
 		padding-top: 120px;
 	}
+}
+
+.cursor-pointer {
+	cursor: pointer;
 }

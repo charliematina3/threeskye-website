@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-// import FocusText from '../components/FocusText';
 import TextSection from '../sections/TextSection';
 import GetToKnowUs from "../sections/GetToKnowUs";
-// import ProductSection from '../components/ProductSection';
 import HeroSection from '../sections/HeroSection';
 import UnderlinedText from '../components/UnderlinedText';
 import HowItWorks from '../sections/HowItWorks';
@@ -14,7 +12,6 @@ class ResearchPage extends Component {
 		window.scrollTo(0, 0)
 	}
 	render() {
-		// const { products } = this.props;
 		return (
 			<>
 				<HeroSection mainHero centred heroImage="/images/hero.png" buttonText="Let's Chat">

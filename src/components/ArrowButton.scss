@@ -1,44 +1,25 @@
 @import "../styles/Variables.scss";
 
-.ts-button {
-	width: auto;
-
-	@media screen and (min-width: $breakpoint-lg){
-		width: auto;
-	}
-	
+.ts-arrow-button {	
 	&.MuiButton-root {
-		background-color: $colour-blue;
-		font-family: $font-primary;
-		border-radius: 8px;
+		background-color: transparent;
+		border-radius: 0;
 		color: #fff;
-		padding: 16px 40px;
+		padding: 0;
 		height: 56px;
-		min-width: 100px;
 		border: none !important;
 		transition: 200ms ease;
 		font-size: 20px;
 		letter-spacing: normal;
 
-		&.colour-primary {
-			span {
-				color: $colour-blue;
-			}
-		}
-
 		&.colour-white {
 			span {
-				color: $colour-blue;
+				color: #fff;
 			}
-		}
-
-		&.bg-colour-alt {
-			// background-color: $colour-blue-alt;
-			background-color: transparent;
 		}
 
 		span {
-			color: #fff;
+			color: $colour-blue;
 			text-transform: capitalize;
 			font-weight: 600;
 		}
@@ -50,8 +31,7 @@
 		}
 
 		&:hover {
-			background-color: $colour-blue;
-			opacity: 0.6;
+			background-color: transparent;
 
 			.button-arrow {
 				margin-left: 10px;
