@@ -18,7 +18,7 @@ const HomepageWealth = (props) => {
 			<TsContainer homepage>
 				<Row className="mb-5">
 					<Col xs="12" className="px-0">
-						<img onClick={() => changeRoute("/wealth-platform")} src="/images/2023-images/products/crm-grouped.png" alt="crm" width="100%" />
+						<img onClick={() => changeRoute("/wealth-platform")} src="/images/2023-images/products/crm-grouped.png" alt="crm" width="100%" className="cursor-pointer"/>
 					</Col>
 				</Row>
 				<Row>

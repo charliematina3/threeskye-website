@@ -1,0 +1,13 @@
+@import "../styles/Variables.scss";
+
+.integrations-block {
+	border-radius: $border-radius;
+	box-shadow: $box-shadow;
+	width: auto;
+	display: inline-flex;
+	background-color: #fff;
+	padding: 32px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+

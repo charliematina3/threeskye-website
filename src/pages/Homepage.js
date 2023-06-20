@@ -8,6 +8,7 @@ import "./Homepage.scss";
 import HomepageWealth from '../sections/HomepageWealth';
 import HomepageResearch from '../sections/HomepageResearch';
 import HomepageTsx from '../sections/HomepageTsx';
+import IntegrationsSection from '../sections/IntegrationsSection';
 
 class Homepage extends Component {
 	componentDidMount() {
@@ -30,6 +31,7 @@ class Homepage extends Component {
 				<HomepageWealth />
 				<HomepageResearch />
 				<HomepageTsx />
+				<IntegrationsSection logos={["office", "nzx", "apex", "chelmer", "akahu", "addy", "xignite", "bloomberg", "power-bi", "refinitiv", "send-grid", "click-send"]} />
 				{/* Get to know us */}
 				<ScrollFadeSection>
 					<GetToKnowUs bg="white" />

@@ -3,6 +3,7 @@
 .ts-container {
 	padding-top: 50px;
 	padding-bottom: 50px;
+	overflow-x: hidden;
 
 	&.bg-blue {
 		background-color: $colour-blue-bg;
@@ -13,8 +14,8 @@
 	}
 
 	&.homepage-container {
-		padding-top: 64px;
-		padding-bottom: 64px;
+		padding-top: 100px;
+		padding-bottom: 100px;
 	}
 
 	@media screen and (min-width: $breakpoint-lg){
@@ -36,8 +37,8 @@
 		padding-bottom: 80px;
 
 		&.homepage-container {
-			padding-top: 100px;
-			padding-bottom: 100px;
+			padding-top: 160px;
+			padding-bottom: 160px;
 
 			.container {
 				max-width: 1300px;
@@ -46,7 +47,21 @@
 	}
 
 	.hero-image-left {
-		// transform: translateX(-45%);
+		transition: 200ms ease-in-out;
+		transform: translateX(-20%) scale(1.4);
+		
+		&:hover {
+			transform: translateX(-20%) scale(1.42);
+		}
+	}
+
+	.hero-image-right {
+		transition: 200ms ease-in-out;
+		transform: translateX(20%) scale(1.4);
+		
+		&:hover {
+			transform: translateX(20%) scale(1.42);
+		}
 	}
 }
 

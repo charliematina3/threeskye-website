@@ -27,7 +27,7 @@ const HomepageTsx = (props) => {
 							<ArrowButton routeChangePath={"/research-platform"}>Learn More</ArrowButton>
 						</FadeInSection>
 					</FlexWrapper>
-					<img onClick={() => changeRoute("/3skye-x")} className="hero-image-left cursor-pointer" src="/images/2023-images/products/3sx-grouped.png" alt="crm" width="40%" />
+					<img onClick={() => changeRoute("/3skye-x")} className="hero-image-right cursor-pointer" src="/images/2023-images/products/3sx-grouped.png" alt="crm" width="40%" />
 				</FlexWrapper>
 			</TsContainer>
 		</FadeInSection>
