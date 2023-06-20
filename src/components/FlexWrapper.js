@@ -9,7 +9,8 @@ const FlexWrapper = ({
   width,
   gap,
   className,
-  children
+  children,
+  flexWrap
 }) => {
   const flexWrapperClasses = classNames('flex-wrapper', className);
 
@@ -19,6 +20,7 @@ const FlexWrapper = ({
 		flexDirection: flexDirection,
 		width: width,
 		gap: gap,
+		flexWrap: flexWrap,
 		display: "flex",
   };
 

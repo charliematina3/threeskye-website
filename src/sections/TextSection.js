@@ -8,9 +8,9 @@ import "./TextSection.scss";
 
 class TextSection extends Component {
 	render() {
-		const { children, header, props, bg, className, style, h1 } = this.props;
+		const { children, header, props, bg, className, style, h1, containerClass } = this.props;
 		return (
-			<TsContainer {...props} bg={bg} style={style}>
+			<TsContainer {...props} bg={bg} style={style} className={`pt-1${containerClass ? ' ' + containerClass : ''}`}>
 				<Row>
 					<Col xs="12" className={className ? className : ""}>
 						{header && <SectionHeader h1={h1}>{header}</SectionHeader>}

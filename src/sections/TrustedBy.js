@@ -29,16 +29,16 @@ const TrustedBy = ({ companies }) => {
 	return (
 		<FadeInSection>
 			<TsContainer bg="blue">
-				<Row className="mb-5">
+				<Row className="mb-4">
 					<Col xs="12">
 						<FadeInSection delay="1">
-							<h3>Trusted By</h3>
+							<h3 className="mb-0">Trusted By</h3>
 						</FadeInSection>
 					</Col>
 				</Row>
 				<Row style={{rowGap: 24}}>
 					{filteredCompanies.map((company, idx) => (
-						<Col xs="12"  xl="6">
+						<Col xs="12"  xl={12 / filteredCompanies.length}>
 							<TrustedCard key={idx} logo={company.img} name={company.name} text={company.description} link={company.link} />
 						</Col>
 					))}

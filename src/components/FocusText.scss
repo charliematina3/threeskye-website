@@ -6,9 +6,7 @@
 	line-height: 1.8;
 	color: $colour-blue;
 	display: inline;
-
 	font-weight: $fw-regular;
-	color: inherit;
 
 	@media screen and (min-width: $breakpoint-xl) {
 		font-size: $fs-large;

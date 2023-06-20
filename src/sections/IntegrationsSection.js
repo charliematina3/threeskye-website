@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Button from '../components/Button';
 import IntegrationsBlock from '../components/IntegrationsBlock';
 
-const IntegrationsSection = ({logos}) => {
+const IntegrationsSection = ({logos, text}) => {
 	return (
 		<FadeInSection>
 			<TsContainer>
@@ -16,7 +16,7 @@ const IntegrationsSection = ({logos}) => {
 							<FadeInSection delay="1" className="text-center">
 								<h3>Integrations</h3>
 							</FadeInSection>
-							<FadeInSection className="text-center"><p className="sub-header">Harness the strength of connectivity across all our platforms, with integrations that unite data, insights, and strategy, turbocharging your financial journey</p></FadeInSection>
+							<FadeInSection className="text-center"><p className="sub-header">{text ? text : "Harness the strength of connectivity across all our platforms, with integrations that unite data, insights, and strategy, turbocharging your financial journey"}</p></FadeInSection>
 						</Col>
 						<Col xs="12" className="my-5 d-flex justify-content-center">
 							{/* Block */}

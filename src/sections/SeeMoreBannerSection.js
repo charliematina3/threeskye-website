@@ -8,8 +8,9 @@ import Button from '../components/Button';
 const SeeMoreBannerSection = ({logos}) => {
 	return (
 		<FadeInSection>
-			<TsContainer style={{paddingTop: 80, paddingBottom: 80}}>
-				<img src="images/2023-images/misc/g1.png" alt="triangle graphic" style={{ position: "absolute", left: 0}} width="100%" />
+			<TsContainer style={{paddingTop: 80, paddingBottom: 80, position: "relative", overflow: "hidden"}}>
+				<img src="images/2023-images/misc/g3.png" alt="triangle graphic" style={{ position: "absolute", left: -40, bottom: -60}} width={250} />
+				<img src="images/2023-images/misc/g4.png" alt="triangle graphic" style={{ position: "absolute", right: -140, top: 0}} width={305} />
 				<Row>
 					<Col xs="12" className="px-0">
 						<Col xs="12">
