@@ -1,0 +1,42 @@
+@import "../styles/Variables.scss";
+
+.trusted-card {
+	flex-direction: column;
+	gap: 16px;
+	align-items: center;
+
+	.logo-wrapper {
+		flex-shrink: 0;
+
+		&:hover {
+			img {
+				transform: scale(1);
+			}
+		}
+	}
+	
+	p {
+		font-size: $fs-medium;
+	}
+
+	.trusted-card-text {
+		padding-top: 24px;
+
+		.trusted-header {
+			margin-bottom: 7px;
+			
+		}
+	}
+
+	@media screen and (min-width: $breakpoint-md) {
+		flex-direction: row;
+		gap: 32px;
+		align-items: center;
+
+		.trusted-card-text {
+			padding-left: 32px;
+			border-left: 1.5px solid #E5E7ED;
+		}
+	
+	}
+}

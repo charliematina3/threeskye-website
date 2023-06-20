@@ -9,6 +9,7 @@ import HomepageWealth from '../sections/HomepageWealth';
 import HomepageResearch from '../sections/HomepageResearch';
 import HomepageTsx from '../sections/HomepageTsx';
 import IntegrationsSection from '../sections/IntegrationsSection';
+import TrustedBy from '../sections/TrustedBy';
 
 class Homepage extends Component {
 	componentDidMount() {
@@ -31,7 +32,10 @@ class Homepage extends Component {
 				<HomepageWealth />
 				<HomepageResearch />
 				<HomepageTsx />
+				{/* Integrations */}
 				<IntegrationsSection logos={["office", "nzx", "apex", "chelmer", "akahu", "addy", "xignite", "bloomberg", "power-bi", "refinitiv", "send-grid", "click-send"]} />
+				{/* Trusted */}
+				<TrustedBy companies={["hwp", "cip"]} />
 				{/* Get to know us */}
 				<ScrollFadeSection>
 					<GetToKnowUs bg="white" />

@@ -1,9 +1,9 @@
 import React from 'react';
 import "./Logo.scss";
 
-const Logo = ({ src, alt, link, width, height }) => {
+const Logo = ({ src, alt, link, maxWidth }) => {
 	return (
-		<a href={link} target="_blank" rel="noreferrer" className="logo-wrapper cursor-pointer">
+		<a href={link} target="_blank" rel="noreferrer" className="logo-wrapper cursor-pointer" style={{maxWidth: maxWidth ? maxWidth : ""}}>
 			<img src={src} alt={alt} />
 		</a>
 	);

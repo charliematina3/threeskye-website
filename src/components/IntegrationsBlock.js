@@ -10,7 +10,7 @@ const IntegrationsBlock = ({ logos }) => {
 
 	return (
 		<Card>
-			<FlexWrapper className="integrations-block" gap={48} alignItems="center">
+			<FlexWrapper className="integrations-block" alignItems="center">
 				{filteredLogos.map((logo, idx) => (
 					<Logo key={idx} src={logo.img} alt={logo.name} link={logo.link} height={40} />
 				))}

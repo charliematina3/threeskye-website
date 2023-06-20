@@ -9,7 +9,7 @@ import IntegrationsBlock from '../components/IntegrationsBlock';
 const IntegrationsSection = ({logos}) => {
 	return (
 		<FadeInSection>
-			<TsContainer homepage>
+			<TsContainer>
 				<Row>
 					<Col xs="12" className="px-0">
 						<Col xs="12">
