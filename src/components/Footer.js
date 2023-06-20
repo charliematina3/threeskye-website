@@ -9,21 +9,24 @@ import ArrowButton from './ArrowButton';
 
 class Footer extends Component {
 	render() {
-		const { paths, products } = this.props;
+		const { paths, products, other } = this.props;
 		return (
 			<TsContainer id="footer" className="footer-container">
 				<Row>
-					<Col xs="12" lg={{ span: 4, order: 1 }} className="mb-5 text-center text-sm-left">
-						<h2 className="colour-white mb-2">How Can We Help?</h2>
+					<Col xs="12" lg={{ span: 6, order: 1 }} className="mb-5 text-center text-sm-left">
+						<h3 className="colour-white mb-2">How Can We Help?</h3>
 						<ArrowButton variant="outlined" routeChangePath="./get-in-touch">
-							How can we help?
+							Let’s Chat
 						</ArrowButton>
 					</Col>
-					<Col xs="6" lg={{ span: 3, order: 2, offset: 1 }}>
+					<Col xs="4" lg={{ span: 2, order: 2 }}>
 						<FooterList header="3SKYE" links={paths} />
 					</Col>
-					<Col xs="6" lg={{ span: 3, order: 3 }}>
+					<Col xs="4" lg={{ span: 2, order: 3 }}>
 						<FooterList header="Products" links={products} />
+					</Col>
+					<Col xs="4" lg={{ span: 2, order: 4 }}>
+						<FooterList header="Other" links={other} />
 					</Col>
 					<Col xs="12" lg={{ span: 4, order: 5 }} className="icons-container mt-5">
 						<a href="https://www.linkedin.com/company/3skye/" target="_blank" rel="noreferrer" className="footer-icon"><LinkedIn /></a>

@@ -30,6 +30,10 @@ function App() {
 		{ name: "3SKYE-X", path: "/3skye-x", text: "A HNW and family office focused platform.", landingText: "A HNW and Family Office focused platform.", img: "/images/product-hnw.png" },
 	];
 
+	const other = [
+		{ name: "Integrations", path: "/integrations", exact: true },
+	];
+
 	return (
 		<div className="master-container">
 			<BrowserRouter>
@@ -50,7 +54,7 @@ function App() {
 						<Route render={ErrorPage}/>
 					</Switch>
 				</div>
-				<Footer paths={paths} products={products} />
+				<Footer paths={paths} products={products} other={other} />
 			</BrowserRouter>
 		</div>
 	);
