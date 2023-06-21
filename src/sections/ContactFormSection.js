@@ -135,7 +135,7 @@ class ContactFormSection extends Component {
 		const { submitted, loading, name, email, message, formInvalid, emailInvalid, captchaChecked } = this.state;
 
 		return (
-			<TsContainer className="contact-form-container" bg={bg ? bg : "white"}>
+			<TsContainer className="contact-form-container" bg="blue">
 				{!submitted ? (
 					<FadeInSection fadeUp delay="2">
 						<form className="contact-form" onSubmit={this.handleSubmit} action="" autoComplete="off">
@@ -144,6 +144,7 @@ class ContactFormSection extends Component {
 									<InputField helperText={formInvalid && !name && "Please enter your name"} error={formInvalid && !name} required placeholder="Name" label="Your Name" name="name" onChange={this.handleInputChange} autoFocus />
 									<InputField type="email" helperText={(formInvalid && !email && "Please enter your email address") || (emailInvalid && "Please enter a valid email address")} error={(formInvalid && !email) || emailInvalid} required placeholder="Email" label="Your Email Address" name="email" onChange={this.handleInputChange} />
 									<InputField placeholder="Company" label="Company Name" name="company" onChange={this.handleInputChange} />
+									<InputField type="number" placeholder="+64" label="Phone Number" name="phone" onChange={this.handleInputChange} />
 									<InputField helperText={formInvalid && !message && "Please enter a message"} error={formInvalid && !message} required placeholder="Message" label="Message/Comment" name="message" onChange={this.handleInputChange} />
 									<FormCheckboxGroup
 										onChange={this.handleInputChange}

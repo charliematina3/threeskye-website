@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-import FocusText from '../components/FocusText';
-import TextSection from '../sections/TextSection';
-import GetInTouchSection from "../sections/GetInTouchSection";
 import FadeInSection from '../components/FadeInSection';
-import HeroSection from '../sections/HeroSection';
-import UnderlinedText from '../components/UnderlinedText';
 import { Col, Row } from 'react-bootstrap';
 import TsContainer from '../components/TsContainer';
 import FlexWrapper from '../components/FlexWrapper';
