@@ -141,6 +141,30 @@ export const IntegrationsContent = [
 				]
 			},
 			{
+				name: azure.name,
+				code: azure.code,
+				description: azure.description,
+				image: azure.img,
+				link: azure.link,
+				mobileOnly: true,
+			},
+			{
+				name: office.name,
+				code: office.code,
+				description: office.description,
+				image: office.img,
+				link: office.link,
+				mobileOnly: true,
+			},
+			{
+				name: powerBi.name,
+				code: powerBi.code,
+				description: powerBi.description,
+				image: powerBi.img,
+				link: powerBi.link,
+				mobileOnly: true,
+			},
+			{
 				name: sendGrid.name,
 				code: sendGrid.code,
 				description: sendGrid.description,

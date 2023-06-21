@@ -30,45 +30,48 @@ function IntegrationsFeatures() {
 										<TsContainer>
 											<Row className="justify-content-center">
 												{content.tiles &&
-													content.tiles.map((tile, idx) => (
-														<Col
-															lg={
-																tile.large
-																	? "12"
-																	: content.tiles.length == 4
-																	? "5"
-																	: tile.code === "nzx" || tile.code === "chelmer"
-																	? "3"
-																	: tile.code === "apex"
-																	? "6"
-																	: "4"
-															}
-															style={{ marginBottom: 38 }}
-															key={idx}
-														>
-															<ScrollFadeSection style={{ height: "100%" }}>
-																{tile.large ? (
-																	<LargeProductFeatureCard
-																		name={tile.name}
-																		img={tile.image}
-																		info={tile.title}
-																		partner={tile.partnership}
-																		subs={tile.subs}
-																		link={tile.link}
-																	/>
-																) : (
-																	<ProductFeatureCard
-																		className={`integrations-card${tile.code === "apex" ? " apex-card" : ""}`}
-																		name={tile.name}
-																		img={tile.image}
-																		info={tile.description}
-																		partner={tile.partnership}
-																		link={tile.link}
-																	/>
-																)}
-															</ScrollFadeSection>
-														</Col>
-													))}
+													content.tiles.map(
+														(tile, idx) =>
+															!tile.mobileOnly && (
+																<Col
+																	lg={
+																		tile.large
+																			? "12"
+																			: content.tiles.length == 4
+																			? "5"
+																			: tile.code === "nzx" || tile.code === "chelmer"
+																			? "3"
+																			: tile.code === "apex"
+																			? "6"
+																			: "4"
+																	}
+																	style={{ marginBottom: 38 }}
+																	key={idx}
+																>
+																	<ScrollFadeSection style={{ height: "100%" }}>
+																		{tile.large ? (
+																			<LargeProductFeatureCard
+																				name={tile.name}
+																				img={tile.image}
+																				info={tile.title}
+																				partner={tile.partnership}
+																				subs={tile.subs}
+																				link={tile.link}
+																			/>
+																		) : (
+																			<ProductFeatureCard
+																				className={`integrations-card${tile.code === "apex" ? " apex-card" : ""}`}
+																				name={tile.name}
+																				img={tile.image}
+																				info={tile.description}
+																				partner={tile.partnership}
+																				link={tile.link}
+																			/>
+																		)}
+																	</ScrollFadeSection>
+																</Col>
+															)
+													)}
 											</Row>
 											{content.name !== "Partnerships" && (
 												<Row align="center" className="mt-4">
@@ -85,11 +88,13 @@ function IntegrationsFeatures() {
 											{content.tiles &&
 												content.tiles.map((tile, idx) => (
 													<ProductFeatureBlock
-														// bg={idx % 2 !== 0 ? "blue" : "white"}
+														key={idx}
 														imgPath={tile.image}
 														header={tile.name}
 														text={tile.description}
 														smallText={tile.description}
+														partner={tile.partnership}
+														title={tile.title}
 													/>
 												))}
 										</div>
