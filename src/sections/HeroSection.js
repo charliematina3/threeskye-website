@@ -8,7 +8,7 @@ import "./HeroSection.scss";
 
 function HeroSection(props) {
 
-		const { header, text, buttonLink, buttonText, heroImage, id, children, customScroll, buttonDisabled, heroImageXs, className, style, centred, mainHero, noButton, productPage } = props;
+		const { header, text, buttonLink, buttonText, heroImage, id, children, customScroll, buttonDisabled, heroImageXs, className, style, centred, mainHero, noButton, productPage, fullWidth } = props;
 		const [scrollValue, setScroll] = React.useState(false);
 	
 		React.useEffect(() => {
@@ -36,7 +36,7 @@ function HeroSection(props) {
 							</FadeInSection>
 						</Col>
 					)}
-					<Col xs="12" sm="12" lg={centred ? "12" : "6"} xl={centred ? "12" : "6"} className="px-0 mt-4 mt-lg-0">
+					<Col xs="12" sm="12" lg={fullWidth || centred ? "12" : "6"} xl={fullWidth || centred ? "12" : "6"} className="px-0 mt-4 mt-lg-0">
 						<Col xs="12" className={centred ? "text-center" : "text-center text-lg-left"}>
 							<FadeInSection delay="1">
 								<h1>{header || children}</h1>

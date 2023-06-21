@@ -5,10 +5,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from '../components/Button';
 
-const SeeMoreBannerSection = ({logos}) => {
+const SeeMoreBannerSection = ({logos, bg}) => {
 	return (
 		<FadeInSection>
-			<TsContainer style={{paddingTop: 80, paddingBottom: 80, position: "relative", overflow: "hidden"}}>
+			<TsContainer bg={bg} style={{paddingTop: 80, paddingBottom: 80, position: "relative", overflow: "hidden"}}>
 				<img src="images/2023-images/misc/g3.png" alt="triangle graphic" style={{ position: "absolute", left: -40, bottom: -60}} width={250} />
 				<img src="images/2023-images/misc/g4.png" alt="triangle graphic" style={{ position: "absolute", right: -140, top: 0}} width={305} />
 				<Row>
