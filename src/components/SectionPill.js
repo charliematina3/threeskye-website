@@ -1,9 +1,9 @@
 import React from 'react';
 import "./SectionPill.scss";
 
-const SectionPill = ({label, children, onClick}) => {
+const SectionPill = ({ label, children }) => {
 	return (
-		<div className="section-pill" onClick={onClick}>
+		<div className="section-pill">
 			{label || children}
 		</div>
    );

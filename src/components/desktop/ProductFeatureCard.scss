@@ -10,6 +10,7 @@
 
 .pc-image {
 	width: 200px;
+	height: 140px;
 
 	img {
 		width: 100%;
@@ -17,12 +18,12 @@
 }
 
 .pc-name {
-	font-size: 17px;
+	font-size: 16px;
 	font-weight: $fw-bold;
 }
 
 .pc-info {
-	font-size: 17px;
+	font-size: 16px;
 	font-weight: $fw-regular;
 }
 
@@ -32,7 +33,7 @@
 	}
 
 	.pc-image {
-		margin: 0 auto 10px auto;
+		margin: 0 auto 16px auto;
 	}
 }
 

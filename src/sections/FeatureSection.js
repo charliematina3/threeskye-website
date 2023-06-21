@@ -24,16 +24,18 @@ function FeatureSection(props) {
 				>
 					{heroImage && (
 						<Col
+							xs="8"
+							lg="6"
 							xl="6"
-							className={centred ? "mt-4 justify-content-center" : ""}
+							className="mt-4 justify-content-center"
 						>
 							<FadeInSection className="centred-hero-image position" fadeUp>
 								<img width="100%" height="auto" alt="hero" src={heroImage} />
 							</FadeInSection>
 						</Col>
 					)}
-					<Col xs="12" sm={centred ? "12" : "7"} xl={centred ? "12" : "6"} className="px-0">
-						<Col xs="12" className={centred ? "text-center" : ""}>
+					<Col xs="12" lg="6" xl="6" className="mt-5 mt-lg-0 px-0">
+						<Col xs="12" className="text-center text-lg-left">
 							<FadeInSection delay="1">
 								<h2>{header || children}</h2>
 							</FadeInSection>

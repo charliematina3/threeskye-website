@@ -35,13 +35,13 @@
 
 	@media screen and (min-width: $breakpoint-lg) {	
 		p, .focus-text {
-			font-size: $fs-medium;
+			// font-size: $fs-medium;
 		}
 	}
 	
 	@media screen and (min-width: $breakpoint-xl) {	
 		p, .focus-text {
-			font-size: $fs-large;
+			// font-size: $fs-medium;
 		}
 	}
 }

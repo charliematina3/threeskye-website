@@ -8,27 +8,20 @@ import TrustedBy from '../sections/TrustedBy';
 import FlexWrapper from '../components/FlexWrapper';
 import SectionPill from '../components/SectionPill';
 import TsContainer from '../components/TsContainer';
-import WealthCoreFeatures from '../sections/wealth/WealthCoreFeatures';
+import WealthFeatures from '../sections/wealth/WealthFeatures';
+import FadeInSection from '../components/FadeInSection';
 
 const WealthPage = () => {
   const [scrollValue, setScroll] = React.useState(false);
-	
-  React.useEffect(() => {
-		window.addEventListener("scroll", () => {
-			setScroll(window.scrollY);
-		});
-		document.title = 'Wealth Platform';
-		window.scrollTo(0, 0);
-  }, []);
 
   return (
 		<>
 			<ProductHeroSection
-				images={
-					<>
-						<img src="images/2023-images/misc/g5.png" alt="" style={{ position: "absolute", bottom: -68, width: 100 - scrollValue * 0.01 + "%" }} />
-					</>
-				}
+				// images={
+				// 	<FadeInSection>
+				// 		<img src="images/2023-images/misc/g5.png" alt="" style={{ position: "absolute", bottom: -68, width: 100 - scrollValue * 0.01 + "%" }} />
+				// 	</FadeInSection>
+				// }
 				id="wealth"
 				customScroll={100 - scrollValue * 0.04 + "%"}
 				heroImage="/images/2023-images/products/crm-grouped.png"
@@ -47,15 +40,15 @@ const WealthPage = () => {
 			</TextSection>
 			<TsContainer className="pt-5">
 				<FlexWrapper gap={20} alignItems="center" justifyContent="center" flexWrap="wrap">
-					<SectionPill label="Core Features" />
-					<SectionPill label="AML" />
-					<SectionPill label="Flexible Customisation" />
-					<SectionPill label="Artificial Intelligence" />
-					<SectionPill label="Integrations" />
+					<SectionPill sectionRef="core" label="Core Features" />
+					<SectionPill sectionRef="aml" label="AML" />
+					<SectionPill sectionRef="flexible" label="Flexible Customisation" />
+					<SectionPill sectionRef="ai" label="Artificial Intelligence" />
+					<SectionPill sectionRef="integrations" label="Integrations" />
 				</FlexWrapper>
 			</TsContainer>
 			{/* Features */}
-			<WealthCoreFeatures />
+			<WealthFeatures />
 			{/* Integrations */}
 			<IntegrationsSection
 				logos={["office", "nzx", "apex", "chelmer", "akahu", "addy", "xignite", "bloomberg", "power-bi", "refinitiv", "send-grid", "click-send"]}
