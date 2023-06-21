@@ -87,9 +87,8 @@
 	}
 
 	&.Mui-disabled {
-		opacity: 0.4;
-		background-color: $colour-blue-light;
-		background-color: transparent;
+		opacity: 0.5;
+		background-color: $colour-blue;
 	}
 
 	.spinner-border {

@@ -16,7 +16,7 @@ class PrivacyPolicyPage extends Component {
 	render() { 
 		return (
 			<div className="bg-white">
-				<TsContainer bg="white" className="pb-0">
+				<TsContainer bg="blue" className="pb-5">
 					<SectionHeader noMargin><h1>Privacy Policy</h1></SectionHeader>
 				</TsContainer>
 				<PrivacyPolicySection header="Who are we">

@@ -12,6 +12,7 @@ import Button from '../../components/Button';
 import ProductFeatureBlock from '../../components/ProductFeatureBlock';
 import CentredFeatureSection from '../CentredFeatureSection';
 import LargeProductFeatureCard from '../../components/desktop/LargeProductFeatureCard';
+import ContactModal from '../../components/ContactModal';
 
 function IntegrationsFeatures() {
 	return (
@@ -77,7 +78,7 @@ function IntegrationsFeatures() {
 												<Row align="center" className="mt-4">
 													<Col xs="12">
 														<h4 className="font-weight-medium">Your company missing from this list?</h4>
-														<Button>Join the Mix</Button>
+														<ContactModal />
 													</Col>
 												</Row>
 											)}

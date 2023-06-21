@@ -9,7 +9,7 @@ function Button(props) {
 		history.push(path);
 	}
 
-	const { variant, buttonColour, children, bgColour, onClick, routeChangePath, className, loading, disabled } = props;
+	const { variant, buttonColour, children, bgColour, onClick, routeChangePath, className, loading, disabled, style } = props;
 
 	return (
 		<MuiButton
@@ -18,6 +18,7 @@ function Button(props) {
 			className={`ts-button${className ? " " + className : ""}${buttonColour ? " colour-" + buttonColour : ""}${bgColour ? " bg-colour-" + bgColour : ""}`}
 			variant={variant && variant}
 			disabled={disabled}
+			style={style}
 		>
 			{loading && (
 				<div className="spinner-border" role="status">
