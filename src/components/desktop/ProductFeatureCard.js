@@ -9,7 +9,7 @@ class ProductFeatureCard extends Component {
 		return (
 			<Card className={`product-card${className ? " " + className : ""}`}>
 				{link ? (
-					<a className="pc-image" href={link} target="_blank">
+					<a className="pc-image" href={link} target="_blank" rel="noreferrer">
 						<img src={img} alt={name + " graphic"} width="100%" height="auto" />
 					</a>
 				) : (

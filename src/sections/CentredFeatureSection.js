@@ -7,7 +7,7 @@ import "./HeroSection.scss";
 
 function CentredFeatureSection(props) {
 
-		const { header, text, heroImage, id, children, className, style, productPage } = props;
+		const { header, text, heroImage, id, children, className, productPage } = props;
 		const [, setScroll] = React.useState(false);
 	
 		React.useEffect(() => {

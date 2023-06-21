@@ -10,7 +10,7 @@ class LargeProductFeatureCard extends Component {
 		return (
 			<Card className={`product-card large${className ? " " + className : ""}`}>
 				{link ? (
-					<a className="pc-image pc-large" href={link} target="_blank">
+					<a className="pc-image pc-large" href={link} target="_blank" rel="noreferrer">
 						<img src={img} alt={name + " graphic"} width="100%" height="auto" />
 					</a>
 				) : (
@@ -34,7 +34,7 @@ class LargeProductFeatureCard extends Component {
 							return (
 								<Card className="product-card sub-card" key={idx}>
 									{link ? (
-										<a className="pc-image" href={sub.link} target="_blank">
+										<a className="pc-image" href={sub.link} target="_blank" rel="noreferrer">
 											<img src={sub.image} alt={sub.name + " graphic"} width="100%" height="auto" />
 										</a>
 									) : (

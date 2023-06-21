@@ -1,14 +1,11 @@
 import React from 'react';
 import FadeInSection from '../../components/FadeInSection';
-import FeatureSection from '../FeatureSection';
 import TsContainer from '../../components/TsContainer';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProductFeatureCard from '../../components/desktop/ProductFeatureCard';
 import { IntegrationsContent } from './IntegrationsContent';
 import ScrollFadeSection from '../../components/ScrollFadeSection';
-import Card from '../../components/Card';
-import Button from '../../components/Button';
 import ProductFeatureBlock from '../../components/ProductFeatureBlock';
 import CentredFeatureSection from '../CentredFeatureSection';
 import LargeProductFeatureCard from '../../components/desktop/LargeProductFeatureCard';
@@ -40,9 +37,9 @@ function IntegrationsFeatures() {
 																			? "12"
 																			: content.tiles.length == 4
 																			? "5"
-																			: tile.code === "nzx" || tile.code === "chelmer"
+																			: tile.code == "nzx" || tile.code == "chelmer"
 																			? "3"
-																			: tile.code === "apex"
+																			: tile.code == "apex"
 																			? "6"
 																			: "4"
 																	}
@@ -61,7 +58,7 @@ function IntegrationsFeatures() {
 																			/>
 																		) : (
 																			<ProductFeatureCard
-																				className={`integrations-card${tile.code === "apex" ? " apex-card" : ""}`}
+																				className={`integrations-card${tile.code == "apex" ? " apex-card" : ""}`}
 																				name={tile.name}
 																				img={tile.image}
 																				info={tile.description}

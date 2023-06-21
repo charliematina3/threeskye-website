@@ -5,9 +5,6 @@ import "./WealthPage.scss";
 import ProductHeroSection from '../sections/ProductHeroSection';
 import IntegrationsSection from '../sections/IntegrationsSection';
 import TrustedBy from '../sections/TrustedBy';
-import FlexWrapper from '../components/FlexWrapper';
-import SectionPill from '../components/SectionPill';
-import TsContainer from '../components/TsContainer';
 import WealthFeatures from '../sections/wealth/WealthFeatures';
 import SeeMoreBannerSection from '../sections/SeeMoreBannerSection';
 
@@ -38,15 +35,6 @@ const WealthPage = () => {
 				3SKYE Wealth is a modular web-and-mobile platform for financial professionals and investors. Our intuitive interface allows Advisers to easily and efficiently
 				manage their client’s affairs. We take a subset of that data and expose it to the investors in a bespoke investor portal.
 			</TextSection>
-			<TsContainer className="pt-5">
-				<FlexWrapper gap={20} alignItems="center" justifyContent="center" flexWrap="wrap">
-					<SectionPill sectionRef="core" label="Core Features" />
-					<SectionPill sectionRef="aml" label="AML" />
-					<SectionPill sectionRef="flexible" label="Flexible Customisation" />
-					<SectionPill sectionRef="ai" label="Artificial Intelligence" />
-					<SectionPill sectionRef="integrations" label="Integrations" />
-				</FlexWrapper>
-			</TsContainer>
 			{/* Features */}
 			<WealthFeatures />
 			{/* Integrations */}

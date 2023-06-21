@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import FadeInSection from '../../components/FadeInSection';
 import FeatureSection from '../FeatureSection';
 import TsContainer from '../../components/TsContainer';
@@ -10,14 +10,27 @@ import ScrollFadeSection from '../../components/ScrollFadeSection';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
 import ProductFeatureBlock from '../../components/ProductFeatureBlock';
+import FlexWrapper from '../../components/FlexWrapper';
+import SectionPill from '../../components/SectionPill';
 
 function WealthFeatures() {
+	const componentRef = useRef();
+
 	return (
 		<>
+			<TsContainer className="pt-5">
+				<FlexWrapper gap={20} alignItems="center" justifyContent="center" flexWrap="wrap">
+					<SectionPill sectionRef="core" label="Core Features" />
+					<SectionPill sectionRef="aml" label="AML" />
+					<SectionPill sectionRef="flexible" label="Flexible Customisation" />
+					<SectionPill sectionRef="ai" label="Artificial Intelligence" />
+					<SectionPill sectionRef="integrations" label="Integrations" />
+				</FlexWrapper>
+			</TsContainer>
 			{WealthContent &&
 				WealthContent.map((content, idx) => {
 					return (
-						<FadeInSection key={idx}>
+						<FadeInSection key={idx} forwardedRef={componentRef}>
 							<FeatureSection heroImage={content.image} className="homepage-hero" text={content.description}>
 								{content.name}
 							</FeatureSection>

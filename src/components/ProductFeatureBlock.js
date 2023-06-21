@@ -5,7 +5,6 @@ import TsContainer from './TsContainer';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ScrollFadeSection from './ScrollFadeSection';
-import FlexWrapper from './FlexWrapper';
 import PartnerToken from './PartnerToken';
 
 class ProductFeatureBlock extends Component {

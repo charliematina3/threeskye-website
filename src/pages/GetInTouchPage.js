@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import FadeInSection from '../components/FadeInSection';
 import ContactFormSection from '../sections/ContactFormSection';
-import TextSection from '../sections/TextSection';
 import { Col, Row } from 'react-bootstrap';
 import TsContainer from '../components/TsContainer';
 import RelatedPages from '../sections/RelatedPages';

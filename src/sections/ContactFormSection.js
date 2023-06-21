@@ -135,7 +135,7 @@ class ContactFormSection extends Component {
 	}
 
 	render() {
-		const { bg, modalForm } = this.props;
+		const { modalForm } = this.props;
 		const { submitted, loading, name, email, message, formInvalid, emailInvalid, captchaChecked } = this.state;
 
 		return (
