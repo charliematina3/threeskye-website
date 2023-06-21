@@ -10,6 +10,7 @@ import SectionPill from '../components/SectionPill';
 import TsContainer from '../components/TsContainer';
 import WealthFeatures from '../sections/wealth/WealthFeatures';
 import FadeInSection from '../components/FadeInSection';
+import SeeMoreBannerSection from '../sections/SeeMoreBannerSection';
 
 const WealthPage = () => {
   const [scrollValue, setScroll] = React.useState(false);
@@ -17,11 +18,6 @@ const WealthPage = () => {
   return (
 		<>
 			<ProductHeroSection
-				// images={
-				// 	<FadeInSection>
-				// 		<img src="images/2023-images/misc/g5.png" alt="" style={{ position: "absolute", bottom: -68, width: 100 - scrollValue * 0.01 + "%" }} />
-				// 	</FadeInSection>
-				// }
 				id="wealth"
 				customScroll={100 - scrollValue * 0.04 + "%"}
 				heroImage="/images/2023-images/products/crm-grouped.png"
@@ -55,7 +51,9 @@ const WealthPage = () => {
 				text="Unlock seamless integrations with leading tools and systems, enhancing your wealth management capabilities effortlessly."
 			/>
 			{/* Trusted */}
-			<TrustedBy companies={["hwp"]} />
+		  	<TrustedBy companies={["hwp"]} />
+		  	{/* See more */}
+		  	<SeeMoreBannerSection />
 		</>
   );
 };

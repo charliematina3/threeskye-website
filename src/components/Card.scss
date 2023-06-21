@@ -2,7 +2,7 @@
 
 .ts-card {
 	padding: 21px;
-	border: none;
+	border: none !important;
 	box-shadow: 0 3px 6px rgba(#000, 0.16);
 
 	&.more-button-card {
@@ -10,5 +10,6 @@
     	align-items: center;
    		background: transparent;
  	   	box-shadow: none;
+		border: none;
 	}
 }

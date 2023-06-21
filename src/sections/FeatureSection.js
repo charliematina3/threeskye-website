@@ -27,7 +27,7 @@ function FeatureSection(props) {
 							xs="8"
 							lg="6"
 							xl="6"
-							className="mt-4 justify-content-center"
+							className="justify-content-center"
 						>
 							<FadeInSection className="centred-hero-image position" fadeUp>
 								<img width="100%" height="auto" alt="hero" src={heroImage} />
