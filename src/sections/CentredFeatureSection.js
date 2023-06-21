@@ -5,9 +5,9 @@ import FadeInSection from '../components/FadeInSection';
 import TsContainer from '../components/TsContainer';
 import "./HeroSection.scss";
 
-function FeatureSection(props) {
+function CentredFeatureSection(props) {
 
-		const { header, text, heroImage, id, children, className, style, centred, productPage } = props;
+		const { header, text, heroImage, id, children, className, style, productPage } = props;
 		const [, setScroll] = React.useState(false);
 	
 		React.useEffect(() => {
@@ -17,15 +17,15 @@ function FeatureSection(props) {
 		}, []);
 
 		return (
-			<TsContainer bg="blue" className={className} style={style} id={id}>
+			<TsContainer bg="blue" className={className} style={{padding: "140px 15px"}} id={id}>
 				<Row
-					className={`justify-content-start justify-content-md-center justify-content-lg-between align-items-center ${centred ? "flex-column-reverse centred-hero" : "flex-sm-row-reverse"}${productPage ? " product-page-hero" : ""}`}
+					className={`justify-content-start justify-content-md-center justify-content-lg-between align-items-center flex-column-reverse centred-hero${productPage ? " product-page-hero" : ""}`}
 				>
 					{heroImage && (
 						<Col
 							xs="8"
 							lg="6"
-							xl="6"
+							xl="12"
 							className="justify-content-center"
 						>
 							<FadeInSection className="centred-hero-image position" fadeUp>
@@ -33,8 +33,8 @@ function FeatureSection(props) {
 							</FadeInSection>
 						</Col>
 					)}
-					<Col xs="12" lg="6" xl="6" className="mt-5 mt-lg-0 px-0">
-						<Col xs="12" className="text-center text-lg-left">
+					<Col xs="12" className="mt-5 mt-lg-0 px-0">
+						<Col xs="12" className="text-center">
 							<FadeInSection delay="1">
 								<h2>{header || children}</h2>
 							</FadeInSection>
@@ -46,4 +46,4 @@ function FeatureSection(props) {
 		);
 }
 
-export default FeatureSection;
+export default CentredFeatureSection;

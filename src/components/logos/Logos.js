@@ -10,7 +10,7 @@ const Logo = ({ src, alt, link, maxWidth }) => {
 };
 
 // Logo object
-export const LogoObject = [
+export const LogoObject = [	
 	{
 		name: "Microsoft Office 365",
 		code: "office",
@@ -52,7 +52,8 @@ export const LogoObject = [
 		name: "Apex Group",
 		code: "apex",
 		description: "Investment administration, portfolio reporting and custodial services. Apex Group acquired MMC in 2022.",
-		img: "images/2023-images/logos/apex.jpg",
+		img: "images/2023-images/logos/apex.jpg", 
+		altImg: "images/2023-images/logos/apex-group.png",
 		link: "https://www.apexgroup.com/",
 	},
 	{
@@ -74,6 +75,7 @@ export const LogoObject = [
 		code: "refinitiv",
 		description:
 			"Experience unparalleled data access with our integration with Refinitiv. This powerful tool supplies real-time and historical data, offering critical insights into market pricing and fundamentals. Elevate your investment strategy with rich, comprehensive data, efficiently harnessed through the 3SKYE platform.",
+			partnership: "Our partnership with Refinitiv grants us access to build solutions on top of their market data services, while also enabling them to sell our platform and extend its distribution globally.",
 		img: "images/2023-images/logos/refinitiv.jpg",
 		link: "https://www.refinitiv.com/",
 	},
@@ -116,6 +118,16 @@ export const LogoObject = [
 			"Stay connected on-the-go with our integration with ClickSend, facilitating secure and instantaneous SMS messaging to reach your stakeholders wherever they are.",
 		img: "images/2023-images/logos/click-send.jpg",
 		link: "https://www.clicksend.com/nz/",
+	},
+	{
+		name: "Microsoft",
+		code: "ms",
+		title: "Microsoft Solution Partner",
+		description:
+			"As a Microsoft solution partner for Azure AD and Office 365, we deliver a comprehensive suite of services, enhancing your business operations and decision-making with seamless integration, robust security, and insightful data analysis.",
+		partnership: "As a Microsoft solution partner for Azure AD and Office 365, we deliver a comprehensive suite of services, enhancing your business operations and decision-making with seamless integration, robust security, and insightful data analysis.",
+		img: "images/2023-images/logos/MS.jpg",
+		link: "https://www.microsoft.com/en-nz",
 	},
 ];
 

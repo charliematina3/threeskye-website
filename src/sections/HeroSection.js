@@ -20,15 +20,15 @@ function HeroSection(props) {
 		return (
 			<TsContainer bg="white" className={className} style={style} id={id}>
 				<Row
-					className={`justify-content-start justify-content-md-center justify-content-lg-between ${centred ? "flex-column-reverse centred-hero" : "flex-sm-row-reverse"}${productPage ? " product-page-hero" : ""}`}
+					className={`justify-content-center justify-content-lg-between ${centred ? "flex-column-reverse centred-hero" : "flex-sm-row-reverse"}${productPage ? " product-page-hero" : ""}`}
 				>
 					{heroImage && (
 						<Col
 							xs={centred ? 12 : heroImageXs ? heroImageXs : 8}
-							sm={centred ? "12" : "5"}
-							md={centred ? "12" : "4"}
-							lg={centred ? "12" : "4"}
-							xl={{ col: 4 }}
+							sm={centred ? "12" : "8"}
+							md={centred ? "12" : "6"}
+							lg={centred ? "12" : "6"}
+							xl={{ col: 6 }}
 							className={centred ? "mt-4 justify-content-center" : ""}
 						>
 							<FadeInSection className="centred-hero-image position" fadeUp>
@@ -36,8 +36,8 @@ function HeroSection(props) {
 							</FadeInSection>
 						</Col>
 					)}
-					<Col xs="12" sm={centred ? "12" : "7"} xl={centred ? "12" : "8"} className="px-0">
-						<Col xs="12" className={centred ? "text-center" : ""}>
+					<Col xs="12" sm="12" lg={centred ? "12" : "6"} xl={centred ? "12" : "6"} className="px-0 mt-4 mt-lg-0">
+						<Col xs="12" className={centred ? "text-center" : "text-center text-lg-left"}>
 							<FadeInSection delay="1">
 								<h1>{header || children}</h1>
 							</FadeInSection>

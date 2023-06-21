@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../components/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import FadeInSection from '../components/FadeInSection';

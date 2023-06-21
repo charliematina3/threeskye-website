@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 import TextSection from '../sections/TextSection';
-import GetToKnowUs from "../sections/GetToKnowUs";
-import HeroSection from '../sections/HeroSection';
-import UnderlinedText from '../components/UnderlinedText';
-import HowItWorks from '../sections/HowItWorks';
-import FadeInSection from '../components/FadeInSection';
 import ProductHeroSection from '../sections/ProductHeroSection';
 import FocusText from '../components/FocusText';
 import TsContainer from '../components/TsContainer';

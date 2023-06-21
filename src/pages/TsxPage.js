@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import TextSection from '../sections/TextSection';
-import GetToKnowUs from "../sections/GetToKnowUs";
-// import ProductSection from '../components/ProductSection';
-import HeroSection from '../sections/HeroSection';
 import UnderlinedText from '../components/UnderlinedText';
 import FadeInSection from '../components/FadeInSection';
-import ScrollFadeSection from '../components/ScrollFadeSection';
-import Button from '../components/Button';
 import ProductHeroSection from '../sections/ProductHeroSection';
 import TsContainer from '../components/TsContainer';
 import FlexWrapper from '../components/FlexWrapper';

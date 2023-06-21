@@ -1,0 +1,27 @@
+@import "../styles/Variables.scss";
+
+.related-card {
+	height: 180px;
+	background-color: #EFF3FF;
+	justify-content: flex-end;
+	cursor: pointer;
+	transition: 500ms ease;
+
+	svg {
+		transition: 200ms ease;
+		color: $colour-blue;
+		font-size: 48px;
+	}
+
+	&:hover {
+		
+		svg {
+			transform: translateX(8px);
+		}
+	}
+
+	&.alt {
+		background-color: #041A4E;
+		color: #fff;
+	}
+}

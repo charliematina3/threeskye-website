@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import Card from '../Card';
 import "./ProductFeatureCard.scss";
+import PartnerToken from '../PartnerToken';
 
 class ProductFeatureCard extends Component {
 	render() {
-		const { img, name, info, smallText } = this.props;
+		const { img, name, info, smallText, className, partner } = this.props;
 		return (
-			<Card className="product-card">
+			<Card className={`product-card${className ? ' ' + className : ''}`}>
 				<div className="pc-image">
 					<img src={img} alt={name + " graphic"} width="100%" height="auto" />
 				</div>
 				<div className="pc-info">
 					<h3 className="pc-name">
-						{name}
+						{name}{partner && <><span>•</span><PartnerToken /></> }
 					</h3>
 					<p className="pc-info">
 						{info}

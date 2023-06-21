@@ -5,10 +5,10 @@ import "./Card.scss";
 
 class Card extends Component {
 	render() {
-		const { className, children } = this.props;
+		const { className, children, onClick } = this.props;
 
 		return (
-			<MuiCard className={`ts-card${className ? " " + className : ""}`}>{children}</MuiCard >
+			<MuiCard onClick={onClick} className={`ts-card${className ? " " + className : ""}`}>{children}</MuiCard >
 		);
 	}
 }

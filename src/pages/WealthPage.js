@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FocusText from '../components/FocusText';
 import TextSection from '../sections/TextSection';
 import "./WealthPage.scss";
@@ -9,12 +9,16 @@ import FlexWrapper from '../components/FlexWrapper';
 import SectionPill from '../components/SectionPill';
 import TsContainer from '../components/TsContainer';
 import WealthFeatures from '../sections/wealth/WealthFeatures';
-import FadeInSection from '../components/FadeInSection';
 import SeeMoreBannerSection from '../sections/SeeMoreBannerSection';
 
 const WealthPage = () => {
-  const [scrollValue, setScroll] = React.useState(false);
+  const [scrollValue] = React.useState(false);
 
+  useEffect(() => {
+    document.title = 'A Single Pane of Glass for Advisers and Investors';
+    window.scrollTo(0, 0);
+  }, []);
+	
   return (
 		<>
 			<ProductHeroSection

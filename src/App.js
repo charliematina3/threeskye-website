@@ -13,6 +13,7 @@ import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import NavBar from "./components/desktop/navigation/NavBar";
 import ErrorPage from "./pages/ErrorPage";
 import Homepage from "./pages/Homepage";
+import IntegrationsPage from "./pages/IntegrationsPage";
 
 function App() {
 	// Paths for navigation
@@ -34,12 +35,14 @@ function App() {
 		{ name: "Integrations", path: "/integrations", exact: true },
 	];
 
+	const combinedPaths = [ ...paths, ...other ];
+
 	return (
 		<div className="master-container">
 			<BrowserRouter>
 				{/* Navigation */}
 				{/* Mobile */}
-				<MobileNav paths={paths} products={products} />
+				<MobileNav paths={combinedPaths} products={products} />
 				{/* Desktop */}
 				<NavBar products={products} />
 				<div className="main-content-container" id="main-content">
@@ -48,6 +51,7 @@ function App() {
 						<Route path="/wealth-platform" exact render={() => <WealthPage products={products} />} />
 						<Route path="/research-platform" exact render={() => <ResearchPage products={products} />} />
 						<Route path="/3skye-x" exact render={() => <TsxPage products={products} />} />
+						<Route path="/integrations" exact render={() => <IntegrationsPage />} />
 						<Route path="/about-us" exact render={() => <AboutUsPage products={products} />} />
 						<Route path="/get-in-touch" exact render={() => <GetInTouchPage products={products} />} />
 						<Route path="/privacy-policy" exact render={() => <PrivacyPolicyPage products={products} />} />

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import FadeInSection from '../../components/FadeInSection';
 import FeatureSection from '../FeatureSection';
 import TsContainer from '../../components/TsContainer';

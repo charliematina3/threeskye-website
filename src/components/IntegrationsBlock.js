@@ -9,7 +9,7 @@ const IntegrationsBlock = ({ logos }) => {
   const filteredLogos = logos ? LogoObject.filter((logo) => logos.includes(logo.code)) : [];
 
 	return (
-		<Card>
+		<Card className="p-3">
 			<FlexWrapper className="integrations-block" alignItems="center">
 				{filteredLogos.map((logo, idx) => (
 					<Logo key={idx} src={logo.img} alt={logo.name} link={logo.link} height={40} />
