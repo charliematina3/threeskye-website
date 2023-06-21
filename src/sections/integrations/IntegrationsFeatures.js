@@ -54,6 +54,7 @@ function IntegrationsFeatures() {
 																		info={tile.title}
 																		partner={tile.partnership}
 																		subs={tile.subs}
+																		link={tile.link}
 																	/>
 																) : (
 																	<ProductFeatureCard
@@ -62,6 +63,7 @@ function IntegrationsFeatures() {
 																		img={tile.image}
 																		info={tile.description}
 																		partner={tile.partnership}
+																		link={tile.link}
 																	/>
 																)}
 															</ScrollFadeSection>
