@@ -10,6 +10,7 @@ import TsContainer from '../components/TsContainer';
 import FlexWrapper from '../components/FlexWrapper';
 import RelatedPages from '../sections/RelatedPages';
 import SeeMoreBannerSection from '../sections/SeeMoreBannerSection';
+import Button from '../components/Button';
 
 class AboutUsPage extends Component {
 	componentDidMount() {
@@ -20,16 +21,24 @@ class AboutUsPage extends Component {
 		return (
 			<>
 				<FadeInSection>
-					<HeroSection
-						fullWidth
-						className="homepage-hero"
-						text="We make simple, beautiful software that reinvents the user experiences of ageing legacy financial systems. 3SKYE is building a better world for investment analysts, financial advisers, asset managers, and family offices. With our technology, save time and have confident discussions with accurate, real-time information."
-					>
-						About Us
-					</HeroSection>
+					<TsContainer>
+						<Row style={{ alignItems: "center" }} className="flex-column-reverse flex-lg-row">
+							<Col xs="12" lg="12">
+								<h1 style={{fontSize: 52}}>About Us</h1>
+								<p style={{ fontSize: 20 }}>
+									We make simple, beautiful software that reinvents the user experiences of ageing legacy financial systems. 3SKYE is building a better world for
+									investment analysts, financial advisers, asset managers, and family offices. With our technology, save time and have confident discussions with
+									accurate, real-time information.
+								</p>
+								<Button routeChangePath="/get-in-touch" className="mt-4">
+									Let's Chat
+								</Button>
+							</Col>
+						</Row>
+					</TsContainer>
 				</FadeInSection>
 				<FadeInSection>
-					<TsContainer bg="blue">
+					<TsContainer bg="blue" paddingLarge>
 						<Row style={{ alignItems: "center" }} className="flex-column-reverse flex-lg-row">
 							<Col xs="12" lg="8">
 								<h2>Our Why</h2>
@@ -43,7 +52,7 @@ class AboutUsPage extends Component {
 									We are on a mission to save you time, empowering you to focus on what truly matters and unlock the freedom to expand your business.
 								</p>
 							</Col>
-							<Col xs="12" lg="4" style={{ alignItems: "center" }} className="mb-4 mb-lg-0">
+							<Col xs="5" lg="4" style={{ alignItems: "center" }} className="mb-4 mb-lg-0">
 								<FlexWrapper alignItems="center" justifyContent="center" fullWidth>
 									<img src="images/logo.svg" alt="3skye" style={{ maxWidth: 300 }} />
 								</FlexWrapper>
@@ -52,9 +61,9 @@ class AboutUsPage extends Component {
 					</TsContainer>
 				</FadeInSection>
 				<FadeInSection>
-					<TsContainer>
-						<Row style={{ alignItems: "center" }} className="flex-column-reverse flex-lg-row">
-							<Col xs="12" lg="6" style={{ alignItems: "center" }} className="mb-4 mb-lg-0">
+					<TsContainer paddingLarge>
+						<Row style={{ alignItems: "center", justifyContent: "center" }} className="flex-lg-reverse-row column-reverse flex-lg-row">
+							<Col xs="6" lg="6" style={{ alignItems: "center" }} className="mb-4 mb-lg-0">
 								<FlexWrapper alignItems="center" justifyContent="center" fullWidth>
 									<img src="images/2023-images/people/team.png" alt="team" style={{ maxWidth: 300 }} />
 								</FlexWrapper>

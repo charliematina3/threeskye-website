@@ -8,7 +8,7 @@ import "./HeroSection.scss";
 
 function HeroSection(props) {
 
-		const { header, text, buttonLink, buttonText, heroImage, id, children, customScroll, buttonDisabled, heroImageXs, className, style, centred, mainHero, noButton, productPage, fullWidth } = props;
+		const { header, text, buttonLink, buttonText, heroImage, id, children, customScroll, buttonDisabled, heroImageXs, className, style, centred, mainHero, noButton, productPage, fullWidth, paddingLarge } = props;
 		const [scrollValue, setScroll] = React.useState(false);
 	
 		React.useEffect(() => {
@@ -18,7 +18,7 @@ function HeroSection(props) {
 		}, []);
 
 		return (
-			<TsContainer bg="white" className={className} style={style} id={id}>
+			<TsContainer bg="white" className={className} style={style} id={id} paddingLarge={paddingLarge}>
 				<Row
 					className={`justify-content-center justify-content-lg-between ${centred ? "flex-column-reverse centred-hero" : "flex-sm-row-reverse"}${productPage ? " product-page-hero" : ""}`}
 				>
