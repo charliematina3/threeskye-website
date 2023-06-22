@@ -35,8 +35,19 @@
 		align-items: center;
 		gap: 10px;
 	}
+
 }
 
+.pb-image-wrapper {
+	padding: 16px 24px;
+	border-radius: 8px;
+	box-shadow: 0 3px 6px rgba(#000, 0.16);
+}
+
+.pb-text {
+	padding-top: 16px;
+	border-top: 1px solid #D0D5E5;
+}
 .pc-image {
 	// width: 200px;
 	height: 140px;

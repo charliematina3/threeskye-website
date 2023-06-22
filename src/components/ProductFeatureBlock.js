@@ -31,7 +31,7 @@ class ProductFeatureBlock extends Component {
 	}
 
 	render() {
-		const { imgPath, header, text, expandedText, bg, smallText, partner, title } = this.props;
+		const { imgPath, header, text, expandedText, bg, smallText, partner, title, logoBlock } = this.props;
 		const { expanded, width } = this.state;
 
 		return (
@@ -39,10 +39,12 @@ class ProductFeatureBlock extends Component {
 				<ScrollFadeSection>
 					<Row className="justify-content-center justify-content-lg-center">
 						<Col xs="7" sm="6" md="4" lg="3" className="d-flex justify-content-center align-items-md-baseline mb-4 mb-lg-0">
-							<img src={imgPath} alt="Product graphic" className="pb-image" width="80%" height="auto" />
+							<div className={logoBlock ? "pb-image-wrapper" : ''}>
+								<img src={imgPath} alt="Product graphic" className="pb-image" width="80%" height="auto" />
+							</div>
 						</Col>
-						<Col xs="12" md="6" lg="9">
-							<h3 className="d-flex align-items-center mb-2" style={{gap: 8}}>
+						<Col xs="12" md="6" lg="9" className="text-center">
+							<h3 className="d-flex align-items-center justify-content-center mb-2" style={{gap: 8}}>
 								{header}{" "}
 								{partner && (
 									<>

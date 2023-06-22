@@ -18,7 +18,7 @@ function IntegrationsFeatures() {
 	return (
 		<>
 			<TsContainer className="pt-1">
-				<FlexWrapper gap={20} alignItems="center" flexWrap="wrap" className="justify-content-center justify-content-lg-start">
+				<FlexWrapper alignItems="center" flexWrap="wrap" className="justify-content-center justify-content-lg-start pill-wrapper">
 					<Link to="financial" smooth={true} duration={1000} offset={-100}>
 						<SectionPill label="Financial Service" />
 					</Link>
@@ -108,6 +108,7 @@ function IntegrationsFeatures() {
 											{content.tiles &&
 												content.tiles.map((tile, idx) => (
 													<ProductFeatureBlock
+														logoBlock
 														key={idx}
 														imgPath={tile.image}
 														header={tile.name}
@@ -117,6 +118,14 @@ function IntegrationsFeatures() {
 														title={tile.title}
 													/>
 												))}
+											{content.name !== "Partnerships" && (
+												<Row align="center" className="mt-3 mb-5">
+													<Col xs="12">
+														<h4 className="font-weight-medium">Your company missing from this list?</h4>
+														<ContactModal />
+													</Col>
+												</Row>
+											)}
 										</div>
 									</div>
 								</>

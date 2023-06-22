@@ -15,6 +15,7 @@ class IntegrationsPage extends Component {
 			<>
 				<FadeInSection fadeUp>
 					<HeroSection
+						centredButton
 						heroImage="/images/2023-images/products/integrations.png"
 						text={
 							<>

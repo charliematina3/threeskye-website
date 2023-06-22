@@ -8,7 +8,7 @@ import "./HeroSection.scss";
 
 function HeroSection(props) {
 
-		const { header, text, buttonLink, buttonText, heroImage, id, children, customScroll, buttonDisabled, heroImageXs, className, style, centred, mainHero, noButton, productPage, fullWidth, paddingLarge } = props;
+		const { header, text, buttonLink, buttonText, heroImage, id, children, customScroll, buttonDisabled, heroImageXs, className, style, centred, mainHero, noButton, productPage, fullWidth, paddingLarge ,centredButton } = props;
 		const [scrollValue, setScroll] = React.useState(false);
 	
 		React.useEffect(() => {
@@ -43,7 +43,7 @@ function HeroSection(props) {
 							</FadeInSection>
 							<FadeInSection>{text && <p className="sub-header">{text}</p>}</FadeInSection>
 						</Col>
-						{!noButton && <Col xs="12" sm={centred ? "12" : "6"} lg={centred ? "12" : "5"} className={`mt-4 text-lg-left text-center ${centred ? "text-center" : ""}`}>
+						{!noButton && <Col xs="12" sm={(centred || centredButton) ? "12" : "6"} lg={centred ? "12" : "6"} className={`mt-4 text-lg-left text-center ${centred ? "text-center" : ""}`}>
 							<FadeInSection>
 								<Button disabled={buttonDisabled} routeChangePath={buttonLink ? buttonLink : "/get-in-touch"}>
 									{buttonText ? buttonText : "Let's Chat"}

@@ -18,7 +18,7 @@ function ResearchFeatures() {
 	return (
 		<>
 			<TsContainer className="pt-5">
-				<FlexWrapper gap={20} alignItems="center" justifyContent="center" flexWrap="wrap">
+				<FlexWrapper alignItems="center" justifyContent="center" flexWrap="wrap" className="pill-wrapper">
 					<Link to="core" smooth={true} duration={1000} offset={-100}>
 						<SectionPill sectionRef="core" label="Core Features" />
 					</Link>
