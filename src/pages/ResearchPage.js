@@ -18,7 +18,7 @@ class ResearchPage extends Component {
 				<ProductHeroSection
 					mainHero
 					centred
-					heroImage="/images/hero.png"
+					heroImage="/images/2023-images/products/research-2023.png"
 					buttonText="Let's Chat"
 					text={
 						<>
