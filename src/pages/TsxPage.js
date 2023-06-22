@@ -3,9 +3,6 @@ import TextSection from '../sections/TextSection';
 import UnderlinedText from '../components/UnderlinedText';
 import FadeInSection from '../components/FadeInSection';
 import ProductHeroSection from '../sections/ProductHeroSection';
-import TsContainer from '../components/TsContainer';
-import FlexWrapper from '../components/FlexWrapper';
-import SectionPill from '../components/SectionPill';
 import TsxFeatures from '../sections/tsx/TsxFeatures';
 
 class TsxPage extends Component {
@@ -34,15 +31,6 @@ class TsxPage extends Component {
 						types of investments: private equity, property (residential and commercial), funds, stocks, commodities, currencies, cash, collectables, crypto, and other
 						valuable assets (cars, insurance, fishing quotas). All your assets, all in one place.
 					</TextSection>
-				</FadeInSection>
-				<FadeInSection>
-					<TsContainer className="pt-5">
-						<FlexWrapper gap={20} alignItems="center" justifyContent="center" flexWrap="wrap">
-							<SectionPill sectionRef="consolidated" label="Consolidated View" />
-							<SectionPill sectionRef="managers" label="Managers" />
-							<SectionPill sectionRef="integrations" label="Integrations" />
-						</FlexWrapper>
-					</TsContainer>
 				</FadeInSection>
 				<FadeInSection>
 					<TsxFeatures />

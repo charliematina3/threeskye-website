@@ -12,6 +12,7 @@ import Button from '../../components/Button';
 import ProductFeatureBlock from '../../components/ProductFeatureBlock';
 import FlexWrapper from '../../components/FlexWrapper';
 import SectionPill from '../../components/SectionPill';
+import { Link } from 'react-scroll';
 
 function WealthFeatures() {
 	const componentRef = useRef();
@@ -19,18 +20,28 @@ function WealthFeatures() {
 	return (
 		<>
 			<TsContainer className="pt-5">
-				<FlexWrapper gap={20} alignItems="center" justifyContent="center" flexWrap="wrap">
-					<SectionPill sectionRef="core" label="Core Features" />
-					<SectionPill sectionRef="aml" label="AML" />
-					<SectionPill sectionRef="flexible" label="Flexible Customisation" />
-					<SectionPill sectionRef="ai" label="Artificial Intelligence" />
-					<SectionPill sectionRef="integrations" label="Integrations" />
+				<FlexWrapper alignItems="center" justifyContent="center" flexWrap="wrap" className="pill-wrapper">
+					<Link to="core" smooth={true} duration={1000} offset={-100}>
+						<SectionPill label="Core Features" />
+					</Link>
+					<Link to="aml" smooth={true} duration={1000} offset={-100}>
+						<SectionPill label="AML" />
+					</Link>
+					<Link to="flex" smooth={true} duration={1000} offset={-100}>
+						<SectionPill label="Flexible Customisation" />
+					</Link>
+					<Link to="ai" smooth={true} duration={1000} offset={-100}>
+						<SectionPill label="Artificial Intelligence" />
+					</Link>
+					<Link to="integrations" smooth={true} duration={1000} offset={-100}>
+						<SectionPill label="Integrations" />
+					</Link>
 				</FlexWrapper>
 			</TsContainer>
 			{WealthContent &&
 				WealthContent.map((content, idx) => {
 					return (
-						<FadeInSection key={idx} forwardedRef={componentRef}>
+						<FadeInSection key={idx} forwardedRef={componentRef} ref={componentRef} id={content.ref}>
 							<FeatureSection heroImage={content.image} className="homepage-hero" text={content.description}>
 								{content.name}
 							</FeatureSection>

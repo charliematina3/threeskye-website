@@ -10,14 +10,27 @@ import ScrollFadeSection from '../../components/ScrollFadeSection';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
 import ProductFeatureBlock from '../../components/ProductFeatureBlock';
+import FlexWrapper from '../../components/FlexWrapper';
+import SectionPill from '../../components/SectionPill';
+import { Link } from 'react-scroll';
 
 function TsxFeatures() {
 	return (
 		<>
+			<TsContainer className="pt-5">
+				<FlexWrapper gap={20} alignItems="center" justifyContent="center" flexWrap="wrap">
+					<Link to="consolidated" smooth={true} duration={1000} offset={-100}>
+						<SectionPill label="Consolidated View" />
+					</Link>
+					<Link to="managers" smooth={true} duration={1000} offset={-100}>
+						<SectionPill label="Managers" />
+					</Link>
+				</FlexWrapper>
+			</TsContainer>
 			{TsxContent &&
 				TsxContent.map((content, idx) => {
 					return (
-						<FadeInSection key={idx}>
+						<FadeInSection key={idx} id={content.ref}>
 							<FeatureSection heroImage={content.image} className="homepage-hero" text={content.description}>
 								{content.name}
 							</FeatureSection>

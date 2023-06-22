@@ -16,8 +16,8 @@ const HomepageWealth = (props) => {
 	return (
 		<FadeInSection>
 			<TsContainer homepage>
-				<Row className="mb-5">
-					<Col xs="12" className="px-0">
+				<Row className="mb-3 mb-md-5">
+					<Col xs="12" className="px-2">
 						<img onClick={() => changeRoute("/wealth-platform")} src="/images/2023-images/products/crm-grouped.png" alt="crm" width="100%" className="cursor-pointer"/>
 					</Col>
 				</Row>

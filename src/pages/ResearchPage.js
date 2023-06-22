@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import TextSection from '../sections/TextSection';
 import ProductHeroSection from '../sections/ProductHeroSection';
 import FocusText from '../components/FocusText';
-import TsContainer from '../components/TsContainer';
-import FlexWrapper from '../components/FlexWrapper';
-import SectionPill from '../components/SectionPill';
 import IntegrationsSection from '../sections/IntegrationsSection';
 import TrustedBy from '../sections/TrustedBy';
 import SeeMoreBannerSection from '../sections/SeeMoreBannerSection';
@@ -35,14 +32,6 @@ class ResearchPage extends Component {
 				<TextSection bg="white" containerClass="pb-1">
 					Focus on your quality content > Team collaboration via Inbuilt version control > Publish with slick branding > Analyse readership statistics. Repeat.
 				</TextSection>
-				<TsContainer className="pt-5">
-					<FlexWrapper gap={20} alignItems="center" justifyContent="center" flexWrap="wrap">
-						<SectionPill sectionRef="core" label="Core Features" />
-						<SectionPill sectionRef="ai" label="Artificial Intelligence" />
-						<SectionPill sectionRef="research" label="Research Design" />
-						<SectionPill sectionRef="integrations" label="Integrations" />
-					</FlexWrapper>
-				</TsContainer>
 				{/* Features */}
 				<ResearchFeatures />
 				{/* Integrations */}

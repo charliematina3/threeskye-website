@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import FadeInSection from '../components/FadeInSection';
 import TsContainer from '../components/TsContainer';
 import "./HeroSection.scss";
+import "./CentredFeatureSection.scss";
 
 function CentredFeatureSection(props) {
 
@@ -17,7 +18,7 @@ function CentredFeatureSection(props) {
 		}, []);
 
 		return (
-			<TsContainer bg="blue" className={className} style={{padding: "140px 15px"}} id={id}>
+			<TsContainer bg="blue" className={`centred-feature-section${className ? ' ' + className : ''}`} id={id}>
 				<Row
 					className={`justify-content-start justify-content-md-center justify-content-lg-between align-items-center flex-column-reverse centred-hero${productPage ? " product-page-hero" : ""}`}
 				>
@@ -33,7 +34,7 @@ function CentredFeatureSection(props) {
 							</FadeInSection>
 						</Col>
 					)}
-					<Col xs="12" className="mt-5 mt-lg-0 px-0">
+					<Col xs="12" className={`mt-lg-0 px-0${heroImage ? 'mt-5' : ''}`}>
 						<Col xs="12" className="text-center">
 							<FadeInSection delay="1">
 								<h2>{header || children}</h2>

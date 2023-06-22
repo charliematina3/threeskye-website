@@ -14,11 +14,15 @@
 	}
 
 	&.homepage-container {
-		padding-top: 100px;
-		padding-bottom: 100px;
+		padding-top: 32px;
+		padding-bottom: 32px;
+
+		h2 {
+			margin-bottom: 8px;
+		}
 	}
 
-	@media screen and (min-width: $breakpoint-lg){
+	@media screen and (min-width: $breakpoint-md){
 		padding-top: 80px;
 		padding-bottom: 80px;
 
@@ -28,6 +32,10 @@
 
 			.container {
 				max-width: 1300px;
+			}
+			
+			h2 {
+				margin-bottom: 10px;
 			}
 		}
 	}

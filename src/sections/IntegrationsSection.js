@@ -8,7 +8,7 @@ import IntegrationsBlock from '../components/IntegrationsBlock';
 
 const IntegrationsSection = ({logos, text}) => {
 	return (
-		<FadeInSection>
+		<FadeInSection id="integrations">
 			<TsContainer>
 				<Row>
 					<Col xs="12" className="px-0">

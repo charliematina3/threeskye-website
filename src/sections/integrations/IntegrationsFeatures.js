@@ -10,14 +10,36 @@ import ProductFeatureBlock from '../../components/ProductFeatureBlock';
 import CentredFeatureSection from '../CentredFeatureSection';
 import LargeProductFeatureCard from '../../components/desktop/LargeProductFeatureCard';
 import ContactModal from '../../components/ContactModal';
+import FlexWrapper from '../../components/FlexWrapper';
+import SectionPill from '../../components/SectionPill';
+import { Link } from 'react-scroll';
 
 function IntegrationsFeatures() {
 	return (
 		<>
+			<TsContainer className="pt-1">
+				<FlexWrapper gap={20} alignItems="center" flexWrap="wrap" className="justify-content-center justify-content-lg-start">
+					<Link to="financial" smooth={true} duration={1000} offset={-100}>
+						<SectionPill label="Financial Service" />
+					</Link>
+					<Link to="compliance" smooth={true} duration={1000} offset={-100}>
+						<SectionPill label="Compliance" />
+					</Link>
+					<Link to="market" smooth={true} duration={1000} offset={-100}>
+						<SectionPill label="Market Data" />
+					</Link>
+					<Link to="business" smooth={true} duration={1000} offset={-100}>
+						<SectionPill label="Business Automation" />
+					</Link>
+					<Link to="partnerships" smooth={true} duration={1000} offset={-100}>
+						<SectionPill label="Partnerships" />
+					</Link>
+				</FlexWrapper>
+			</TsContainer>
 			{IntegrationsContent &&
 				IntegrationsContent.map((content, idx) => {
 					return (
-						<FadeInSection key={idx}>
+						<FadeInSection key={idx} id={content.ref}>
 							<CentredFeatureSection centred heroImage={content.image} text={content.description}>
 								{content.name}
 							</CentredFeatureSection>
@@ -35,11 +57,11 @@ function IntegrationsFeatures() {
 																	lg={
 																		tile.large
 																			? "12"
-																			: content.tiles.length == 4
+																			: content.tiles.length === 4
 																			? "5"
-																			: tile.code == "nzx" || tile.code == "chelmer"
+																			: tile.code === "nzx" || tile.code === "chelmer"
 																			? "3"
-																			: tile.code == "apex"
+																			: tile.code === "apex"
 																			? "6"
 																			: "4"
 																	}
@@ -58,7 +80,7 @@ function IntegrationsFeatures() {
 																			/>
 																		) : (
 																			<ProductFeatureCard
-																				className={`integrations-card${tile.code == "apex" ? " apex-card" : ""}`}
+																				className={`integrations-card${tile.code === "apex" ? " apex-card" : ""}`}
 																				name={tile.name}
 																				img={tile.image}
 																				info={tile.description}

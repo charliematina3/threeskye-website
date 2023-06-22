@@ -10,14 +10,33 @@ import ScrollFadeSection from '../../components/ScrollFadeSection';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
 import ProductFeatureBlock from '../../components/ProductFeatureBlock';
+import SectionPill from '../../components/SectionPill';
+import FlexWrapper from '../../components/FlexWrapper';
+import { Link } from 'react-scroll';
 
 function ResearchFeatures() {
 	return (
 		<>
+			<TsContainer className="pt-5">
+				<FlexWrapper gap={20} alignItems="center" justifyContent="center" flexWrap="wrap">
+					<Link to="core" smooth={true} duration={1000} offset={-100}>
+						<SectionPill sectionRef="core" label="Core Features" />
+					</Link>
+					<Link to="ai" smooth={true} duration={1000} offset={-100}>
+						<SectionPill sectionRef="ai" label="Artificial Intelligence" />
+					</Link>
+					<Link to="research" smooth={true} duration={1000} offset={-100}>
+						<SectionPill sectionRef="research" label="Research Design" />
+					</Link>
+					<Link to="integrations" smooth={true} duration={1000} offset={-100}>
+						<SectionPill sectionRef="integrations" label="Integrations" />
+					</Link>
+				</FlexWrapper>
+			</TsContainer>
 			{ResearchContent &&
 				ResearchContent.map((content, idx) => {
 					return (
-						<FadeInSection key={idx}>
+						<FadeInSection key={idx} id={content.ref}>
 							<FeatureSection heroImage={content.image} className="homepage-hero" text={content.description}>
 								{content.name}
 							</FeatureSection>

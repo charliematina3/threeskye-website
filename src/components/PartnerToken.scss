@@ -1,5 +1,11 @@
 @import "../styles/Variables.scss";
 
+
+.partnership-wrapper {
+	display: flex;
+	align-items: center;
+}
+
 .partner-token {
 	display: inline-block;
 	border-radius: 100px;

@@ -19,7 +19,7 @@ class AboutUsPage extends Component {
 					<TsContainer>
 						<Row style={{ alignItems: "center" }} className="flex-column-reverse flex-lg-row">
 							<Col xs="12" lg="12">
-								<h1 style={{fontSize: 52}}>About Us</h1>
+								<h1>About Us</h1>
 								<p style={{ fontSize: 20 }}>
 									We make simple, beautiful software that reinvents the user experiences of ageing legacy financial systems. 3SKYE is building a better world for
 									investment analysts, financial advisers, asset managers, and family offices. With our technology, save time and have confident discussions with

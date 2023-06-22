@@ -1,11 +1,14 @@
 import React from 'react';
 import "./PartnerToken.scss";
+import { Link } from 'react-scroll';
 
-const PartnerToken = ({ label, children, onClick }) => {
+const PartnerToken = ({ onClick }) => {
 	return (
-		<div className="partner-token" onClick={onClick}>
-			Partner
-		</div>
+		<Link className="partnership-wrapper" to="partnerships" smooth={true} duration={1000} offset={-100}>
+			<div className="partner-token" onClick={onClick}>
+				Partner
+			</div>
+		</Link>
    );
 }
 

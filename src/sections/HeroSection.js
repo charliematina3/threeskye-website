@@ -43,7 +43,7 @@ function HeroSection(props) {
 							</FadeInSection>
 							<FadeInSection>{text && <p className="sub-header">{text}</p>}</FadeInSection>
 						</Col>
-						{!noButton && <Col xs="12" sm={centred ? "12" : "6"} lg={centred ? "12" : "5"} className={`mt-4 ${centred ? "text-center" : ""}`}>
+						{!noButton && <Col xs="12" sm={centred ? "12" : "6"} lg={centred ? "12" : "5"} className={`mt-4 text-lg-left text-center ${centred ? "text-center" : ""}`}>
 							<FadeInSection>
 								<Button disabled={buttonDisabled} routeChangePath={buttonLink ? buttonLink : "/get-in-touch"}>
 									{buttonText ? buttonText : "Let's Chat"}

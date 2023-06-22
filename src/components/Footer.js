@@ -19,20 +19,20 @@ class Footer extends Component {
 							Let’s Chat
 						</ArrowButton>
 					</Col>
-					<Col xs="4" lg={{ span: 2, order: 2 }}>
+					<Col xs="6" md="4" lg={{ span: 2, order: 2 }}>
 						<FooterList header="3SKYE" links={paths} />
 					</Col>
-					<Col xs="4" lg={{ span: 2, order: 3 }}>
+					<Col xs="6" md="4" lg={{ span: 2, order: 3 }}>
 						<FooterList header="Products" links={products} />
 					</Col>
-					<Col xs="4" lg={{ span: 2, order: 4 }}>
+					<Col xs="6" md="4" lg={{ span: 2, order: 4 }} className='mt-5 mt-md-0'>
 						<FooterList header="Other" links={other} />
 					</Col>
 					<Col xs="12" lg={{ span: 4, order: 5 }} className="icons-container mt-5">
 						<a href="https://www.linkedin.com/company/3skye/" target="_blank" rel="noreferrer" className="footer-icon"><LinkedIn /></a>
 						<a href="mailto:info@3skye.com" target="_blank" rel="noreferrer" className="footer-icon"><EmailOutlined /></a>
 					</Col>
-					<Col xs="12" lg={{ span: 5, order: 4 }} className="mt-5">
+					<Col xs="12" lg={{ span: 6, order: 4 }} className="mt-5">
 						<div className="disclaimer">© {new Date().getFullYear()} 3SKYE Limited, All rights reserved</div>
 					</Col>
 				</Row>

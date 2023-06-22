@@ -19,7 +19,7 @@ function FeatureSection(props) {
 		return (
 			<TsContainer bg="blue" className={className} style={style} id={id}>
 				<Row
-					className={`justify-content-start justify-content-md-center justify-content-lg-between align-items-center ${centred ? "flex-column-reverse centred-hero" : "flex-sm-row-reverse"}${productPage ? " product-page-hero" : ""}`}
+					className={`justify-content-center justify-content-md-center justify-content-lg-between align-items-center ${centred ? "flex-column-reverse centred-hero" : "flex-sm-row-reverse"}${productPage ? " product-page-hero" : ""}`}
 				>
 					{heroImage && (
 						<Col
