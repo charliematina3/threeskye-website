@@ -1,21 +1,26 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import TextSection from '../sections/TextSection';
 import UnderlinedText from '../components/UnderlinedText';
 import FadeInSection from '../components/FadeInSection';
 import ProductHeroSection from '../sections/ProductHeroSection';
 import TsxFeatures from '../sections/tsx/TsxFeatures';
 
-class TsxPage extends Component {
-	componentDidMount() {
+const TsxPage = () => {
+	const [scrollValue, setScroll] = React.useState(false);
+
+	useEffect(() => {
 		document.title = 'High Net Worth and Family Offices';
-		window.scrollTo(0, 0)
-	}
-	render() {
-		// const { products } = this.props;
+		  window.scrollTo(0, 0);
+		  window.addEventListener("scroll", () => {
+				setScroll(window.scrollY);
+			});
+	  }, []);
+
 		return (
 			<>
 				<FadeInSection fadeUp>
 					<ProductHeroSection
+						customScroll={100 - scrollValue * 0.04 + "%"}						
 						heroImage="/images/2023-images/products/3sx-hero.png"
 						text={
 							<>
@@ -37,7 +42,6 @@ class TsxPage extends Component {
 				</FadeInSection>
 			</>
 		);
-	}
 }
 
 export default TsxPage;

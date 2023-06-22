@@ -9,11 +9,14 @@ import WealthFeatures from '../sections/wealth/WealthFeatures';
 import SeeMoreBannerSection from '../sections/SeeMoreBannerSection';
 
 const WealthPage = () => {
-  const [scrollValue] = React.useState(false);
+	const [scrollValue, setScroll] = React.useState(false);
 
   useEffect(() => {
     document.title = 'A Single Pane of Glass for Advisers and Investors';
-    window.scrollTo(0, 0);
+	  window.scrollTo(0, 0);
+	  window.addEventListener("scroll", () => {
+			setScroll(window.scrollY);
+		});
   }, []);
 	
   return (
