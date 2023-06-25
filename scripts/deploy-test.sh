@@ -18,7 +18,7 @@ DIR=/var/www/public-test.3skye.com
 	# remove whats in the portal
 	# copy new portal in
 	# remove old portal
-ssh www.3skye.com << EOF
+ssh public-test.3skye.com << EOF
 	tar -xf build.tar.gz
  	rm build.tar.gz
 	rm -rf $DIR/* 2> /dev/null
