@@ -1,37 +1,56 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import FocusText from '../components/FocusText';
 import TextSection from '../sections/TextSection';
-import GetToKnowUs from "../sections/GetToKnowUs";
-// import ProductSection from '../components/ProductSection';
-import HeroSection from '../sections/HeroSection';
-import UnderlinedText from '../components/UnderlinedText';
-import WealthFeatures from '../sections/WealthFeatures';
+import "./WealthPage.scss";
+import ProductHeroSection from '../sections/ProductHeroSection';
+import IntegrationsSection from '../sections/IntegrationsSection';
+import TrustedBy from '../sections/TrustedBy';
+import WealthFeatures from '../sections/wealth/WealthFeatures';
+import SeeMoreBannerSection from '../sections/SeeMoreBannerSection';
 
-class WealthPage extends Component {
-	componentDidMount() {
-		window.scrollTo(0, 0)
-	}
-	render() {
-		// const { products } = this.props;
-		return (
-			<>
-				<HeroSection heroImage="/images/product-wp.png" buttonText="Let's Chat">
-					A <UnderlinedText>Single Pane</UnderlinedText> of Glass for Advisers and Investors.
-				</HeroSection>
-				{/* Intro */}
-				<TextSection header="Intro" bg="white">
-					3SKYE Wealth is a modular web-and-mobile platform for <FocusText>financial professionals</FocusText> and investors. Our intuitive interface allows Advisers to easily and efficiently manage
-					their client’s affairs. We take a subset of that data and expose it to the investors in a bespoke investor portal.
-				</TextSection>
-				{/* Features */}
-				<WealthFeatures />
-				{/* Products */}
-				{/* <ProductSection products={products} currentPage="Wealth Platform" /> */}
-				{/* Get to know us */}
-				<GetToKnowUs bg="blue"/>
-			</>
-		);
-	}
-}
+const WealthPage = () => {
+	const [scrollValue, setScroll] = React.useState(false);
+
+  useEffect(() => {
+    document.title = 'A Single Pane of Glass for Advisers and Investors';
+	  window.scrollTo(0, 0);
+	  window.addEventListener("scroll", () => {
+			setScroll(window.scrollY);
+		});
+  }, []);
+	
+  return (
+		<>
+			<ProductHeroSection
+				id="wealth"
+				customScroll={100 - scrollValue * 0.04 + "%"}
+				heroImage="/images/2023-images/products/crm-grouped.png"
+				text={
+					<>
+						A <FocusText>Single Pane of Glass</FocusText> for Advisers and Investors
+					</>
+				}
+			>
+				3SKYE Wealth Platform
+			</ProductHeroSection>
+			{/* Intro */}
+			<TextSection bg="white" containerClass="pb-1">
+				3SKYE Wealth is a modular web-and-mobile platform for financial professionals and investors. Our intuitive interface allows Advisers to easily and efficiently
+				manage their client’s affairs. We take a subset of that data and expose it to the investors in a bespoke investor portal.
+			</TextSection>
+			{/* Features */}
+			<WealthFeatures />
+			{/* Integrations */}
+			<IntegrationsSection
+				logos={["office", "nzx", "apex", "chelmer", "akahu", "addy", "xignite", "bloomberg", "power-bi", "refinitiv", "send-grid", "click-send"]}
+				text="Unlock seamless integrations with leading tools and systems, enhancing your wealth management capabilities effortlessly."
+			/>
+			{/* Trusted */}
+		  	<TrustedBy companies={["hwp"]} />
+		  	{/* See more */}
+		  	<SeeMoreBannerSection />
+		</>
+  );
+};
 
 export default WealthPage;

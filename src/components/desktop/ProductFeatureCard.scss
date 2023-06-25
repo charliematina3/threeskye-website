@@ -4,12 +4,53 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
 	height: 100%;
+	justify-content: flex-start;
+
+	&.large {
+		.pc-image {
+			margin: 0;
+			height: auto;
+		}
+	}
+
+	&.sub-card {
+		background-color: transparent;
+		border: none !important;
+		box-shadow: none;
+		padding: 0;
+		margin: 0;
+		flex: 1 1 0px;
+		width: auto;
+		align-items: center;
+		justify-content: flex-start;
+		row-gap: 30px;
+	}
+
+	.pc-sub-info {
+		margin: 16px 0;
+		font-size: 16px;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
 }
 
+.pb-image-wrapper {
+	padding: 16px 24px;
+	border-radius: 8px;
+	box-shadow: 0 3px 6px rgba(#000, 0.16);
+}
+
+.pb-text {
+	padding-top: 16px;
+	border-top: 1px solid #D0D5E5;
+}
 .pc-image {
-	width: 200px;
+	// width: 200px;
+	height: 140px;
 
 	img {
 		width: 100%;
@@ -17,22 +58,57 @@
 }
 
 .pc-name {
-	font-size: 17px;
+	font-size: 16px;
 	font-weight: $fw-bold;
+	display: flex;
+	gap: 8px;
+	align-items: center;
 }
 
 .pc-info {
-	font-size: 17px;
+	font-size: 16px;
 	font-weight: $fw-regular;
 }
+
 
 @media screen and (min-width: $breakpoint-lg) {
 	.product-card {
 		display: block;		
+
+		&.integrations-card {
+			.pc-image {
+				max-width: 150px;
+				height: 90px;
+			}
+
+			&.apex-card {
+				.pc-image {
+					max-width: 400px;
+				}
+			}
+		}
+
+		&.sub-card {
+			.pc-image {
+				max-width: 100px;
+				height: 90px;
+			}
+		}
 	}
 
 	.pc-image {
-		margin: 0 auto 10px auto;
+		margin: 0 auto 16px auto;
+		max-width: 200px;
+		height: 140px;
+		display: flex;
+		align-items: center;
+		
+
+		img {
+			width: 100%;
+			height: auto;
+			max-height: 100%;
+		}
 	}
 }
 

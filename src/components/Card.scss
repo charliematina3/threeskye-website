@@ -1,7 +1,15 @@
 @import "../styles/Variables.scss";
 
 .ts-card {
-	padding: 21px;
-	border: none;
+	padding: 32px;
+	border: none !important;
 	box-shadow: 0 3px 6px rgba(#000, 0.16);
+
+	&.more-button-card {
+		display: flex;
+    	align-items: center;
+   		background: transparent;
+ 	   	box-shadow: none;
+		border: none;
+	}
 }

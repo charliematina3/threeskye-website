@@ -1,0 +1,31 @@
+@import "../styles/Variables.scss";
+
+.section-pill {
+	display: inline-block;
+	border-radius: 100px;
+	border: 2px solid $colour-blue;
+	padding: 4px 16px;
+	background-color: transparent;
+	font-size: 13px;
+	font-weight: 600;
+	color: $colour-font-main;
+	cursor: pointer;
+	transition: 200ms;
+
+	&:hover {
+		background-color: $colour-blue;
+		color: #fff;
+	}
+
+	@media screen and (min-width: $breakpoint-md) {
+		font-size: 18px;
+	}
+}
+
+.pill-wrapper {
+	gap: 10px;
+
+	@media screen and (min-width: $breakpoint-md) {
+		gap: 20px;
+	}
+}

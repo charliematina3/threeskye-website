@@ -19,6 +19,7 @@ h2 {
 h3 {
 	font-size: 23px;
 	margin-bottom: 15px;
+	font-weight: 700;
 }
 
 h4 {
@@ -82,20 +83,20 @@ p {
 
 @media screen and (min-width: $breakpoint-xl){
 	h1 {
-		font-size: 70px;
+		font-size: 65px;
 	}
 	
 	h2 {
-		font-size: 27px;
+		font-size: 50px;
 	}
 	
 	h3 {
-		font-size: 23px;
+		font-size: 36px;
 		margin-bottom: 15px;
 	}
 	
 	h4 {
-		font-size: 20px;
+		font-size: 23px;
 	}
 	
 	h5 {
@@ -139,4 +140,20 @@ small {
 
 .small-text {
 	font-size: $fs-small;
+}
+
+.font-weight-regular {
+	font-weight: 400;
+}
+
+.font-weight-medium {
+	font-weight: 500;
+}
+
+.font-weight-semi-bold {
+	font-weight: 600;
+}
+
+.font-weight-bold {
+	font-weight: 700;
 }

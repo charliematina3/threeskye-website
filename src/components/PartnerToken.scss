@@ -1,0 +1,24 @@
+@import "../styles/Variables.scss";
+
+
+.partnership-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.partner-token {
+	display: inline-block;
+	border-radius: 100px;
+	padding: 0 11px;
+	font-size: 17px;
+	background-color: #E7EAF2;
+	font-weight: 600;
+	color: $colour-blue;
+	cursor: pointer;
+	transition: 200ms;
+
+	&:hover {
+		background-color: $colour-blue;
+		color: #fff;
+	}
+}

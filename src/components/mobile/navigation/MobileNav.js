@@ -36,7 +36,7 @@ function MobileNav(props) {
 					<Col xs="auto">
 						{/* Logo */}
 						<Link to="/">
-							<img src="/images/logo.svg" alt="logo" style={{ width: 73 }} />
+							<img src="/images/logo.svg" alt="logo"  width={73} height="auto" />
 						</Link>
 					</Col>
 					<Col xs="auto">

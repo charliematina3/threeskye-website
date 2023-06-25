@@ -1,0 +1,9 @@
+@import "../styles/Variables.scss";
+
+.centred-feature-section {
+	padding: 64px 15px;
+
+	@media screen and (min-width: $breakpoint-lg) {
+		padding: 150px 15px;
+	}
+}

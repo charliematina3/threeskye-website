@@ -9,14 +9,15 @@ import PrivacyPolicySection, { PrivacyPolicyTextSection } from '../sections/Priv
 
 class PrivacyPolicyPage extends Component {
 	componentDidMount() {
+		document.title = 'Privacy Policy';
 		window.scrollTo(0, 0)
 	}
+	
 	render() { 
 		return (
 			<div className="bg-white">
-				<h1 className="d-none">About Us</h1>
-				<TsContainer bg="white" className="pb-0">
-					<SectionHeader noMargin>Privacy Policy</SectionHeader>
+				<TsContainer bg="blue" className="pb-5">
+					<SectionHeader noMargin><h1>Privacy Policy</h1></SectionHeader>
 				</TsContainer>
 				<PrivacyPolicySection header="Who are we">
 					<p>
@@ -24,9 +25,7 @@ class PrivacyPolicyPage extends Component {
 						<br />
 						3SKYE’s head office is
 						<br />
-						Level 11, Equinox House
-						<br />
-						111 The Terrace
+						Level 5, 1 Post Office Square
 						<br />
 						Wellington 6011
 						<br />

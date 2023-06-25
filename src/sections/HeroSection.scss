@@ -1,5 +1,18 @@
 @import "../styles/Variables.scss";
 
+.product-page-hero {
+	h1 {
+		font-size: 30px;
+	}
+	
+	@media screen and (min-width: $breakpoint-md) {
+		h1 {
+			font-size: 52px;
+		}
+		
+	}
+}
+
 .centred-hero {
 	position: relative;
 

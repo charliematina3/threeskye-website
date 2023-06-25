@@ -15,7 +15,7 @@ function ProductMenuItem(props) {
 	return (
 		<div className="product-menu-item" onClick={() => changeRoute(path)}>
 			<div className="pmi-img">
-				<img src={img} alt="product" />
+				<img src={img} alt="product" width="100%" height="auto" />
 			</div>
 			<div className="pmi-details">
 				<div className="pmi-name">{name} <ArrowRightAlt className="pmi-arrow" /></div>

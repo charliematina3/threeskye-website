@@ -4,7 +4,7 @@ import "./FocusParagraph.scss";
 class FocusParagraph extends Component {
 	render() { 
 		return (
-			<div className="focus-paragraph">{this.props.children}</div>
+			<div className="focus-paragraph text-center"><p>{this.props.children}</p></div>
 		 );
 	}
 }

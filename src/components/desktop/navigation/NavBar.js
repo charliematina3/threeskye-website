@@ -29,11 +29,11 @@ function NavBar(props) {
 	const { products } = props;
 	
 	return (
-		<TsContainer bg="blue" className={`ts-nav-bar d-none d-lg-block${scrolled ? " page-scrolled" : ""}`}>
+		<TsContainer bg="white" className={`ts-nav-bar d-none d-lg-block${scrolled ? " page-scrolled" : ""}`}>
 			<Row className="justify-content-between align-items-center">
 				<Col xs="auto">
 					<Link className="d-flex align-items-center" to="/">
-						<img src="/images/logo.svg" alt="logo" style={{ width: 90 }} />
+						<img src="/images/logo.svg" alt="logo" width={90} height="auto" />
 					</Link>
 				</Col>
 				<Col xs="auto">
@@ -41,6 +41,7 @@ function NavBar(props) {
 					<div className="ts-nav-bar-links">
 						<NavBarLink label="Home" path="/" exact />
 						<ProductDropdown products={products} className="nav-bar-product-menu link-item" />
+						<NavBarLink label="Integrations" path="/integrations" />
 						<NavBarLink label="About Us" path="/about-us" />
 						<NavBarLink label="Contact" path="/get-in-touch" />
 						{/* <Button className="nav-bar-button" bgColour="alt" routeChangePath="/get-in-touch">Contact</Button> */}

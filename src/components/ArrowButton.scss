@@ -1,0 +1,85 @@
+@import "../styles/Variables.scss";
+
+.ts-arrow-button {	
+	&.MuiButton-root {
+		background-color: transparent;
+		border-radius: 0;
+		color: #fff;
+		padding: 0;
+		height: 40px;
+		border: none !important;
+		transition: 200ms ease;
+		font-size: 20px;
+		letter-spacing: normal;
+
+		&.colour-white {
+			span {
+				color: #fff;
+			}
+		}
+
+		span {
+			color: $colour-blue;
+			text-transform: capitalize;
+			font-weight: 600;
+		}
+
+		.button-arrow {
+			transition: 300ms ease;
+			transform: translateY(1px) translateX(2px);
+			opacity: 1;
+		}
+
+		&:hover {
+			background-color: transparent;
+
+			.button-arrow {
+				margin-left: 10px;
+			}
+		}
+	}
+	
+	&.MuiButton-outlined {
+		background-color: transparent;
+		border-width: 2px;
+		border-color: $colour-blue;
+		border: none;
+
+		&.bg-colour-alt {
+			border-color: $colour-blue-alt;
+		}
+
+		&.bg-colour-white {
+			border-color: #fff;
+		}
+
+		&:hover {
+			background-color: transparent !important;
+			
+			&.bg-colour-alt {
+				background-color: $colour-blue-alt;
+			}
+	
+			&.bg-colour-white {
+				background-color: #fff;
+			}
+		}
+	}
+
+	&.Mui-disabled {
+		opacity: 0.4;
+		background-color: $colour-blue-light;
+		background-color: transparent;
+	}
+
+	.spinner-border {
+		width: 1em;
+		height: 1em;
+		border-width: 0.15em;
+		margin-right: 10px;
+	}
+
+	.MuiTouchRipple-root {
+		display: none;
+	}
+}

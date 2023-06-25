@@ -8,12 +8,17 @@
 	}
 	
 	&.MuiButton-root {
-		background-color: transparent;
+		background-color: $colour-blue;
 		font-family: $font-primary;
-		border-radius: 0px;
-		color: $colour-blue;
-		padding: 0;
+		border-radius: 8px;
+		color: #fff;
+		padding: 0 40px;
+		height: 60px;
+		min-width: 100px;
 		border: none !important;
+		transition: 200ms ease;
+		font-size: 25px;
+		letter-spacing: normal;
 
 		&.colour-primary {
 			span {
@@ -33,23 +38,23 @@
 		}
 
 		span {
-			color: $colour-blue;
+			color: #fff;
 			text-transform: capitalize;
-			font-weight: 500;
+			font-weight: 600;
 		}
 
 		.button-arrow {
-			transition: 100ms ease;
+			transition: 300ms ease;
 			transform: translateY(1px) translateX(2px);
-			opacity: 0.7;
+			opacity: 1;
 		}
 
 		&:hover {
-			background-color: rgba($colour-blue-light, 0.9);
-			background-color: transparent !important;
+			background-color: $colour-blue;
+			opacity: 0.6;
 
 			.button-arrow {
-				transform: translateY(1px) translateX(4px);
+				margin-left: 10px;
 			}
 		}
 	}
@@ -82,9 +87,8 @@
 	}
 
 	&.Mui-disabled {
-		opacity: 0.4;
-		background-color: $colour-blue-light;
-		background-color: transparent;
+		opacity: 0.5;
+		background-color: $colour-blue;
 	}
 
 	.spinner-border {

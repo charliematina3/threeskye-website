@@ -19,6 +19,8 @@ $fw-medium: 500;
 $fw-semi-bold: 600;
 $fw-bold: 700;
 $fs-small: 13px;
+$fs-medium: 16px;
+$fs-large: 24px;
 
 // Breakpoints
 $breakpoint-xs: 0px;
@@ -37,3 +39,7 @@ $max-extra-large-size: 1140px;
 $footer-height-xs: 658px;
 $footer-height-md: 608px;
 $footer-height-lg: 500px;
+
+// Misc
+$border-radius: 20px;
+$box-shadow: 0 2px 6px rgba(#000, 0.16);
