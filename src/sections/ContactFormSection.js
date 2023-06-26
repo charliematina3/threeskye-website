@@ -173,15 +173,15 @@ class ContactFormSection extends Component {
 				) : (
 					<FadeInSection>
 						<TsContainer className="p-0">
-							<Row className="justify-content-center">
+							<Row className={modalForm ? "justify-content-start" : "justify-content-center"}>
 								<Col lg="10" xl="8" style={{marginBottom: 25}} className="d-flex align-items-center">
 									<span className="material-icons-round mr-2 colour-blue">task_alt</span>
 									<SectionHeader noMargin>Success</SectionHeader>
 								</Col>
 							</Row>
-							<Row className="justify-content-center">
-								<Col lg="10" xl="8">
-									<FocusParagraph>
+							<Row className={modalForm ? "justify-content-start" : "justify-content-center"}>
+								<Col lg="10" xl={modalForm ? "12" : "8"}>
+									<FocusParagraph textLeft>
 										Thanks for reaching out. One of the team will be in touch.
 									</FocusParagraph>
 								</Col>
