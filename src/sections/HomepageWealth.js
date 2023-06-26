@@ -32,7 +32,7 @@ const HomepageWealth = (props) => {
 					<img
 						onClick={() => changeRoute("/wealth-platform")}
 						className="hero-image-right cursor-pointer"
-						src="/images/2023-images/products/crm-small.png"
+						src="/images/2023-images/products/crm-single.png"
 						alt="crm"
 						width="40%"
 					/>
