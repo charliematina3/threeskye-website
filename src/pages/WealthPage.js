@@ -24,7 +24,7 @@ const WealthPage = () => {
 			<ProductHeroSection
 				id="wealth"
 				customScroll={100 - scrollValue * 0.04 + "%"}
-				heroImage="/images/2023-images/products/crm-grouped.png"
+				heroImage="/images/2023-images/products/crm-single.png"
 				text={
 					<>
 						A <FocusText>Single Pane of Glass</FocusText> for Advisers and Investors

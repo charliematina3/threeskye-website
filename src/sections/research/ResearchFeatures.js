@@ -73,7 +73,6 @@ function ResearchFeatures() {
 												imgPath={tile.image}
 												header={tile.name}
 												text={tile.description}
-												smallText={tile.description}
 											/>
 										))}
 								</div>

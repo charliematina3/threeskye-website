@@ -5,6 +5,7 @@ import TsContainer from '../components/TsContainer';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ArrowButton from '../components/ArrowButton';
+import FlexWrapper from '../components/FlexWrapper';
 
 const HomepageWealth = (props) => {
 	const history = useHistory();
@@ -16,30 +17,87 @@ const HomepageWealth = (props) => {
 	return (
 		<FadeInSection>
 			<TsContainer homepage>
-				<Row className="mb-3 mb-md-5">
-					<Col xs="12" className="px-2">
-						<img onClick={() => changeRoute("/wealth-platform")} src="/images/2023-images/products/crm-grouped.png" alt="crm" width="100%" className="cursor-pointer"/>
-					</Col>
-				</Row>
-				<Row>
-					<Col xs="12" className="px-0">
-						<Col xs="12">
-							<FadeInSection delay="1" className="text-center">
-								<h2>3SKYE Wealth Platform</h2>
-							</FadeInSection>
-							<FadeInSection className="text-center"><p className="sub-header">A Single Pane of Glass for Advisers and Investors</p></FadeInSection>
+				<FlexWrapper gap={32} alignItems="center" className="d-none d-md-flex">
+					<FlexWrapper flexDirection="column" width="60%">
+						<FadeInSection delay="1" className="text-center">
+							<h2>3SKYE Wealth Platform</h2>
+						</FadeInSection>
+						<FadeInSection className="text-center">
+							<p className="sub-header">A Single Pane of Glass for Advisers and Investors</p>
+						</FadeInSection>
+						<FadeInSection className="text-center">
+							<ArrowButton routeChangePath={"/wealth-platform"}>Learn More</ArrowButton>
+						</FadeInSection>
+					</FlexWrapper>
+					<img
+						onClick={() => changeRoute("/wealth-platform")}
+						className="hero-image-right cursor-pointer"
+						src="/images/2023-images/products/crm-small.png"
+						alt="crm"
+						width="40%"
+					/>
+				</FlexWrapper>
+				<div className="d-block d-md-none">
+					<Row className="mb-3">
+						<Col xs="12" className="px-0">
+							<FlexWrapper justifyContent="center">
+								<img
+									onClick={() => changeRoute("/3skye-x")}
+									className="cursor-pointer"
+									src="/images/2023-images/products/crm-small.png"
+									alt="crm"
+									width="80%"
+									style={{ margin: "0 auto" }}
+								/>
+							</FlexWrapper>
 						</Col>
-						<Col xs="12">
-							<FadeInSection className="text-center">
-								<ArrowButton routeChangePath={"/wealth-platform"}>
-									Learn More
-								</ArrowButton>
-							</FadeInSection>
+					</Row>
+					<Row>
+						<Col xs="12" className="px-0">
+							<Col xs="12">
+								<FadeInSection delay="1" className="text-center">
+									<h2>3SKYE-X</h2>
+								</FadeInSection>
+								<FadeInSection className="text-center">
+									<p className="sub-header">A Single Pane of Glass for Advisers and Investors</p>
+								</FadeInSection>
+							</Col>
+							<Col xs="12">
+								<FadeInSection className="text-center">
+									<ArrowButton routeChangePath={"/wealth-platform"}>Learn More</ArrowButton>
+								</FadeInSection>
+							</Col>
 						</Col>
-					</Col>
-				</Row>
+					</Row>
+				</div>
 			</TsContainer>
 		</FadeInSection>
+		// <FadeInSection>
+		// 	<TsContainer homepage>
+		// 		<Row className="mb-3 mb-md-5">
+		// 			<Col xs="12" className="px-2">
+		// 				<img onClick={() => changeRoute("/wealth-platform")} src="/images/2023-images/products/crm-small.png" alt="crm" width="100%" className="cursor-pointer"/>
+		// 			</Col>
+		// 		</Row>
+		// 		<Row>
+		// 			<Col xs="12" className="px-0">
+		// 				<Col xs="12">
+		// 					<FadeInSection delay="1" className="text-center">
+		// 						<h2>3SKYE Wealth Platform</h2>
+		// 					</FadeInSection>
+		// 					<FadeInSection className="text-center"><p className="sub-header">A Single Pane of Glass for Advisers and Investors</p></FadeInSection>
+		// 				</Col>
+		// 				<Col xs="12">
+		// 					<FadeInSection className="text-center">
+		// 						<ArrowButton routeChangePath={"/wealth-platform"}>
+		// 							Learn More
+		// 						</ArrowButton>
+		// 					</FadeInSection>
+		// 				</Col>
+		// 			</Col>
+		// 		</Row>
+		// 	</TsContainer>
+		// </FadeInSection>
 	);
 }
 

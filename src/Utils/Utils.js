@@ -32,7 +32,7 @@ export const ResearchFeatures = [
 	{
 		name: "Compliance",
 		text: "Automated compliance approval workflow.",
-		expandedText: "Automated compliance approval workflow is built right into the platform. One click authorization request and approval with full tracking and auditing of the approval process.",
+		expandedText: "Automated compliance approval workflow is built right into the platform. One click authorisation request and approval with full tracking and auditing of the approval process.",
 		imgPath: "/images/research/compliance.png",
 	},
 	{

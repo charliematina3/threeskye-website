@@ -93,7 +93,7 @@ class PrivacyPolicyPage extends Component {
 								/>
 								<PrivacyPolicyTextSection
 									header="Improving 3SKYE"
-									content="Testing features, managing landing pages, heat mapping our site, traffic optimization and data analysis and research, including profiling and the use of machine learning and other techniques over your data and in some cases using third parties to do this."
+									content="Testing features, managing landing pages, heat mapping our site, traffic optimisation and data analysis and research, including profiling and the use of machine learning and other techniques over your data and in some cases using third parties to do this."
 								/>
 								<PrivacyPolicyTextSection
 									header="Customer support"
@@ -219,7 +219,7 @@ class PrivacyPolicyPage extends Component {
 						expandContent={
 							<>
 								<p>
-									We use appropriate technical, organizational and administrative security measures to protect any information we hold from loss, misuse, and
+									We use appropriate technical, organisational and administrative security measures to protect any information we hold from loss, misuse, and
 									unauthorised access, disclosure, alteration and destruction.
 								</p>
 								<br />

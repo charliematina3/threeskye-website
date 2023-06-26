@@ -113,7 +113,6 @@ function IntegrationsFeatures() {
 														imgPath={tile.image}
 														header={tile.name}
 														text={tile.description}
-														smallText={tile.description}
 														partner={tile.partnership}
 														title={tile.title}
 													/>

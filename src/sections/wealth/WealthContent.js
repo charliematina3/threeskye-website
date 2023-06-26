@@ -92,7 +92,7 @@ export const WealthContent = [
 			{
 				name: "Events",
 				description:
-					"Our platform seamlessly captures and organizes key events, including file notes and client emails. With automated synchronization of client emails through Office 365, you can effortlessly maintain a comprehensive view of your client interactions.",
+					"Our platform seamlessly captures and organizes key events, including file notes and client emails. With automated synchronisation of client emails through Office 365, you can effortlessly maintain a comprehensive view of your client interactions.",
 				image: "images/2023-images/tiles/events.png",
 			}
 		],
@@ -125,7 +125,7 @@ export const WealthContent = [
 	},
 	{
 		name: "Flexible Customisation",
-		description: "Discover customization at its finest with our Command Centre. More than just software, it’s a bespoke solution tailored to your firm. Customise our platform to align perfectly with your needs. Embrace the blend of flexibility and control, crafted for your firm’s success.",
+		description: "Discover customisation at its finest with our Command Centre. More than just software, it’s a bespoke solution tailored to your firm. Customise our platform to align perfectly with your needs. Embrace the blend of flexibility and control, crafted for your firm’s success.",
 		image: "images/2023-images/products/flexible-customisation.png",
 		ref: 'flex',
 		tiles: [

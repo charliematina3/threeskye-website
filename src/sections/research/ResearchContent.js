@@ -43,7 +43,7 @@ export const ResearchContent = [
 			{
 				name: "Compliance",
 				description:
-					"An approval workflow is built into the platform in accordance with your internal processes. Request authorization with one click and receive approval from nominated users with full tracking, version control, and auditing of the approval process.",
+					"An approval workflow is built into the platform in accordance with your internal processes. Request authorisation with one click and receive approval from nominated users with full tracking, version control, and auditing of the approval process.",
 				image: "images/2023-images/tiles/compliance.png",
 			},
 			{
