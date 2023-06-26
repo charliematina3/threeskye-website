@@ -44,7 +44,7 @@ export const WealthContent = [
 			{
 				name: "Static Data / Workflow",
 				description:
-					"Advisers can edit and maintain their client’s information with an inbuilt approval workflow, updates occur in real time. All this in one platform takes the guess work out of Audits.",
+					"Take Control of your client static data… Edit Everything. Approval workflow built in that takes the guess work out of Audits.",
 				image: "images/2023-images/tiles/static-data-workflow.png",
 			},
 			{
