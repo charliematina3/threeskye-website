@@ -6,6 +6,7 @@ import FlexWrapper from '../components/FlexWrapper';
 import RelatedPages from '../sections/RelatedPages';
 import SeeMoreBannerSection from '../sections/SeeMoreBannerSection';
 import Button from '../components/Button';
+import ArrowButton from '../components/ArrowButton';
 
 class AboutUsPage extends Component {
 	componentDidMount() {
@@ -25,9 +26,9 @@ class AboutUsPage extends Component {
 									investment analysts, financial advisers, asset managers, and family offices. With our technology, save time and have confident discussions with
 									accurate, real-time information.
 								</p>
-								<Button routeChangePath="/get-in-touch" className="mt-4">
+								<ArrowButton routeChangePath="/get-in-touch" className="mt-4">
 									Let's Chat
-								</Button>
+								</ArrowButton>
 							</Col>
 						</Row>
 					</TsContainer>

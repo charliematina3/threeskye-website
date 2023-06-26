@@ -1,10 +1,10 @@
 import React from 'react';
-import Button from '../components/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import FadeInSection from '../components/FadeInSection';
 import TsContainer from '../components/TsContainer';
 import "./HeroSection.scss";
+import ArrowButton from '../components/ArrowButton';
 
 function HeroSection(props) {
 
@@ -45,9 +45,9 @@ function HeroSection(props) {
 						</Col>
 						{!noButton && <Col xs="12" sm={(centred || centredButton) ? "12" : "6"} lg={centred ? "12" : "6"} className={`mt-4 text-center ${centred ? "text-center" : ""}${centredButton ? " text-lg-left" : " text-lg-center"}`}>
 							<FadeInSection>
-								<Button disabled={buttonDisabled} routeChangePath={buttonLink ? buttonLink : "/get-in-touch"}>
+								<ArrowButton disabled={buttonDisabled} routeChangePath={buttonLink ? buttonLink : "/get-in-touch"}>
 									{buttonText ? buttonText : "Let's Chat"}
-								</Button>
+								</ArrowButton>
 							</FadeInSection>
 						</Col>}
 					</Col>
