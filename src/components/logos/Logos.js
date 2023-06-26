@@ -38,7 +38,7 @@ export const LogoObject = [
 		name: "NZX Wealth Technologies",
 		code: "nzx",
 		description: "Provides custodial services to financial advisers in NZ.",
-		img: "images/2023-images/logos/nzx.jpg",
+		img: "images/2023-images/logos/NZX.jpg",
 		link: "https://nzxwt.com/",
 	},
 	{

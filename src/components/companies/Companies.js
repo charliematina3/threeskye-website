@@ -4,7 +4,7 @@ export const Companies = [
 		code: "hwp",
 		description:
 			"Hobson Wealth is a leading private wealth advisory team with offices throughout New Zealand. They are Kiwi owned and operated and enjoy a strategic relationship with the Macquarie Group.",
-		img: "images/2023-images/logos/hwp.png",
+		img: "images/2023-images/logos/HWP.png",
 		link: "https://www.hobsonwealth.co.nz/",
 	},
 	{
@@ -12,7 +12,7 @@ export const Companies = [
 		code: "cip",
 		description:
 			"Craigs Investment Partners is one of New Zealand’s leading investment advisory firms. They offer investment solutions to private, corporate and institutional clients with offices throughout New Zealand.",
-		img: "images/2023-images/logos/cip.png",
+		img: "images/2023-images/logos/CIP.png",
 		link: "https://craigsip.com/",
 	},
 ];
