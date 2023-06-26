@@ -27,7 +27,7 @@ function App() {
 	// Product paths + content 
 	const products = [
 		{ name: "3SKYE Wealth Platform", path: "/wealth-platform", text: "A Single Pane of Glass", landingText: "A modular platform for financial professionals and investors.", img: "/images/2023-images/products/crm-single.png" },
-		{ name: "3SKYE Research Platform", path: "/research-platform", exact: true, text: "A platform for publishing institutional and equity research.", landingText: "Create publish and distribute Research the easy way", img: "/images/2023-images/products/research-2023.png" },
+		{ name: "3SKYE Research Platform", path: "/research-platform", exact: true, text: "A platform for publishing institutional and equity research.", landingText: "Create publish and distribute Research the easy way", img: "/images/2023-images/products/research-nav.png" },
 		{ name: "3SKYE-X", path: "/3skye-x", text: "A HNW and family office focused platform.", landingText: "A HNW and Family Office focused platform.", img: "/images/2023-images/products/3sx-holdings-large.png" },
 	];
 

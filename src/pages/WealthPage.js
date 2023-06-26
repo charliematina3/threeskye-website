@@ -23,7 +23,7 @@ const WealthPage = () => {
 		<>
 			<ProductHeroSection
 				id="wealth"
-				customScroll={100 - scrollValue * 0.04 + "%"}
+				customScroll={80 - scrollValue * 0.04 + "%"}
 				heroImage="/images/2023-images/products/crm-single.png"
 				text={
 					<>
