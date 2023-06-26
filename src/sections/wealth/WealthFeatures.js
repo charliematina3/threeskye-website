@@ -57,7 +57,7 @@ function WealthFeatures() {
 				WealthContent.map((content, idx) => {
 					return (
 						<FadeInSection key={idx} forwardedRef={componentRef} ref={componentRef} id={content.ref}>
-							<FeatureSection bg={(width < 992) && (idx % 2 === 0) ? 'blue' : 'white'} heroImage={content.image} className="homepage-hero" text={content.description}>
+							<FeatureSection bg={(width < 992) && (idx % 2 === 0) ? 'white' : 'blue'} heroImage={content.image} className="homepage-hero" text={content.description}>
 								{content.name}
 							</FeatureSection>
 							{/* tiles */}
@@ -93,7 +93,7 @@ function WealthFeatures() {
 												imgPath={tile.image}
 												header={tile.name}
 												expandedText={tile.description}
-												bg={(width < 992) && (idx % 2 === 0) ? 'blue' : 'white'}
+												bg={(width < 992) && (idx % 2 === 0) ? 'white' : 'blue'}
 											/>
 										))}
 								</div>

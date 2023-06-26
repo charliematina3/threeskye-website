@@ -47,7 +47,7 @@ class ProductFeatureBlock extends Component {
 							<h3 className="d-flex align-items-center justify-content-center mb-2" style={{gap: 8}}>
 								{header}{" "}
 								{width < 575 && expandedText && (
-									<ExpandMore onClick={() => this.setState({ expanded: !this.state.expanded })} />
+									<ExpandMore className="colour-blue" style={{transform: expanded ? "translateY(2px) rotate(-180deg)" : "translateY(2px) rotate(0deg)", transition: '200ms ease',}} onClick={() => this.setState({ expanded: !this.state.expanded })} />
 								)}
 								{partner && (
 									<>

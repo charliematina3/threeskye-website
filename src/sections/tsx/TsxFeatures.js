@@ -46,7 +46,7 @@ function TsxFeatures() {
 				TsxContent.map((content, idx) => {
 					return (
 						<FadeInSection key={idx} id={content.ref}>
-							<FeatureSection bg={width < 992 && idx % 2 === 0 ? "blue" : "white"} heroImage={content.image} className="homepage-hero" text={content.description}>
+							<FeatureSection bg={width < 992 && idx % 2 === 0 ? "white" : "blue"} heroImage={content.image} className="homepage-hero" text={content.description}>
 								{content.name}
 							</FeatureSection>
 							{/* tiles */}
@@ -80,12 +80,11 @@ function TsxFeatures() {
 											{content.tiles &&
 												content.tiles.map((tile, id) => (
 													<ProductFeatureBlock
-														// bg={idx % 2 !== 0 ? "blue" : "white"}
 														key={id}
 														imgPath={tile.image}
 														header={tile.name}
-														text={tile.description}
-														bg={width < 992 && idx % 2 === 0 ? "blue" : "white"}
+														expandedText={tile.description}
+														bg={width < 992 && idx % 2 === 0 ? "white" : "blue"}
 													/>
 												))}
 										</div>

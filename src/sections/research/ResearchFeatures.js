@@ -52,7 +52,7 @@ function ResearchFeatures() {
 				ResearchContent.map((content, idx) => {
 					return (
 						<FadeInSection key={idx} id={content.ref}>
-							<FeatureSection bg={(width < 992) && (idx % 2 === 0) ? 'blue' : 'white'} heroImage={content.image} className="homepage-hero" text={content.description}>
+							<FeatureSection bg={(width < 992) && (idx % 2 === 0) ? 'white' : 'blue'} heroImage={content.image} className="homepage-hero" text={content.description}>
 								{content.name}
 							</FeatureSection>
 							{/* tiles */}
@@ -84,10 +84,11 @@ function ResearchFeatures() {
 									{content.tiles &&
 										content.tiles.map((tile, id) => (
 											<ProductFeatureBlock
-												bg={(width < 992) && (idx % 2 === 0) ? 'blue' : 'white'}
+												key={id}
+												bg={(width < 992) && (idx % 2 === 0) ? 'white' : 'blue'}
 												imgPath={tile.image}
 												header={tile.name}
-												text={tile.description}
+												expandedText={tile.description}
 											/>
 										))}
 								</div>
