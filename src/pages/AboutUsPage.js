@@ -5,7 +5,6 @@ import TsContainer from '../components/TsContainer';
 import FlexWrapper from '../components/FlexWrapper';
 import RelatedPages from '../sections/RelatedPages';
 import SeeMoreBannerSection from '../sections/SeeMoreBannerSection';
-import Button from '../components/Button';
 import ArrowButton from '../components/ArrowButton';
 
 class AboutUsPage extends Component {

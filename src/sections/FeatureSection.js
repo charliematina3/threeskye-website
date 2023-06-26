@@ -7,7 +7,7 @@ import "./HeroSection.scss";
 
 function FeatureSection(props) {
 
-		const { header, text, heroImage, id, children, className, style, centred, productPage } = props;
+		const { header, text, heroImage, id, children, className, style, centred, productPage, bg } = props;
 		const [, setScroll] = React.useState(false);
 	
 		React.useEffect(() => {
@@ -17,7 +17,7 @@ function FeatureSection(props) {
 		}, []);
 
 		return (
-			<TsContainer bg="blue" className={className} style={style} id={id}>
+			<TsContainer bg={bg ? bg : "blue"} className={className} style={style} id={id}>
 				<Row
 					className={`justify-content-center justify-content-md-center justify-content-lg-between align-items-center ${centred ? "flex-column-reverse centred-hero" : "flex-sm-row-reverse"}${productPage ? " product-page-hero" : ""}`}
 				>

@@ -1,13 +1,19 @@
 @import "../styles/Variables.scss";
 
 .pfb-container {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 24px;
+	padding-bottom: 24px;
 
 	.pb-image {
 		max-height: 100px;
 		max-width: 200px;
 		width: auto;
+	}
+
+	@media screen and (max-width: $breakpoint-sm){
+		&:last-of-type {
+			padding-bottom: 80px;
+		}
 	}
 
 	@media screen and (min-width: $breakpoint-md){

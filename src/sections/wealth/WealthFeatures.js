@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import FadeInSection from '../../components/FadeInSection';
 import FeatureSection from '../FeatureSection';
 import TsContainer from '../../components/TsContainer';
@@ -17,6 +17,21 @@ import { Link } from 'react-scroll';
 function WealthFeatures() {
 	const componentRef = useRef();
 
+	const [width, setWidth] = useState(0);
+
+	const updateWindowDimensions = () => {
+	  setWidth(window.innerWidth);
+	};
+  
+	useEffect(() => {
+	  updateWindowDimensions();
+	  window.addEventListener('resize', updateWindowDimensions);
+  
+	  return () => {
+		window.removeEventListener('resize', updateWindowDimensions);
+	  };
+	}, []);
+	
 	return (
 		<>
 			<TsContainer className="pt-5">
@@ -42,7 +57,7 @@ function WealthFeatures() {
 				WealthContent.map((content, idx) => {
 					return (
 						<FadeInSection key={idx} forwardedRef={componentRef} ref={componentRef} id={content.ref}>
-							<FeatureSection heroImage={content.image} className="homepage-hero" text={content.description}>
+							<FeatureSection bg={(width < 992) && (idx % 2 === 0) ? 'blue' : 'white'} heroImage={content.image} className="homepage-hero" text={content.description}>
 								{content.name}
 							</FeatureSection>
 							{/* tiles */}
@@ -72,12 +87,13 @@ function WealthFeatures() {
 							<div className="d-lg-none">
 								<div>
 									{content.tiles &&
-										content.tiles.map((tile, idx) => (
+										content.tiles.map((tile, id) => (
 											<ProductFeatureBlock
-												// bg={idx % 2 !== 0 ? "blue" : "white"}
+												key={id}
 												imgPath={tile.image}
 												header={tile.name}
-												text={tile.description}
+												expandedText={tile.description}
+												bg={(width < 992) && (idx % 2 === 0) ? 'blue' : 'white'}
 											/>
 										))}
 								</div>
