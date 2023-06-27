@@ -4,6 +4,7 @@
 	flex-direction: column;
 	gap: 16px;
 	align-items: center;
+	padding: 16px;
 
 	.logo-wrapper {
 		flex-shrink: 0;
@@ -17,23 +18,25 @@
 	
 	p {
 		font-size: $fs-medium;
+		margin: 0;
 	}
 
 	.trusted-card-text {
 		padding-top: 24px;
-
+		
 		.trusted-header {
 			margin-bottom: 7px;
 			
 		}
 	}
-
+	
 	@media screen and (min-width: $breakpoint-md) {
 		flex-direction: row;
 		gap: 32px;
 		align-items: center;
-
+		
 		.trusted-card-text {
+			padding-top: 0;
 			padding-left: 32px;
 			border-left: 1.5px solid #E5E7ED;
 		}
