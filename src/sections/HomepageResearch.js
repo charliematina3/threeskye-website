@@ -19,9 +19,9 @@ const HomepageResearch = (props) => {
 				<img
 					onClick={() => changeRoute("/research-platform")}
 					className="hero-image-left cursor-pointer"
-					src="/images/2023-images/products/research-2023.png"
+					src="/images/2023-images/products/research-design.png"
 					alt="crm"
-					width="40%"
+					width="50%"
 				/>
 				<FlexWrapper flexDirection="column" width="60%">
 					<FadeInSection delay="1" className="text-center">
