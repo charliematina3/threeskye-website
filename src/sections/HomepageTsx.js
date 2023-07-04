@@ -56,7 +56,7 @@ const HomepageTsx = (props) => {
 						</Col>
 						<Col xs="12">
 							<FadeInSection className="text-center">
-								<ArrowButton routeChangePath={"/wealth-platform"}>Learn More</ArrowButton>
+								<ArrowButton routeChangePath={"/3skye-x"}>Learn More</ArrowButton>
 							</FadeInSection>
 						</Col>
 					</Col>
