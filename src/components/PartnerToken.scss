@@ -1,6 +1,5 @@
 @import "../styles/Variables.scss";
 
-
 .partnership-wrapper {
 	display: flex;
 	align-items: center;
@@ -10,6 +9,7 @@
 	display: inline-block;
 	border-radius: 100px;
 	padding: 0 11px;
+	padding-bottom: 1px;
 	font-size: 17px;
 	background-color: #E7EAF2;
 	font-weight: 600;
