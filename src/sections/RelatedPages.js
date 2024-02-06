@@ -42,10 +42,10 @@ const RelatedPages = () => {
 				</Row>
 				<Row style={{rowGap: 24}}>
 					<Col xs="12" lg={6}>
-						<RelatedCard text="3SKYE Wealth Platform" onClick={() => changeRoute('/wealth-platform')} />
+						<RelatedCard text="3SKYE Wealth Platform" onClick={() => changeRoute('/wealth')} />
 					</Col>
 					<Col xs="12" lg={6}>
-						<RelatedCard alt text="3SKYE Research Platform" onClick={() => changeRoute('/research-platform')} />
+						<RelatedCard alt text="3SKYE Research Platform" onClick={() => changeRoute('/research')} />
 					</Col>
 				</Row>
 			</TsContainer>

@@ -14,6 +14,7 @@ import NavBar from "./components/desktop/navigation/NavBar";
 import ErrorPage from "./pages/ErrorPage";
 import Homepage from "./pages/Homepage";
 import IntegrationsPage from "./pages/IntegrationsPage";
+import FundManagementPage from "./pages/FundManagementPage";
 
 function App() {
 	// Paths for navigation
@@ -26,8 +27,9 @@ function App() {
 
 	// Product paths + content 
 	const products = [
-		{ name: "3SKYE Wealth Platform", path: "/wealth-platform", text: "A Single Pane of Glass", landingText: "A modular platform for financial professionals and investors.", img: "/images/2023-images/products/crm-single.png" },
-		{ name: "3SKYE Research Platform", path: "/research-platform", exact: true, text: "A platform for publishing institutional and equity research.", landingText: "Create publish and distribute Research the easy way", img: "/images/2023-images/products/research-nav-single.png" },
+		{ name: "3SKYE Wealth", path: "/wealth", text: "A Single Pane of Glass", landingText: "A modular platform for financial professionals and investors.", img: "/images/2023-images/products/crm-single.png" },
+		{ name: "3SKYE Research", path: "/research", exact: true, text: "A platform for publishing institutional and equity research.", landingText: "Create publish and distribute Research the easy way.", img: "/images/2023-images/products/research-nav-single.png" },
+		{ name: "3SKYE Funds Management", path: "/fund-management", exact: true, text: "Automate all your Fund Documentation.", landingText: "Automate all your Fund Documentation. Simple.", img: "/images/funds/fund-menu.png" },
 		{ name: "3SKYE-X", path: "/3skye-x", text: "A HNW and family office focused platform.", landingText: "A HNW and Family Office focused platform.", img: "/images/2023-images/products/3sx-holdings-large.png" },
 	];
 
@@ -48,8 +50,9 @@ function App() {
 				<div className="main-content-container" id="main-content">
 					<Switch>
 						<Route path="/" exact render={() => <Homepage products={products} />} />
-						<Route path="/wealth-platform" exact render={() => <WealthPage products={products} />} />
-						<Route path="/research-platform" exact render={() => <ResearchPage products={products} />} />
+						<Route path="/wealth" exact render={() => <WealthPage products={products} />} />
+						<Route path="/fund-management" exact render={() => <FundManagementPage products={products} />} />
+						<Route path="/research" exact render={() => <ResearchPage products={products} />} />
 						<Route path="/3skye-x" exact render={() => <TsxPage products={products} />} />
 						<Route path="/integrations" exact render={() => <IntegrationsPage />} />
 						<Route path="/about-us" exact render={() => <AboutUsPage products={products} />} />

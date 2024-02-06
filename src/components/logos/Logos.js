@@ -57,6 +57,14 @@ export const LogoObject = [
 		link: "https://www.apexgroup.com/",
 	},
 	{
+		name: "Apex Group",
+		code: "apex-alt",
+		maxWidth: 180,
+		description: "Investment administration, portfolio reporting and custodial services. Apex Group acquired MMC in 2022.",
+		img: "images/2023-images/logos/apex-group.png",
+		link: "https://www.apexgroup.com/",
+	},
+	{
 		name: "Addy",
 		code: "addy",
 		description: "Addy for address verification for onboarding and AML. Addy also provides autocomplete for finding and adding New Zealand and Australian addresses.",

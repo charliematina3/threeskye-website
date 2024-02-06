@@ -155,6 +155,7 @@ class ContactFormSection extends Component {
 										onChange={this.handleInputChange}
 										checkboxes={[
 											{ label: "Research Platform", checked: this.state.research, name: "research" },
+											{ label: "Fund Management", checked: this.state.fundManagement, name: "fundManagement" },
 											{ label: "Wealth Platform", checked: this.state.wealth, name: "wealth" },
 											{ label: "3SKYE-X", checked: this.state.threeskyeX, name: "threeskyeX" },
 											{ label: "Other", checked: this.state.other, name: "other" },

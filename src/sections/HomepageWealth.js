@@ -26,11 +26,11 @@ const HomepageWealth = (props) => {
 							<p className="sub-header">A Single Pane of Glass for Advisers and Investors</p>
 						</FadeInSection>
 						<FadeInSection className="text-center">
-							<ArrowButton routeChangePath={"/wealth-platform"}>Learn More</ArrowButton>
+							<ArrowButton routeChangePath={"/wealth"}>Learn More</ArrowButton>
 						</FadeInSection>
 					</FlexWrapper>
 					<img
-						onClick={() => changeRoute("/wealth-platform")}
+						onClick={() => changeRoute("/wealth")}
 						className="hero-image-right cursor-pointer"
 						src="/images/2023-images/products/crm-single.png"
 						alt="crm"
@@ -64,7 +64,7 @@ const HomepageWealth = (props) => {
 							</Col>
 							<Col xs="12">
 								<FadeInSection className="text-center">
-									<ArrowButton routeChangePath={"/wealth-platform"}>Learn More</ArrowButton>
+									<ArrowButton routeChangePath={"/wealth"}>Learn More</ArrowButton>
 								</FadeInSection>
 							</Col>
 						</Col>
