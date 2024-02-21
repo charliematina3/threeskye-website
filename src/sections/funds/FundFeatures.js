@@ -40,6 +40,9 @@ function FundFeatures() {
 					<Link to="publishing" smooth={true} duration={1000} offset={-100}>
 						<SectionPill sectionRef="publishing" label="Publishing" />
 					</Link>
+					<Link to="compliance" smooth={true} duration={1000} offset={-100}>
+						<SectionPill sectionRef="compliance" label="Compliance" />
+					</Link>
 					<Link to="integrations" smooth={true} duration={1000} offset={-100}>
 						<SectionPill sectionRef="integrations" label="Integrations" />
 					</Link>

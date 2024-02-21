@@ -69,8 +69,8 @@ export const FundContent = [
 		name: "Compliance and Risk",
 		description:
 			"Compliance teams can rest assured with our integrated approval workflow, automatic inclusion of Disclosures and transparent audit records. All in the same system. Easy.",
-		image: "images/funds/fund-publishing.png",
-		ref: "publishing",
+		image: "images/funds/fund-compliance.png",
+		ref: "compliance",
 		tiles: [
 			{
 				name: "Version Control",
