@@ -101,7 +101,7 @@ export const ResearchContent = [
 	{
 		name: "Research Design",
 		description: "At 3SKYE, we intertwine technology and expertise to develop custom research-focused templates and client portals that resonate with your brand and business needs. Our solutions streamline your research processes, amplify your brand’s message, and provide an exceptional user experience, all while placing a premium on insightful, impactful research. With 3SKYE, we transform the way you conduct and present research.",
-		image: "images/2023-images/products/research-design.png",
+		image: "images/2023-images/products/research-hero.png",
 		ref: 'research',
 		tiles: [
 			{

@@ -19,7 +19,7 @@ const HomepageResearch = (props) => {
 				<img
 					onClick={() => changeRoute("/research")}
 					className="hero-image-left cursor-pointer"
-					src="/images/2023-images/products/research-design.png"
+					src="/images/2023-images/products/research-hero.png"
 					alt="crm"
 					width="50%"
 				/>

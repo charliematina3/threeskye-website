@@ -24,11 +24,11 @@ const HomepageFundManagement = (props) => {
 						<p className="sub-header">Automate all your Fund Documentation. Simple.</p>
 					</FadeInSection>
 					<FadeInSection className="text-center">
-						<ArrowButton routeChangePath={"/fund-management"}>Learn More</ArrowButton>
+						<ArrowButton routeChangePath={"/funds-management"}>Learn More</ArrowButton>
 					</FadeInSection>
 				</FlexWrapper>
 				<img
-					onClick={() => changeRoute("/fund-management")}
+					onClick={() => changeRoute("/funds-management")}
 					className="hero-image-right cursor-pointer"
 					src="/images/funds/fund-hero.png"
 					alt="funds"
@@ -40,7 +40,7 @@ const HomepageFundManagement = (props) => {
 					<Col xs="12" className="px-0">
 						<FlexWrapper justifyContent="center">
 							<img
-								onClick={() => changeRoute("/fund-management")}
+								onClick={() => changeRoute("/funds-management")}
 								className="cursor-pointer"
 								src="/images/funds/fund-hero.png"
 								alt="funds"
@@ -62,7 +62,7 @@ const HomepageFundManagement = (props) => {
 						</Col>
 						<Col xs="12">
 							<FadeInSection className="text-center">
-								<ArrowButton routeChangePath={"/fund-management"}>Learn More</ArrowButton>
+								<ArrowButton routeChangePath={"/funds-management"}>Learn More</ArrowButton>
 							</FadeInSection>
 						</Col>
 					</Col>
