@@ -6,15 +6,15 @@ const azure = LogoObject[2];
 const nzx = LogoObject[3];
 const chelmer = LogoObject[4];
 const apex = LogoObject[5];
-const addy = LogoObject[6];
-const akahu = LogoObject[7];
-const refinitiv = LogoObject[8];
-const bloomberg = LogoObject[9];
-const xignite = LogoObject[10];
-const eod = LogoObject[11];
-const sendGrid = LogoObject[12];
-const clickSend = LogoObject[13];
-const ms = LogoObject[14];
+const addy = LogoObject[7];
+const akahu = LogoObject[8];
+const refinitiv = LogoObject[9];
+const bloomberg = LogoObject[10];
+const xignite = LogoObject[11];
+const eod = LogoObject[12];
+const sendGrid = LogoObject[13];
+const clickSend = LogoObject[14];
+const ms = LogoObject[15];
 
 export const IntegrationsContent = [
 	{
