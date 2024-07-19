@@ -18,6 +18,13 @@ const HomepageWealth = (props) => {
 		<FadeInSection>
 			<TsContainer homepage>
 				<FlexWrapper gap={32} alignItems="center" className="d-none d-md-flex">
+					<img
+						onClick={() => changeRoute("/wealth")}
+						className="hero-image-left cursor-pointer"
+						src="/images/2023-images/products/crm-single.png"
+						alt="crm"
+						width="40%"
+					/>
 					<FlexWrapper flexDirection="column" width="60%">
 						<FadeInSection delay="1" className="text-center">
 							<h2>3SKYE Wealth Platform</h2>
@@ -29,13 +36,6 @@ const HomepageWealth = (props) => {
 							<ArrowButton routeChangePath={"/wealth"}>Learn More</ArrowButton>
 						</FadeInSection>
 					</FlexWrapper>
-					<img
-						onClick={() => changeRoute("/wealth")}
-						className="hero-image-right cursor-pointer"
-						src="/images/2023-images/products/crm-single.png"
-						alt="crm"
-						width="40%"
-					/>
 				</FlexWrapper>
 				<div className="d-block d-md-none">
 					<Row className="mb-3">
