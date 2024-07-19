@@ -5,38 +5,40 @@ import FocusText from '../components/FocusText';
 import IntegrationsSection from '../sections/IntegrationsSection';
 import TrustedBy from '../sections/TrustedBy';
 import SeeMoreBannerSection from '../sections/SeeMoreBannerSection';
-import ResearchFeatures from '../sections/research/ResearchFeatures';
+import PortalFeatures from '../sections/portal/PortalFeatures';
 
-class ResearchPage extends Component {
+class PortalManagementPage extends Component {
+
 	componentDidMount() {
-		document.title = '3SKYE Financial Software for Humans - Research';
+		document.title = '3SKYE Financial Software for Humans - Portal Management';
 		window.scrollTo(0, 0)
 	}
+	
 	render() {
 		return (
 			<>
 				<ProductHeroSection
 					mainHero
 					centred
-					heroImage="/images/2023-images/products/research-hero.png"
+					heroImage="/images/portal-management/pmp-hero.png"
 					buttonText="Let's Chat"
 					text={
 						<>
-							Institutional and Retail Equity Research the <FocusText>Easy Way</FocusText>
+							Streamline the entire client experience, from onboarding through to annual reviews.
 						</>
 					}
 				>
-					3SKYE Research Publication
+					3SKYE Portal Management
 				</ProductHeroSection>
 				{/* Intro */}
 				<TextSection bg="white" containerClass="pb-1">
-					Focus on your quality content > Team collaboration via Inbuilt version control > Publish with slick branding > Analyse readership statistics. Repeat.
+					Transcend traditional white-label solutions with our Portal Management Platform, revolutionising your client’s experience. Build and preview customised onboarding workflows, monitor progress, manage content, analyse data, and personalise the client experience for seamless and professional interactions with your clients. Elevate your portal management far beyond the conventional client portals, with advanced tools designed for superior efficiency and client engagement.
 				</TextSection>
 				{/* Features */}
-				<ResearchFeatures />
+				<PortalFeatures />
 				{/* Integrations */}
 				<IntegrationsSection
-					logos={["office", "addy", "xignite", "bloomberg", "power-bi", "refinitiv"]}
+					logos={["office", "nzx", "apex", "chelmer", "akahu", "addy", "xignite", "bloomberg", "power-bi", "refinitiv", "send-grid", "click-send"]}
 					text="Unlock seamless integrations with leading tools and systems, enhancing your wealth management capabilities effortlessly."
 				/>
 				{/* Trusted */}
@@ -48,4 +50,4 @@ class ResearchPage extends Component {
 	}
 }
 
-export default ResearchPage;
+export default PortalManagementPage;

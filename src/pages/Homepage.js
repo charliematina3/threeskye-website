@@ -29,9 +29,9 @@ class Homepage extends Component {
 					{/* <LandingProductSelect products={products} /> */}
 				</FadeInSection>
 				{/* Products */}
-				<HomepageWealth />
 				<HomepageResearch />
 				<HomepageFundManagement />
+				<HomepageWealth />
 				<HomepageTsx />
 				{/* Integrations */}
 				<IntegrationsSection logos={["office", "nzx", "apex", "chelmer", "akahu", "addy", "xignite", "bloomberg", "power-bi", "refinitiv", "send-grid", "click-send"]} />

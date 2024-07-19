@@ -21,9 +21,7 @@ class AboutUsPage extends Component {
 							<Col xs="12" lg="12">
 								<h1>About Us</h1>
 								<p style={{ fontSize: 20 }}>
-									We make simple, beautiful software that reinvents the user experiences of ageing legacy financial systems. 3SKYE is building a better world for
-									investment analysts, financial advisers, asset managers, and family offices. With our technology, save time and have confident discussions with
-									accurate, real-time information.
+								We make simple, beautiful software that reinvents the user experiences of ageing legacy financial systems. 3SKYE is building a better world for superannuation and KiwiSaver providers, fund managers, investment analysts, financial advisers and family offices. With our technology, save time and have confident discussions with accurate, real-time information.
 								</p>
 								<ArrowButton routeChangePath="/get-in-touch" className="mt-4">
 									Let's Chat

@@ -23,9 +23,9 @@ const HomepageResearch = (props) => {
 					alt="crm"
 					width="50%"
 				/>
-				<FlexWrapper flexDirection="column" width="60%">
+				<FlexWrapper flexDirection="column" width="70%">
 					<FadeInSection delay="1" className="text-center">
-						<h2>3SKYE Research Platform</h2>
+						<h2>3SKYE Research Publication</h2>
 					</FadeInSection>
 					<FadeInSection className="text-center">
 						<p className="sub-header">Institutional and retail equity research the easy way</p>
@@ -54,7 +54,7 @@ const HomepageResearch = (props) => {
 					<Col xs="12" className="px-0">
 						<Col xs="12">
 							<FadeInSection delay="1" className="text-center">
-								<h2>3SKYE Research Platform</h2>
+								<h2>3SKYE Research Publication</h2>
 							</FadeInSection>
 							<FadeInSection className="text-center">
 								<p className="sub-header">Institutional and retail equity research the easy way</p>

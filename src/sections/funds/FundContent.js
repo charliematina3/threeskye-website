@@ -3,11 +3,13 @@ export const FundContent = [
 		name: "Automation",
 		description: (
 			<>
-				Streamline your Fund documentation process using a STP solution. Our integration tools can help you with sourcing and coordinating the data from various sources
-				into one place, one-click creation of any type of fund document, editing, reviewing and approval process through to publication & distribution.
+				Streamline your Fund documentation process using our STP solution. We coordinate data from various sources into one place, one-click creation of any type of fund document from creation through to distribution.
 				<br />
 				<br />
-				Useful for Quarterly Fund Updates and Monthly Fact Sheets; we can add value to your current processes by saving you time and ensuring accuracy.
+				Useful for Product Disclosure Statements, Quarterly Fund Updates, Fact Sheets, DDO requirements, TMDs, ESG and newsletters.
+				<br />
+				<br />
+				Streamline your current processes by saving time and increasing accuracy.
 			</>
 		),
 		image: "images/funds/fund-automate.png",
@@ -46,9 +48,9 @@ export const FundContent = [
 		ref: "publishing",
 		tiles: [
 			{
-				name: "Disclose Fillings",
+				name: "Regulatory Filings",
 				description:
-					"Automatically Publish to the Disclose register. A Single Click ensures you meet your FMCR deadlines. Publishing to Disclose can include filings for Full Portfolio Holdings and Fund Returns etc.",
+					"Distribute documents to key regulators, ensure regulatory compliance on a timely basis.",
 				image: "images/2023-images/tiles/disclose-filings.png",
 			},
 			{
@@ -58,9 +60,9 @@ export const FundContent = [
 				image: "images/2023-images/tiles/analytics.png",
 			},
 			{
-				name: "Distribution Options",
+				name: "Publishing Options",
 				description:
-					"Bespoke publication options can include your website, data vendors, wrap platforms, advisors.  Via email, or API… you name the destination and we can send it there.",
+					"Bespoke publication options can include your website, data vendors, wrap platforms, advisors. Via email, or API… you name the destination and we can send it there.",
 				image: "images/2023-images/tiles/distribution.png",
 			},
 		],
@@ -68,14 +70,14 @@ export const FundContent = [
 	{
 		name: "Compliance and Risk",
 		description:
-			"Compliance teams can rest assured with our integrated approval workflow, automatic inclusion of Disclosures and transparent audit records. All in the same system. Easy.",
+			"Rest assured with integrated approval workflow and transparent audit records. All in the same system. Easy.",
 		image: "images/funds/fund-compliance.png",
 		ref: "compliance",
 		tiles: [
 			{
-				name: "Version Control",
+				name: "Document Storage & Version Control",
 				description:
-					"The ability to manage multiple document versions, track changes, ensuring clarity and accuracy. Easy to find the latest version - say goodbye to clogging up your email inbox with various versions.",
+					"Manage multiple document versions, track changes, ensuring clarity and accuracy. Easy to find the latest version - say goodbye to clogging up your email inbox with various versions.",
 				image: "images/2023-images/tiles/version-control.png",
 			},
 			{

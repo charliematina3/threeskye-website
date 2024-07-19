@@ -42,7 +42,7 @@ const RelatedPages = () => {
 				</Row>
 				<Row style={{rowGap: 24}}>
 					<Col xs="12" lg={6}>
-						<RelatedCard text="3SKYE Wealth Platform" onClick={() => changeRoute('/wealth')} />
+						<RelatedCard text="3SKYE Funds Management" onClick={() => changeRoute('/funds-management')} />
 					</Col>
 					<Col xs="12" lg={6}>
 						<RelatedCard alt text="3SKYE Research Platform" onClick={() => changeRoute('/research')} />

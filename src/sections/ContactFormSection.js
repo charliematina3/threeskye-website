@@ -25,6 +25,7 @@ class ContactFormSection extends Component {
 			services: "",
 			other: false,
 			research: false,
+			fundManagement: false,
 			threeskyeX: false,
 			wealth: false,
 			loading: false
@@ -84,6 +85,7 @@ class ContactFormSection extends Component {
 		var services = this.state.services;
 		var wealth = this.state.wealth;
 		var threeskyeX = this.state.threeskyeX;
+		var fundManagement = this.state.fundManagement;
 		var headerStyle = "opacity: 0.7; color: #020a1d; font-size: 14px; width: 100%; margin-bottom: 0; font-weight: 500";
 		var valueStyle = "font-size: 20px; width: 100%; margin-bottom: 36px; margin-top: 2px; font-weight: 500; color: #020A1D;";
 		var hrStyle = "margin: 34px 0; border: none; height: 1px; width: 100%; background-color: #E2E4EA";
@@ -131,7 +133,7 @@ class ContactFormSection extends Component {
 	}
 
 	resetForm(){
-		this.setState({ emailInvalid: false, formInvalid: false, loading: false, submitted: false, name: "", email: "", company: "", message: "", services: "", number: "", other: false, research: false, threeskyeX: false, wealth: false });
+		this.setState({ emailInvalid: false, formInvalid: false, loading: false, submitted: false, name: "", email: "", company: "", message: "", services: "", number: "", other: false, research: false, threeskyeX: false, wealth: false, fundManagement: false });
 	}
 
 	render() {
@@ -154,9 +156,9 @@ class ContactFormSection extends Component {
 									{!modalForm && <FormCheckboxGroup
 										onChange={this.handleInputChange}
 										checkboxes={[
-											{ label: "Research Platform", checked: this.state.research, name: "research" },
-											{ label: "Fund Management", checked: this.state.fundManagement, name: "fundManagement" },
-											{ label: "Wealth Platform", checked: this.state.wealth, name: "wealth" },
+											{ label: "3SKYE Research Publication", checked: this.state.research, name: "research" },
+											{ label: "3SKYE Funds Management", checked: this.state.fundManagement, name: "fundManagement" },
+											{ label: "3SKYE Wealth Platform", checked: this.state.wealth, name: "wealth" },
 											{ label: "3SKYE-X", checked: this.state.threeskyeX, name: "threeskyeX" },
 											{ label: "Other", checked: this.state.other, name: "other" },
 										]}

@@ -5,7 +5,6 @@ import FocusText from '../components/FocusText';
 import IntegrationsSection from '../sections/IntegrationsSection';
 import TrustedBy from '../sections/TrustedBy';
 import SeeMoreBannerSection from '../sections/SeeMoreBannerSection';
-import ResearchFeatures from '../sections/research/ResearchFeatures';
 import FundFeatures from '../sections/funds/FundFeatures';
 
 class FundManagementPage extends Component {
@@ -23,7 +22,7 @@ class FundManagementPage extends Component {
 					buttonText="Let's Chat"
 					text={
 						<>
-							Automate all your Fund Documentation. <FocusText>Simple</FocusText>
+							A full End to End solution to create and distribute all your fund documentation: PDS, SIPOs, Fund Updates, Fact Sheets, TMDs, ESG reporting, monthly newsletters and more.
 						</>
 					}
 				>
@@ -31,7 +30,7 @@ class FundManagementPage extends Component {
 				</ProductHeroSection>
 				{/* Intro */}
 				<TextSection bg="white" containerClass="pb-1">
-					Easy to set up automated data consolidation from various sources and external parties > Integrated Branding > Full compliance approval workflow out of the box > Automated publishing to Disclose Register and more
+					Easy to set up. <br /> Automated data consolidation from various sources > Integrated Branding > Full compliance approval workflow > Automated publishing to key regulators, websites, email > Sales leads provided by analytics
 				</TextSection>
 				{/* Features */}
 				<FundFeatures />

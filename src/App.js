@@ -15,6 +15,7 @@ import ErrorPage from "./pages/ErrorPage";
 import Homepage from "./pages/Homepage";
 import IntegrationsPage from "./pages/IntegrationsPage";
 import FundManagementPage from "./pages/FundManagementPage";
+import PortalManagementPage from "./pages/PortalManagementPage";
 
 function App() {
 	// Paths for navigation
@@ -27,9 +28,10 @@ function App() {
 
 	// Product paths + content 
 	const products = [
-		{ name: "3SKYE Wealth", path: "/wealth", text: "A Single Pane of Glass", landingText: "A modular platform for financial professionals and investors.", img: "/images/2023-images/products/crm-single.png" },
-		{ name: "3SKYE Research", path: "/research", exact: true, text: "A platform for publishing institutional and equity research.", landingText: "Create publish and distribute Research the easy way.", img: "/images/2023-images/products/research-nav-new.png" },
+		{ name: "3SKYE Research Publication", path: "/research", exact: true, text: "Institutional and retail equity research the easy way", landingText: "Create publish and distribute Research the easy way.", img: "/images/2023-images/products/research-nav-new.png" },
 		{ name: "3SKYE Funds Management", path: "/funds-management", exact: true, text: "Automate all your Fund Documentation.", landingText: "Automate all your Fund Documentation. Simple.", img: "/images/funds/fund-menu.png" },
+		// { name: "3SKYE Portal Management", path: "/portal-management", exact: true, text: "Streamline client onboarding and portal management.", landingText: "Streamline Client Onboarding and Portal Management with Ease.", img: "/images/portal-management/pmp-menu.png" },
+		{ name: "3SKYE Wealth Platform", path: "/wealth", text: "A Single Pane of Glass", landingText: "A modular platform for financial professionals and investors.", img: "/images/2023-images/products/crm-single.png" },
 		{ name: "3SKYE-X", path: "/3skye-x", text: "A HNW and family office focused platform.", landingText: "A HNW and Family Office focused platform.", img: "/images/2023-images/products/3sx-holdings-large.png" },
 	];
 
@@ -51,6 +53,7 @@ function App() {
 					<Switch>
 						<Route path="/" exact render={() => <Homepage products={products} />} />
 						<Route path="/wealth" exact render={() => <WealthPage products={products} />} />
+						<Route path="/portal-management" exact render={() => <PortalManagementPage products={products} />} />
 						<Route path="/funds-management" exact render={() => <FundManagementPage products={products} />} />
 						<Route path="/fund-management" exact>
         					<Redirect to="/funds-management" />
