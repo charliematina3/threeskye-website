@@ -22,7 +22,7 @@ class FundManagementPage extends Component {
 					buttonText="Let's Chat"
 					text={
 						<>
-							A full End to End solution to create and distribute all your fund documentation: PDS, SIPOs, Fund Updates, Fact Sheets, TMDs, ESG reporting, monthly newsletters and more.
+							A full <FocusText>End to End</FocusText> solution to create and distribute all your fund documentation.
 						</>
 					}
 				>

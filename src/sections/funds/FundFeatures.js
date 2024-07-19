@@ -52,7 +52,7 @@ function FundFeatures() {
 				FundContent.map((content, idx) => {
 					return (
 						<FadeInSection key={idx} id={content.ref}>
-							<FeatureSection bg={(width < 992) && (idx % 2 === 0) ? 'white' : 'blue'} heroImage={content.image} className="homepage-hero" text={content.description}>
+							<FeatureSection bg={(width < 992) && (idx % 2 === 0) ? 'white' : 'blue'} heroImage={content.image} text={content.description}>
 								{content.name}
 							</FeatureSection>
 							{/* tiles */}

@@ -7,9 +7,6 @@ export const FundContent = [
 				<br />
 				<br />
 				Useful for Product Disclosure Statements, Quarterly Fund Updates, Fact Sheets, DDO requirements, TMDs, ESG and newsletters.
-				<br />
-				<br />
-				Streamline your current processes by saving time and increasing accuracy.
 			</>
 		),
 		image: "images/funds/fund-automate.png",
