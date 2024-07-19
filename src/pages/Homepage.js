@@ -29,8 +29,8 @@ class Homepage extends Component {
 					{/* <LandingProductSelect products={products} /> */}
 				</FadeInSection>
 				{/* Products */}
-				<HomepageResearch />
 				<HomepageFundManagement />
+				<HomepageResearch />
 				<HomepageWealth />
 				<HomepageTsx />
 				{/* Integrations */}

@@ -16,6 +16,13 @@ const HomepageFundManagement = (props) => {
 	return (
 		<TsContainer homepage>
 			<FlexWrapper gap={32} alignItems="center" className="d-none d-md-flex">
+				<img
+					onClick={() => changeRoute("/funds-management")}
+					className="hero-image-left cursor-pointer"
+					src="/images/funds/fund-hero.png"
+					alt="funds"
+					width="50%"
+				/>
 				<FlexWrapper flexDirection="column" width="60%">
 					<FadeInSection delay="1" className="text-center">
 						<h2>3SKYE Funds Management</h2>
@@ -27,13 +34,6 @@ const HomepageFundManagement = (props) => {
 						<ArrowButton routeChangePath={"/funds-management"}>Learn More</ArrowButton>
 					</FadeInSection>
 				</FlexWrapper>
-				<img
-					onClick={() => changeRoute("/funds-management")}
-					className="hero-image-right cursor-pointer"
-					src="/images/funds/fund-hero.png"
-					alt="funds"
-					width="50%"
-				/>
 			</FlexWrapper>
 			<div className="d-block d-md-none">
 				<Row className="mb-3">

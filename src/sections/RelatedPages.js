@@ -45,7 +45,7 @@ const RelatedPages = () => {
 						<RelatedCard text="3SKYE Funds Management" onClick={() => changeRoute('/funds-management')} />
 					</Col>
 					<Col xs="12" lg={6}>
-						<RelatedCard alt text="3SKYE Research Platform" onClick={() => changeRoute('/research')} />
+						<RelatedCard alt text="3SKYE Research Publication" onClick={() => changeRoute('/research')} />
 					</Col>
 				</Row>
 			</TsContainer>

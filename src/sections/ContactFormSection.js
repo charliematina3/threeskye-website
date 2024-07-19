@@ -156,8 +156,8 @@ class ContactFormSection extends Component {
 									{!modalForm && <FormCheckboxGroup
 										onChange={this.handleInputChange}
 										checkboxes={[
-											{ label: "3SKYE Research Publication", checked: this.state.research, name: "research" },
 											{ label: "3SKYE Funds Management", checked: this.state.fundManagement, name: "fundManagement" },
+											{ label: "3SKYE Research Publication", checked: this.state.research, name: "research" },
 											{ label: "3SKYE Wealth Platform", checked: this.state.wealth, name: "wealth" },
 											{ label: "3SKYE-X", checked: this.state.threeskyeX, name: "threeskyeX" },
 											{ label: "Other", checked: this.state.other, name: "other" },

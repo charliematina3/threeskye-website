@@ -28,8 +28,8 @@ function App() {
 
 	// Product paths + content 
 	const products = [
-		{ name: "3SKYE Research Publication", path: "/research", exact: true, text: "Institutional and retail equity research the easy way", landingText: "Create publish and distribute Research the easy way.", img: "/images/2023-images/products/research-nav-new.png" },
 		{ name: "3SKYE Funds Management", path: "/funds-management", exact: true, text: "Automate all your Fund Documentation.", landingText: "Automate all your Fund Documentation. Simple.", img: "/images/funds/fund-menu.png" },
+		{ name: "3SKYE Research Publication", path: "/research", exact: true, text: "Institutional and retail equity research the easy way", landingText: "Create publish and distribute Research the easy way.", img: "/images/2023-images/products/research-nav-new.png" },
 		// { name: "3SKYE Portal Management", path: "/portal-management", exact: true, text: "Streamline client onboarding and portal management.", landingText: "Streamline Client Onboarding and Portal Management with Ease.", img: "/images/portal-management/pmp-menu.png" },
 		{ name: "3SKYE Wealth Platform", path: "/wealth", text: "A Single Pane of Glass", landingText: "A modular platform for financial professionals and investors.", img: "/images/2023-images/products/crm-single.png" },
 		{ name: "3SKYE-X", path: "/3skye-x", text: "A HNW and family office focused platform.", landingText: "A HNW and Family Office focused platform.", img: "/images/2023-images/products/3sx-holdings-large.png" },
