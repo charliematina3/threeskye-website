@@ -40,7 +40,7 @@ class FundManagementPage extends Component {
 					text="Unlock seamless integrations with leading tools and systems, enhancing your fund management capabilities effortlessly."
 				/>
 				{/* Trusted */}
-				<TrustedBy companies={["hwp", "cip"]} />
+				<TrustedBy companies={["simplicity", "cip"]} />
 				{/* See more */}
 				<SeeMoreBannerSection />
 			</>
