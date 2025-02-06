@@ -5,7 +5,6 @@ export const Companies = [
 		description:
 			"Hobson Wealth is a leading private wealth advisory team with offices throughout New Zealand. They are Kiwi owned and operated and enjoy a strategic relationship with the Macquarie Group.",
 		img: "images/2023-images/logos/HWP.png",
-		link: "https://www.hobsonwealth.co.nz/",
 	},
 	{
 		name: "Simplicity",

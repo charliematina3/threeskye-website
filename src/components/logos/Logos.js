@@ -2,12 +2,17 @@ import React from 'react';
 import "./Logo.scss";
 
 const Logo = ({ src, alt, link, maxWidth }) => {
-	return (
-		<a href={link} target="_blank" rel="noreferrer" className="logo-wrapper cursor-pointer" style={{maxWidth: maxWidth ? maxWidth : ""}}>
-			<img src={src} alt={alt} />
-		</a>
+	return link ? (
+	  <a href={link} target="_blank" rel="noreferrer" className="logo-wrapper cursor-pointer" style={{ maxWidth: maxWidth || "" }}>
+		<img src={src} alt={alt} />
+	  </a>
+	) : (
+	  <div className="logo-wrapper" style={{ maxWidth: maxWidth || "" }}>
+		<img src={src} alt={alt} />
+	  </div>
 	);
-};
+  };
+  
 
 // Logo object
 export const LogoObject = [	

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import TextSection from '../sections/TextSection';
 import ProductHeroSection from '../sections/ProductHeroSection';
-import FocusText from '../components/FocusText';
 import IntegrationsSection from '../sections/IntegrationsSection';
 import TrustedBy from '../sections/TrustedBy';
 import SeeMoreBannerSection from '../sections/SeeMoreBannerSection';

@@ -18,8 +18,8 @@ const ms = LogoObject[15];
 
 export const IntegrationsContent = [
 	{
-		name: "Financial Service Integrations",
-		description: "Live feeds from NZX Wealth Technologies, Chelmer and Apex Group (formerly MMC), allow for a single, accurate picture of portfolios and trading information.",
+		name: "Unified Financial Service Integrations",
+		description: "Our technology harnesses live data feeds from trusted financial technology providers—and seamlessly integrates data from CSV and XLS sources—to deliver a comprehensive, real-time picture of portfolios, trading information, and fund reporting. By connecting legacy systems with modern data pipelines, we empower financial professionals across New Zealand, Australia, and beyond to make confident, data-driven decisions.",
 		ref: 'financial',
 		tiles: [
 			{

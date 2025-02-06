@@ -64,7 +64,7 @@ class AboutUsPage extends Component {
 							<Col xs="12" lg="6">
 								<h2>Who are We?</h2>
 								<p style={{ fontSize: 20 }}>
-									3SKYE is based out of Wellington, New Zealand. Since 2018, we have been working hard to make life better for our clients.
+									3SKYE, based in Wellington since 2018, has expanded to Auckland and Australia, enhancing our capability to serve clients more effectively across these regions.
 									<br />
 									<br />
 									3SKYE brings together problem-solvers, designers, and communicators - diverse in our experiences and skills, unified by empathy for the humans

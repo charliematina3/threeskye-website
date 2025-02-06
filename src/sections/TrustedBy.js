@@ -12,7 +12,7 @@ const TrustedCard = ({logo, link, text, name}) => {
 	return (
 		<Card className="trusted-card">
 			{/* Logo */}
-			<Logo src={logo} link={link} maxWidth={140} />
+			<Logo src={logo} link={link && link} maxWidth={140} />
 			{/* Text */}
 			<div className="trusted-card-text">
 				<h5 className="trusted-header">{name}</h5>
